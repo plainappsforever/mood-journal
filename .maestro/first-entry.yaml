@@ -1,0 +1,67 @@
+appId: ${APP_ID}
+name: First entry - two taps from Home, reminder card asks nothing until Turn on
+tags:
+  - p5
+---
+- runFlow: subflows/reset.yaml
+# A1: face → activity → Save (3 taps; the mood step is skipped because the face preselects it)
+- tapOn:
+    id: mood-level-4
+- extendedWaitUntil:
+    visible:
+      id: entry-editor
+    timeout: 10000
+- assertVisible:
+    id: mood-2
+    selected: true
+- tapOn:
+    id: activity-11
+- assertVisible:
+    id: activity-11
+    selected: true
+- tapOn:
+    id: entry-save
+- extendedWaitUntil:
+    visible:
+      id: entry-row-1
+    timeout: 10000
+- assertVisible: .*walk.*
+- assertVisible:
+    id: streak-text
+    text: 1 day in a row \(longest 1\)
+# Flow 1: the one-time reminder card; "Not now" asks nothing and stays away
+- assertVisible:
+    id: reminder-card
+- assertNotVisible:
+    text: Allow.*
+- tapOn:
+    id: reminder-card-later
+- assertNotVisible:
+    id: reminder-card
+- runFlow: subflows/launch.yaml
+- assertVisible:
+    id: entry-row-1
+- assertNotVisible:
+    id: reminder-card
+# A second entry with two activities and a note
+- tapOn:
+    id: mood-level-5
+- tapOn:
+    id: activity-11
+- tapOn:
+    id: activity-18
+- scrollUntilVisible:
+    element:
+      id: note-input
+- tapOn:
+    id: note-input
+- inputText: Lunch with friends
+- runFlow: subflows/hide-keyboard.yaml
+- tapOn:
+    id: entry-save
+- extendedWaitUntil:
+    visible:
+      id: entry-row-2
+    timeout: 10000
+- assertVisible: .*Lunch with friends.*
+- assertVisible: .*friends.*

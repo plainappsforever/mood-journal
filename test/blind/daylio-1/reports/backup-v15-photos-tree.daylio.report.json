@@ -1,0 +1,276 @@
+{
+  "file": "backup-v15-photos-tree.daylio",
+  "status": "ok",
+  "kind": "daylio_backup",
+  "entries": [
+    {
+      "date": "2024-06-20",
+      "time": "19:44",
+      "mood": "rad",
+      "level": 5,
+      "activities": [
+        "sport"
+      ],
+      "title": "Short title",
+      "note": "Rain all day; stayed in.",
+      "photos": 0
+    },
+    {
+      "date": "2024-06-19",
+      "time": "08:00",
+      "mood": "awful",
+      "level": 1,
+      "activities": [
+        "bad sleep",
+        "music"
+      ],
+      "title": "Short title",
+      "note": "Walked to work, cold.",
+      "photos": 0
+    },
+    {
+      "date": "2024-06-17",
+      "time": "11:15",
+      "mood": "awful",
+      "level": 1,
+      "activities": [
+        "walk"
+      ],
+      "title": "Short title",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2024-06-16",
+      "time": "21:18",
+      "mood": "good",
+      "level": 4,
+      "activities": [
+        "gaming",
+        "meds"
+      ],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2024-06-16",
+      "time": "20:07",
+      "mood": "awful",
+      "level": 1,
+      "activities": [
+        "family"
+      ],
+      "title": "Short title",
+      "note": "Walked to work, cold.",
+      "photos": 0
+    },
+    {
+      "date": "2024-06-15",
+      "time": "22:26",
+      "mood": "bad",
+      "level": 2,
+      "activities": [
+        "bad sleep",
+        "good sleep",
+        "music",
+        "walk"
+      ],
+      "title": "Short title",
+      "note": "Good talk with Sam\nfelt better",
+      "photos": 0
+    },
+    {
+      "date": "2024-06-13",
+      "time": "20:30",
+      "mood": "rad",
+      "level": 5,
+      "activities": [
+        "gaming",
+        "meds"
+      ],
+      "title": "",
+      "note": "Good talk with Sam\nfelt better",
+      "photos": 0
+    },
+    {
+      "date": "2024-06-13",
+      "time": "14:47",
+      "mood": "good",
+      "level": 4,
+      "activities": [
+        "family",
+        "gaming",
+        "reading"
+      ],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2024-06-12",
+      "time": "13:18",
+      "mood": "awful",
+      "level": 1,
+      "activities": [
+        "good sleep",
+        "sport"
+      ],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2024-06-12",
+      "time": "07:10",
+      "mood": "good",
+      "level": 4,
+      "activities": [
+        "family",
+        "movies / tv",
+        "reading"
+      ],
+      "title": "Short title",
+      "note": "Good talk with Sam\nfelt better",
+      "photos": 0
+    },
+    {
+      "date": "2024-06-11",
+      "time": "17:13",
+      "mood": "good",
+      "level": 4,
+      "activities": [],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2024-06-09",
+      "time": "14:34",
+      "mood": "good",
+      "level": 4,
+      "activities": [
+        "sport"
+      ],
+      "title": "Short title",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2024-06-09",
+      "time": "10:25",
+      "mood": "meh",
+      "level": 3,
+      "activities": [
+        "date",
+        "family",
+        "friends",
+        "walk"
+      ],
+      "title": "Short title",
+      "note": "Rain all day; stayed in.",
+      "photos": 0
+    },
+    {
+      "date": "2024-06-08",
+      "time": "17:49",
+      "mood": "rad",
+      "level": 5,
+      "activities": [
+        "gaming",
+        "movies / tv",
+        "reading"
+      ],
+      "title": "",
+      "note": "Walked to work, cold.",
+      "photos": 0
+    },
+    {
+      "date": "2024-06-08",
+      "time": "15:38",
+      "mood": "good",
+      "level": 4,
+      "activities": [],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2024-06-07",
+      "time": "21:15",
+      "mood": "good",
+      "level": 4,
+      "activities": [],
+      "title": "",
+      "note": "one present, one missing",
+      "photos": 1
+    },
+    {
+      "date": "2024-06-06",
+      "time": "12:00",
+      "mood": "awful",
+      "level": 1,
+      "activities": [],
+      "title": "",
+      "note": "asset id not in assets[]",
+      "photos": 0
+    },
+    {
+      "date": "2024-06-05",
+      "time": "12:00",
+      "mood": "bad",
+      "level": 2,
+      "activities": [],
+      "title": "",
+      "note": "asset of type 2 (not a photo)",
+      "photos": 0
+    },
+    {
+      "date": "2024-06-04",
+      "time": "12:00",
+      "mood": "meh",
+      "level": 3,
+      "activities": [],
+      "title": "",
+      "note": "photo file missing in zip",
+      "photos": 0
+    },
+    {
+      "date": "2024-06-03",
+      "time": "12:00",
+      "mood": "meh",
+      "level": 3,
+      "activities": [],
+      "title": "",
+      "note": "one photo",
+      "photos": 1
+    },
+    {
+      "date": "2024-06-02",
+      "time": "12:00",
+      "mood": "good",
+      "level": 4,
+      "activities": [],
+      "title": "",
+      "note": "two photos",
+      "photos": 2
+    },
+    {
+      "date": "2024-06-01",
+      "time": "12:00",
+      "mood": "rad",
+      "level": 5,
+      "activities": [],
+      "title": "",
+      "note": "four photos (only 3 import)",
+      "photos": 3
+    }
+  ],
+  "skipped": [],
+  "warnings": [
+    "missingPhoto",
+    "missingPhoto",
+    "photosLimited",
+    "goalsNotImported"
+  ]
+}

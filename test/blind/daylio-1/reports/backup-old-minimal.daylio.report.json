@@ -1,0 +1,85 @@
+{
+  "file": "backup-old-minimal.daylio",
+  "status": "ok",
+  "kind": "daylio_backup",
+  "entries": [],
+  "skipped": [
+    {
+      "where": "1",
+      "reason": "unknown mood"
+    },
+    {
+      "where": "2",
+      "reason": "unknown mood"
+    },
+    {
+      "where": "3",
+      "reason": "unknown mood"
+    },
+    {
+      "where": "4",
+      "reason": "unknown mood"
+    },
+    {
+      "where": "5",
+      "reason": "unknown mood"
+    },
+    {
+      "where": "6",
+      "reason": "unknown mood"
+    },
+    {
+      "where": "7",
+      "reason": "unknown mood"
+    },
+    {
+      "where": "8",
+      "reason": "unknown mood"
+    },
+    {
+      "where": "9",
+      "reason": "unknown mood"
+    },
+    {
+      "where": "10",
+      "reason": "unknown mood"
+    },
+    {
+      "where": "11",
+      "reason": "unknown mood"
+    },
+    {
+      "where": "12",
+      "reason": "unknown mood"
+    },
+    {
+      "where": "13",
+      "reason": "unknown mood"
+    },
+    {
+      "where": "14",
+      "reason": "unknown mood"
+    },
+    {
+      "where": "15",
+      "reason": "unknown mood"
+    }
+  ],
+  "warnings": [
+    "unknownMood",
+    "unknownMood",
+    "unknownMood",
+    "unknownMood",
+    "unknownMood",
+    "unknownMood",
+    "unknownMood",
+    "unknownMood",
+    "unknownMood",
+    "unknownMood",
+    "unknownMood",
+    "unknownMood",
+    "unknownMood",
+    "unknownMood",
+    "unknownMood"
+  ]
+}

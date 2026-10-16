@@ -1,0 +1,270 @@
+{
+ "fixture": "csv-en-notes-escaping.csv",
+ "kind": "daylio_csv",
+ "header": "current8",
+ "options": {
+  "today": "2026-10-16",
+  "mapping": {
+   "good": 4,
+   "meh": 3,
+   "rad": 5,
+   "bad": 2
+  }
+ },
+ "entries": [
+  {
+   "date": "2024-08-01",
+   "time": "08:15",
+   "mood": "good",
+   "level": 4,
+   "activities": [],
+   "title": "Big day, finally",
+   "note": "Lunch with Anna, Ben, and Carl; then coffee.",
+   "photos": 0
+  },
+  {
+   "date": "2024-08-01",
+   "time": "21:40",
+   "mood": "meh",
+   "level": 3,
+   "activities": [
+    "work"
+   ],
+   "title": "",
+   "note": "She said \"never again\" and laughed.",
+   "photos": 0
+  },
+  {
+   "date": "2024-08-02",
+   "time": "08:15",
+   "mood": "rad",
+   "level": 5,
+   "activities": [
+    "friends",
+    "work"
+   ],
+   "title": "\"Quoted\" title",
+   "note": "Line one\nLine two\n\nLine four",
+   "photos": 0
+  },
+  {
+   "date": "2024-08-02",
+   "time": "21:40",
+   "mood": "bad",
+   "level": 2,
+   "activities": [],
+   "title": "",
+   "note": "🎉🎂 birthday! 👨‍👩‍👧 all here, 🏳️‍🌈 flag too",
+   "photos": 0
+  },
+  {
+   "date": "2024-08-03",
+   "time": "08:15",
+   "mood": "good",
+   "level": 4,
+   "activities": [
+    "work"
+   ],
+   "title": "",
+   "note": "=SUM(A1:A3) is not a formula here",
+   "photos": 0
+  },
+  {
+   "date": "2024-08-03",
+   "time": "21:40",
+   "mood": "meh",
+   "level": 3,
+   "activities": [
+    "friends",
+    "work"
+   ],
+   "title": "",
+   "note": "- started running again",
+   "photos": 0
+  },
+  {
+   "date": "2024-08-04",
+   "time": "08:15",
+   "mood": "rad",
+   "level": 5,
+   "activities": [],
+   "title": "",
+   "note": "+1 for the new café ☕",
+   "photos": 0
+  },
+  {
+   "date": "2024-08-04",
+   "time": "21:40",
+   "mood": "bad",
+   "level": 2,
+   "activities": [
+    "work"
+   ],
+   "title": "",
+   "note": "@home all day",
+   "photos": 0
+  },
+  {
+   "date": "2024-08-05",
+   "time": "08:15",
+   "mood": "good",
+   "level": 4,
+   "activities": [
+    "friends",
+    "work"
+   ],
+   "title": "",
+   "note": "Semicolons; everywhere; really;",
+   "photos": 0
+  },
+  {
+   "date": "2024-08-05",
+   "time": "21:40",
+   "mood": "meh",
+   "level": 3,
+   "activities": [],
+   "title": "",
+   "note": "\"Quoted\" at the start, and \"quoted\" at the end \"",
+   "photos": 0
+  },
+  {
+   "date": "2024-08-06",
+   "time": "08:15",
+   "mood": "rad",
+   "level": 5,
+   "activities": [
+    "work"
+   ],
+   "title": "Mixed",
+   "note": "Both \"\"double\"\" and 'single' quotes",
+   "photos": 0
+  },
+  {
+   "date": "2024-08-06",
+   "time": "21:40",
+   "mood": "bad",
+   "level": 2,
+   "activities": [
+    "friends",
+    "work"
+   ],
+   "title": "",
+   "note": ",",
+   "photos": 0
+  },
+  {
+   "date": "2024-08-07",
+   "time": "08:15",
+   "mood": "good",
+   "level": 4,
+   "activities": [],
+   "title": "",
+   "note": "مرحبا بالعالم — 今日は晴れ — Привет",
+   "photos": 0
+  },
+  {
+   "date": "2024-08-07",
+   "time": "21:40",
+   "mood": "meh",
+   "level": 3,
+   "activities": [
+    "work"
+   ],
+   "title": "",
+   "note": "Tab\tinside the note",
+   "photos": 0
+  },
+  {
+   "date": "2024-08-08",
+   "time": "08:15",
+   "mood": "rad",
+   "level": 5,
+   "activities": [
+    "friends",
+    "work"
+   ],
+   "title": "",
+   "note": "This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry. This is a long entry.",
+   "photos": 0
+  },
+  {
+   "date": "2024-08-08",
+   "time": "21:40",
+   "mood": "bad",
+   "level": 2,
+   "activities": [],
+   "title": "Tom & Jerry",
+   "note": "Tom & Jerry night, 100% fun",
+   "photos": 0
+  },
+  {
+   "date": "2024-08-09",
+   "time": "08:15",
+   "mood": "good",
+   "level": 4,
+   "activities": [
+    "work"
+   ],
+   "title": "",
+   "note": "Great note\n\nsuch \"good\" note, really!",
+   "photos": 0
+  },
+  {
+   "date": "2024-08-09",
+   "time": "21:40",
+   "mood": "meh",
+   "level": 3,
+   "activities": [
+    "friends",
+    "work"
+   ],
+   "title": "Title only",
+   "note": "",
+   "photos": 0
+  }
+ ],
+ "skipped": [],
+ "warnings": [],
+ "moods": [
+  {
+   "name": "good",
+   "level": 4
+  },
+  {
+   "name": "meh",
+   "level": 3
+  },
+  {
+   "name": "rad",
+   "level": 5
+  },
+  {
+   "name": "bad",
+   "level": 2
+  }
+ ],
+ "activities": [
+  {
+   "name": "friends",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "work",
+   "group": "Imported from Daylio"
+  }
+ ],
+ "counts": {
+  "entries": 18,
+  "skipped": 0,
+  "moods": 4,
+  "activities": 2,
+  "photos": 0
+ },
+ "_meta": {
+  "confidence": "sourced",
+  "assumptions": [
+   "notes are kept verbatim except <br> -> newline (spec); a note starting with = + - @ is NOT altered on import",
+   "HTML entities are not written by the CSV export, a literal & stays &"
+  ]
+ }
+}

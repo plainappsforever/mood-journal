@@ -1,0 +1,17 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+  <application>
+    <!-- P9 "Mood" home-screen widget: five faces + today + streak. The app pushes a snapshot; the widget redraws
+         itself at the next journal-day start (non-waking alarm), so it never needs updatePeriodMillis. -->
+    <receiver
+      android:name="expo.modules.moodwidget.MoodWidgetProvider"
+      android:exported="false"
+      android:label="@string/mood_widget_label">
+      <intent-filter>
+        <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+      </intent-filter>
+      <meta-data
+        android:name="android.appwidget.provider"
+        android:resource="@xml/mood_widget_info" />
+    </receiver>
+  </application>
+</manifest>

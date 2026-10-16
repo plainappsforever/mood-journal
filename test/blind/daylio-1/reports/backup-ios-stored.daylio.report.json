@@ -1,0 +1,311 @@
+{
+  "file": "backup-ios-stored.daylio",
+  "status": "ok",
+  "kind": "daylio_backup",
+  "entries": [
+    {
+      "date": "2026-01-21",
+      "time": "07:45",
+      "mood": "rad",
+      "level": 5,
+      "activities": [],
+      "title": "",
+      "note": "iPhone photo",
+      "photos": 1
+    },
+    {
+      "date": "2026-01-20",
+      "time": "10:35",
+      "mood": "meh+",
+      "level": 4,
+      "activities": [],
+      "title": "",
+      "note": "Rain all day; stayed in.",
+      "photos": 0
+    },
+    {
+      "date": "2026-01-20",
+      "time": "07:13",
+      "mood": "rad",
+      "level": 5,
+      "activities": [
+        "date"
+      ],
+      "title": "Short title",
+      "note": "Rain all day; stayed in.",
+      "photos": 0
+    },
+    {
+      "date": "2026-01-19",
+      "time": "17:45",
+      "mood": "meh+",
+      "level": 4,
+      "activities": [
+        "friends",
+        "meds",
+        "movies / tv",
+        "reading"
+      ],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2026-01-18",
+      "time": "18:55",
+      "mood": "bad",
+      "level": 2,
+      "activities": [],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2026-01-16",
+      "time": "19:27",
+      "mood": "bad",
+      "level": 2,
+      "activities": [
+        "bad sleep",
+        "good sleep",
+        "movies / tv",
+        "music"
+      ],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2026-01-15",
+      "time": "12:12",
+      "mood": "bad",
+      "level": 2,
+      "activities": [],
+      "title": "",
+      "note": "Walked to work, cold.",
+      "photos": 0
+    },
+    {
+      "date": "2026-01-15",
+      "time": "11:27",
+      "mood": "bad",
+      "level": 2,
+      "activities": [],
+      "title": "",
+      "note": "Rain all day; stayed in.",
+      "photos": 0
+    },
+    {
+      "date": "2026-01-15",
+      "time": "07:19",
+      "mood": "good",
+      "level": 4,
+      "activities": [
+        "family",
+        "movies / tv",
+        "sport",
+        "walk"
+      ],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2026-01-14",
+      "time": "13:14",
+      "mood": "rad",
+      "level": 5,
+      "activities": [],
+      "title": "Short title",
+      "note": "Walked to work, cold.",
+      "photos": 0
+    },
+    {
+      "date": "2026-01-13",
+      "time": "21:05",
+      "mood": "awful",
+      "level": 1,
+      "activities": [
+        "bad sleep",
+        "gaming",
+        "walk"
+      ],
+      "title": "",
+      "note": "Rain all day; stayed in.",
+      "photos": 0
+    },
+    {
+      "date": "2026-01-13",
+      "time": "09:41",
+      "mood": "meh+",
+      "level": 4,
+      "activities": [],
+      "title": "Short title",
+      "note": "Walked to work, cold.",
+      "photos": 0
+    },
+    {
+      "date": "2026-01-13",
+      "time": "07:42",
+      "mood": "rad",
+      "level": 5,
+      "activities": [
+        "movies / tv",
+        "music"
+      ],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2026-01-12",
+      "time": "14:09",
+      "mood": "meh",
+      "level": 3,
+      "activities": [
+        "bad sleep",
+        "reading"
+      ],
+      "title": "Short title",
+      "note": "Good talk with Sam\nfelt better",
+      "photos": 0
+    },
+    {
+      "date": "2026-01-11",
+      "time": "12:45",
+      "mood": "good",
+      "level": 4,
+      "activities": [],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2026-01-10",
+      "time": "19:20",
+      "mood": "good",
+      "level": 4,
+      "activities": [
+        "date",
+        "meds",
+        "reading"
+      ],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2026-01-10",
+      "time": "14:37",
+      "mood": "meh+",
+      "level": 4,
+      "activities": [
+        "family",
+        "reading",
+        "sport"
+      ],
+      "title": "Short title",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2026-01-06",
+      "time": "21:54",
+      "mood": "bad",
+      "level": 2,
+      "activities": [
+        "bad sleep",
+        "sport"
+      ],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2026-01-05",
+      "time": "16:59",
+      "mood": "bad",
+      "level": 2,
+      "activities": [
+        "friends",
+        "gaming",
+        "reading",
+        "sport"
+      ],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2026-01-03",
+      "time": "13:57",
+      "mood": "meh",
+      "level": 3,
+      "activities": [
+        "date",
+        "reading",
+        "sport"
+      ],
+      "title": "Short title",
+      "note": "Walked to work, cold.",
+      "photos": 0
+    },
+    {
+      "date": "2026-01-03",
+      "time": "08:39",
+      "mood": "meh",
+      "level": 3,
+      "activities": [
+        "date",
+        "reading"
+      ],
+      "title": "Short title",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2026-01-02",
+      "time": "20:31",
+      "mood": "rad",
+      "level": 5,
+      "activities": [
+        "date",
+        "movies / tv"
+      ],
+      "title": "Short title",
+      "note": "Rain all day; stayed in.",
+      "photos": 0
+    },
+    {
+      "date": "2026-01-01",
+      "time": "11:11",
+      "mood": "rad",
+      "level": 5,
+      "activities": [
+        "date",
+        "family",
+        "meds",
+        "reading"
+      ],
+      "title": "",
+      "note": "Good talk with Sam\nfelt better",
+      "photos": 0
+    },
+    {
+      "date": "2026-01-01",
+      "time": "07:32",
+      "mood": "meh+",
+      "level": 4,
+      "activities": [
+        "date"
+      ],
+      "title": "",
+      "note": "Walked to work, cold.",
+      "photos": 0
+    }
+  ],
+  "skipped": [],
+  "warnings": [
+    "goalsNotImported"
+  ]
+}

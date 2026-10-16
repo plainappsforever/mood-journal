@@ -1,0 +1,51 @@
+appId: ${APP_ID}
+name: Activity detail - entries, same day and next day comparisons
+tags:
+  - p6
+---
+- runFlow: subflows/reset.yaml
+- runFlow:
+    file: subflows/link.yaml
+    env:
+      LINK: debug/fixture?name=stats
+- tapOn:
+    id: tab-stats
+- extendedWaitUntil:
+    visible:
+      id: stat-average
+    timeout: 15000
+- scrollUntilVisible:
+    element:
+      id: stat-activity-11
+- tapOn:
+    id: stat-activity-11
+- extendedWaitUntil:
+    visible:
+      id: cmp-result
+    timeout: 10000
+- assertVisible: "Entries with walk: 3.5 \\(10\\). Without: 4.0 \\(20\\)."
+- tapOn:
+    id: cmp-sameday
+- assertVisible:
+    id: cmp-sameday
+    selected: true
+- assertVisible: "Days with walk: 3.5 \\(10\\). Days without: 4.0 \\(20\\)."
+- tapOn:
+    id: cmp-nextday
+- assertVisible: "Day after walk: .*"
+- assertVisible:
+    id: often-together
+- runFlow: subflows/go-back.yaml
+# Level detail
+- scrollUntilVisible:
+    element:
+      id: stat-level-5
+    direction: UP
+- tapOn:
+    id: stat-level-5
+- extendedWaitUntil:
+    visible:
+      id: level-related
+    timeout: 10000
+- assertVisible:
+    id: related-10

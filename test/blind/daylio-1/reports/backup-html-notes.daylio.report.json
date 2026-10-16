@@ -1,0 +1,119 @@
+{
+  "file": "backup-html-notes.daylio",
+  "status": "ok",
+  "kind": "daylio_backup",
+  "entries": [
+    {
+      "date": "2025-08-09",
+      "time": "21:00",
+      "mood": "bad",
+      "level": 2,
+      "activities": [
+        "reading"
+      ],
+      "title": "A title, with comma",
+      "note": "a\n\nb",
+      "photos": 0
+    },
+    {
+      "date": "2025-08-08",
+      "time": "21:00",
+      "mood": "meh",
+      "level": 3,
+      "activities": [
+        "reading"
+      ],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2025-08-07",
+      "time": "21:00",
+      "mood": "good",
+      "level": 4,
+      "activities": [
+        "reading"
+      ],
+      "title": "Quote \"title\"",
+      "note": "Ümlaut, ß, 日本語, عربى",
+      "photos": 0
+    },
+    {
+      "date": "2025-08-06",
+      "time": "21:00",
+      "mood": "rad",
+      "level": 5,
+      "activities": [
+        "reading"
+      ],
+      "title": "",
+      "note": "Plain, no HTML; \"quotes\" and = sign",
+      "photos": 0
+    },
+    {
+      "date": "2025-08-05",
+      "time": "21:00",
+      "mood": "awful",
+      "level": 1,
+      "activities": [
+        "reading"
+      ],
+      "title": "A title, with comma",
+      "note": "Emoji 🎉👨‍👩‍👧 and\nself-closing\ntags",
+      "photos": 0
+    },
+    {
+      "date": "2025-08-04",
+      "time": "21:00",
+      "mood": "bad",
+      "level": 2,
+      "activities": [
+        "reading"
+      ],
+      "title": "",
+      "note": "First paragraph\nSecond paragraph",
+      "photos": 0
+    },
+    {
+      "date": "2025-08-03",
+      "time": "21:00",
+      "mood": "meh",
+      "level": 3,
+      "activities": [
+        "reading"
+      ],
+      "title": "Quote \"title\"",
+      "note": "1 < 2 > 0, \"quoted\" and it's",
+      "photos": 0
+    },
+    {
+      "date": "2025-08-02",
+      "time": "21:00",
+      "mood": "good",
+      "level": 4,
+      "activities": [
+        "reading"
+      ],
+      "title": "",
+      "note": "Bold and italic & more",
+      "photos": 0
+    },
+    {
+      "date": "2025-08-01",
+      "time": "21:00",
+      "mood": "rad",
+      "level": 5,
+      "activities": [
+        "reading"
+      ],
+      "title": "A title, with comma",
+      "note": "Line one\nLine two",
+      "photos": 0
+    }
+  ],
+  "skipped": [],
+  "warnings": [
+    "goalsNotImported"
+  ]
+}

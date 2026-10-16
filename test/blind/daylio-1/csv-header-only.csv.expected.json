@@ -1,0 +1,28 @@
+{
+ "fixture": "csv-header-only.csv",
+ "kind": "daylio_csv",
+ "header": "current8",
+ "options": {
+  "today": "2026-10-16",
+  "mapping": {}
+ },
+ "entries": [],
+ "skipped": [],
+ "warnings": [],
+ "moods": [],
+ "activities": [],
+ "counts": {
+  "entries": 0,
+  "skipped": 0,
+  "moods": 0,
+  "activities": 0,
+  "photos": 0
+ },
+ "_meta": {
+  "confidence": "assumed",
+  "assumptions": [
+   "a Daylio export with no entries is a valid, empty import"
+  ],
+  "also_acceptable": "refused:empty"
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "refused": "date_format",
+ "_meta": {
+  "confidence": "sourced",
+  "assumptions": [
+   "Excel (US) re-save turns full_date into 9/28/2021 and time into 10:00:00 PM; M/D vs D/M is ambiguous -> nothing imported"
+  ],
+  "also_acceptable": "ok_with_all_rows_skipped",
+  "data_rows": 18
+ }
+}

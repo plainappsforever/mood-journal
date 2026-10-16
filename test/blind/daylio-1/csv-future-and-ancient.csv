@@ -1,0 +1,7 @@
+full_date,date,weekday,time,mood,activities,note_title,note
+2031-01-01,1 January,Wednesday,08:00,rad,"","","far future"
+2026-10-18,18 October,Sunday,08:00,rad,"","","two days ahead"
+2026-10-17,17 October,Saturday,08:00,good,"","","tomorrow is allowed (today + 1)"
+2026-10-16,16 October,Friday,07:00,good,"","","today"
+1900-01-01,1 January,Monday,12:00,meh,"","","oldest allowed day"
+1899-12-31,31 December,Sunday,12:00,meh,"","","too old"

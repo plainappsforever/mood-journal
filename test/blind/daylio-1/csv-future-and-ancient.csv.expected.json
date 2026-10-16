@@ -1,0 +1,83 @@
+{
+ "fixture": "csv-future-and-ancient.csv",
+ "kind": "daylio_csv",
+ "header": "current8",
+ "options": {
+  "today": "2026-10-16",
+  "mapping": {}
+ },
+ "entries": [
+  {
+   "date": "1900-01-01",
+   "time": "12:00",
+   "mood": "meh",
+   "level": 3,
+   "activities": [],
+   "title": "",
+   "note": "oldest allowed day",
+   "photos": 0
+  },
+  {
+   "date": "2026-10-16",
+   "time": "07:00",
+   "mood": "good",
+   "level": 4,
+   "activities": [],
+   "title": "",
+   "note": "today",
+   "photos": 0
+  },
+  {
+   "date": "2026-10-17",
+   "time": "08:00",
+   "mood": "good",
+   "level": 4,
+   "activities": [],
+   "title": "",
+   "note": "tomorrow is allowed (today + 1)",
+   "photos": 0
+  }
+ ],
+ "skipped": [
+  {
+   "line": 2,
+   "row": 1,
+   "reason": "out_of_range"
+  },
+  {
+   "line": 3,
+   "row": 2,
+   "reason": "out_of_range"
+  },
+  {
+   "line": 7,
+   "row": 6,
+   "reason": "out_of_range"
+  }
+ ],
+ "warnings": [],
+ "moods": [
+  {
+   "name": "good",
+   "level": 4
+  },
+  {
+   "name": "meh",
+   "level": 3
+  }
+ ],
+ "activities": [],
+ "counts": {
+  "entries": 3,
+  "skipped": 3,
+  "moods": 2,
+  "activities": 0,
+  "photos": 0
+ },
+ "_meta": {
+  "confidence": "sourced",
+  "assumptions": [
+   "today = 2026-10-16 passed as option; allowed range 1900-01-01 .. today+1 (SPEC); out-of-range rows skipped not refused"
+  ]
+ }
+}

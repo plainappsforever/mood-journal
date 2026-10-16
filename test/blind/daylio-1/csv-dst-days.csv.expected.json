@@ -1,0 +1,148 @@
+{
+ "fixture": "csv-dst-days.csv",
+ "kind": "daylio_csv",
+ "header": "current8",
+ "options": {
+  "today": "2026-10-16",
+  "mapping": {}
+ },
+ "entries": [
+  {
+   "date": "2024-03-10",
+   "time": "02:15",
+   "mood": "awful",
+   "level": 1,
+   "activities": [],
+   "title": "",
+   "note": "New York spring-forward gap",
+   "photos": 0
+  },
+  {
+   "date": "2024-03-31",
+   "time": "01:45",
+   "mood": "good",
+   "level": 4,
+   "activities": [
+    "sport"
+   ],
+   "title": "",
+   "note": "before spring-forward (Berlin)",
+   "photos": 0
+  },
+  {
+   "date": "2024-03-31",
+   "time": "02:30",
+   "mood": "meh",
+   "level": 3,
+   "activities": [],
+   "title": "",
+   "note": "02:30 does not exist in Berlin today",
+   "photos": 0
+  },
+  {
+   "date": "2024-03-31",
+   "time": "03:15",
+   "mood": "good",
+   "level": 4,
+   "activities": [],
+   "title": "",
+   "note": "after",
+   "photos": 0
+  },
+  {
+   "date": "2024-10-26",
+   "time": "23:30",
+   "mood": "rad",
+   "level": 5,
+   "activities": [
+    "party"
+   ],
+   "title": "",
+   "note": "night before fall-back",
+   "photos": 0
+  },
+  {
+   "date": "2024-10-27",
+   "time": "02:30",
+   "mood": "bad",
+   "level": 2,
+   "activities": [
+    "bad sleep"
+   ],
+   "title": "",
+   "note": "first 02:30 (CEST)",
+   "photos": 0
+  },
+  {
+   "date": "2024-10-27",
+   "time": "02:45",
+   "mood": "meh",
+   "level": 3,
+   "activities": [],
+   "title": "",
+   "note": "second hour",
+   "photos": 0
+  },
+  {
+   "date": "2024-11-03",
+   "time": "01:30",
+   "mood": "good",
+   "level": 4,
+   "activities": [],
+   "title": "",
+   "note": "New York repeated hour",
+   "photos": 0
+  }
+ ],
+ "skipped": [],
+ "warnings": [],
+ "moods": [
+  {
+   "name": "good",
+   "level": 4
+  },
+  {
+   "name": "meh",
+   "level": 3
+  },
+  {
+   "name": "bad",
+   "level": 2
+  },
+  {
+   "name": "rad",
+   "level": 5
+  },
+  {
+   "name": "awful",
+   "level": 1
+  }
+ ],
+ "activities": [
+  {
+   "name": "bad sleep",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "party",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "sport",
+   "group": "Imported from Daylio"
+  }
+ ],
+ "counts": {
+  "entries": 8,
+  "skipped": 0,
+  "moods": 5,
+  "activities": 3,
+  "photos": 0
+ },
+ "_meta": {
+  "confidence": "sourced",
+  "assumptions": [
+   "CSV has no offset: date/time are reported exactly as written, even 02:30 on a spring-forward day (report contract: \"date/time are reported as written\")"
+  ]
+ }
+}

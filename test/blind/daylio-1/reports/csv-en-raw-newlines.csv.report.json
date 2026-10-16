@@ -1,0 +1,80 @@
+{
+  "file": "csv-en-raw-newlines.csv",
+  "status": "ok",
+  "kind": "daylio_csv",
+  "entries": [
+    {
+      "date": "2023-03-05",
+      "time": "22:10",
+      "mood": "good",
+      "level": 4,
+      "activities": [
+        "reading"
+      ],
+      "title": "",
+      "note": "First line\nSecond line",
+      "photos": 0
+    },
+    {
+      "date": "2023-03-05",
+      "time": "09:00",
+      "mood": "meh",
+      "level": 3,
+      "activities": [],
+      "title": "Paragraphs",
+      "note": "Para one.\n\nPara two, with a comma.",
+      "photos": 0
+    },
+    {
+      "date": "2023-03-04",
+      "time": "20:00",
+      "mood": "rad",
+      "level": 5,
+      "activities": [
+        "friends",
+        "party"
+      ],
+      "title": "",
+      "note": "Looks like a row:\n2021-01-01,1 January,Friday,10:00,rad,\"\",\"\",\"\"\nbut it is my note",
+      "photos": 0
+    },
+    {
+      "date": "2023-03-04",
+      "time": "07:30",
+      "mood": "bad",
+      "level": 2,
+      "activities": [
+        "bad sleep"
+      ],
+      "title": "",
+      "note": "full_date,date,weekday,time,mood,activities,note_title,note\n(I pasted the header into my note)",
+      "photos": 0
+    },
+    {
+      "date": "2023-03-02",
+      "time": "23:59",
+      "mood": "awful",
+      "level": 1,
+      "activities": [
+        "stress / frustration"
+      ],
+      "title": "Ugh",
+      "note": "\"Quote on its own line\"\n\"\"\nend",
+      "photos": 0
+    },
+    {
+      "date": "2023-03-01",
+      "time": "12:00",
+      "mood": "good",
+      "level": 4,
+      "activities": [
+        "work"
+      ],
+      "title": "",
+      "note": "single line",
+      "photos": 0
+    }
+  ],
+  "skipped": [],
+  "warnings": []
+}

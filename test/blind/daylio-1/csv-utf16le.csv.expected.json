@@ -1,0 +1,9 @@
+{
+ "refused": "encoding",
+ "_meta": {
+  "confidence": "sourced",
+  "assumptions": [
+   "Excel \"Unicode Text\" / UTF-16LE with BOM is not UTF-8"
+  ]
+ }
+}

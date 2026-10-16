@@ -1,0 +1,810 @@
+{
+ "fixture": "csv-many-activities.csv",
+ "kind": "daylio_csv",
+ "header": "current8",
+ "options": {
+  "today": "2026-10-16",
+  "mapping": {}
+ },
+ "entries": [
+  {
+   "date": "2022-07-01",
+   "time": "08:00",
+   "mood": "meh",
+   "level": 3,
+   "activities": [],
+   "title": "",
+   "note": "nothing",
+   "photos": 0
+  },
+  {
+   "date": "2022-07-01",
+   "time": "21:00",
+   "mood": "good",
+   "level": 4,
+   "activities": [
+    "100% done",
+    "bad sleep",
+    "bills",
+    "C++ coding",
+    "café",
+    "cleaning",
+    "cooking",
+    "date",
+    "dentist 🦷",
+    "early sleep",
+    "eating out",
+    "family",
+    "friends",
+    "gaming",
+    "good meal",
+    "guitar",
+    "headache",
+    "laundry",
+    "meds",
+    "movies / tv",
+    "mum's place",
+    "music",
+    "nature walk",
+    "naïve hope",
+    "Netflix/Disney+",
+    "party",
+    "period",
+    "piano",
+    "reading",
+    "relax",
+    "rest, relax",
+    "rock & roll",
+    "shopping",
+    "sleep < 6h",
+    "sleep > 8h",
+    "sport",
+    "stomachache",
+    "stress / frustration",
+    "therapy",
+    "tired",
+    "work",
+    "über-tired",
+    "ŻÓŁW",
+    "🏃 run",
+    "🧘 yoga"
+   ],
+   "title": "Everything",
+   "note": "All the things.",
+   "photos": 0
+  },
+  {
+   "date": "2022-07-02",
+   "time": "10:00",
+   "mood": "rad",
+   "level": 5,
+   "activities": [
+    "rest, relax"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2022-07-04",
+   "time": "23:02",
+   "mood": "meh",
+   "level": 3,
+   "activities": [
+    "music"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2022-07-05",
+   "time": "14:40",
+   "mood": "bad",
+   "level": 2,
+   "activities": [
+    "alcohol",
+    "C++ coding",
+    "café",
+    "gaming",
+    "music",
+    "Netflix/Disney+",
+    "overtime",
+    "party",
+    "rain",
+    "rock & roll",
+    "sport",
+    "🧘 yoga"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2022-07-06",
+   "time": "10:48",
+   "mood": "meh",
+   "level": 3,
+   "activities": [
+    "alcohol",
+    "bad sleep",
+    "C++ coding",
+    "church",
+    "cleaning",
+    "friends",
+    "kids",
+    "meds",
+    "reading",
+    "shopping",
+    "sport",
+    "sun"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2022-07-06",
+   "time": "11:29",
+   "mood": "awful",
+   "level": 1,
+   "activities": [
+    "date",
+    "guitar",
+    "meds",
+    "naïve hope",
+    "pets",
+    "rain"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2022-07-08",
+   "time": "09:48",
+   "mood": "rad",
+   "level": 5,
+   "activities": [
+    "café",
+    "dentist 🦷",
+    "eating out",
+    "gaming",
+    "headache",
+    "movies / tv",
+    "nature walk",
+    "overtime",
+    "party",
+    "therapy",
+    "über-tired",
+    "🧘 yoga"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2022-07-10",
+   "time": "10:29",
+   "mood": "awful",
+   "level": 1,
+   "activities": [],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2022-07-12",
+   "time": "16:52",
+   "mood": "bad",
+   "level": 2,
+   "activities": [
+    "date",
+    "family",
+    "garden",
+    "good meal",
+    "headache",
+    "movies / tv",
+    "party",
+    "relax",
+    "stomachache",
+    "therapy",
+    "vegetarian day",
+    "volunteering"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2022-07-12",
+   "time": "17:03",
+   "mood": "awful",
+   "level": 1,
+   "activities": [
+    "rock & roll"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2022-07-13",
+   "time": "11:20",
+   "mood": "rad",
+   "level": 5,
+   "activities": [
+    "family"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2022-07-13",
+   "time": "15:32",
+   "mood": "meh",
+   "level": 3,
+   "activities": [
+    "100% done",
+    "early sleep",
+    "friends",
+    "kids",
+    "nature walk",
+    "overtime",
+    "rain",
+    "reading",
+    "sleep > 8h",
+    "tired",
+    "volunteering",
+    "über-tired"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2022-07-14",
+   "time": "19:38",
+   "mood": "awful",
+   "level": 1,
+   "activities": [],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2022-07-16",
+   "time": "16:07",
+   "mood": "bad",
+   "level": 2,
+   "activities": [
+    "sun"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2022-07-17",
+   "time": "08:37",
+   "mood": "good",
+   "level": 4,
+   "activities": [],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2022-07-18",
+   "time": "15:20",
+   "mood": "awful",
+   "level": 1,
+   "activities": [
+    "church",
+    "mum's place",
+    "no alcohol",
+    "relax",
+    "rock & roll",
+    "vegetarian day"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2022-07-20",
+   "time": "07:19",
+   "mood": "awful",
+   "level": 1,
+   "activities": [
+    "commute",
+    "friends",
+    "music",
+    "rain",
+    "sport",
+    "stomachache",
+    "stress / frustration",
+    "sun",
+    "tired",
+    "vegetarian day",
+    "ŻÓŁW",
+    "🏃 run"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2022-07-21",
+   "time": "13:04",
+   "mood": "rad",
+   "level": 5,
+   "activities": [
+    "sleep > 8h"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2022-07-22",
+   "time": "11:22",
+   "mood": "bad",
+   "level": 2,
+   "activities": [
+    "C++ coding",
+    "friends",
+    "guitar",
+    "movies / tv",
+    "music",
+    "Netflix/Disney+",
+    "no alcohol",
+    "overtime",
+    "rock & roll",
+    "stress / frustration",
+    "therapy",
+    "ŻÓŁW"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2022-07-27",
+   "time": "20:43",
+   "mood": "rad",
+   "level": 5,
+   "activities": [
+    "bad sleep",
+    "cooking",
+    "dentist 🦷",
+    "early sleep",
+    "friends",
+    "overtime",
+    "rain",
+    "relax",
+    "rock & roll",
+    "sleep > 8h",
+    "vacation",
+    "volunteering"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2022-07-28",
+   "time": "07:01",
+   "mood": "meh",
+   "level": 3,
+   "activities": [
+    "cooking"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2022-07-28",
+   "time": "10:55",
+   "mood": "good",
+   "level": 4,
+   "activities": [
+    "church",
+    "early sleep",
+    "movies / tv",
+    "overtime",
+    "reading",
+    "volunteering"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2022-07-29",
+   "time": "11:58",
+   "mood": "awful",
+   "level": 1,
+   "activities": [
+    "cooking",
+    "friends",
+    "guitar",
+    "headache",
+    "kids",
+    "meds",
+    "naïve hope",
+    "party",
+    "pets",
+    "therapy",
+    "tired",
+    "volunteering"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2022-07-29",
+   "time": "19:18",
+   "mood": "good",
+   "level": 4,
+   "activities": [
+    "bad sleep",
+    "bills",
+    "cleaning",
+    "kids",
+    "movies / tv",
+    "pets",
+    "rain",
+    "snow",
+    "vegetarian day",
+    "volunteering",
+    "über-tired",
+    "🧘 yoga"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2022-07-30",
+   "time": "23:23",
+   "mood": "meh",
+   "level": 3,
+   "activities": [
+    "rock & roll"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2022-07-31",
+   "time": "07:32",
+   "mood": "rad",
+   "level": 5,
+   "activities": [],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2022-07-31",
+   "time": "11:13",
+   "mood": "good",
+   "level": 4,
+   "activities": [
+    "dentist 🦷",
+    "headache",
+    "stress / frustration",
+    "vacation",
+    "work",
+    "🏃 run"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2022-07-31",
+   "time": "17:58",
+   "mood": "good",
+   "level": 4,
+   "activities": [
+    "alcohol",
+    "bills",
+    "café",
+    "cleaning",
+    "dentist 🦷",
+    "garden",
+    "laundry",
+    "nature walk",
+    "party",
+    "sport",
+    "stomachache",
+    "über-tired"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  }
+ ],
+ "skipped": [],
+ "warnings": [],
+ "moods": [
+  {
+   "name": "good",
+   "level": 4
+  },
+  {
+   "name": "meh",
+   "level": 3
+  },
+  {
+   "name": "rad",
+   "level": 5
+  },
+  {
+   "name": "bad",
+   "level": 2
+  },
+  {
+   "name": "awful",
+   "level": 1
+  }
+ ],
+ "activities": [
+  {
+   "name": "100% done",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "alcohol",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "bad sleep",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "bills",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "C++ coding",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "café",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "church",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "cleaning",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "commute",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "cooking",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "date",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "dentist 🦷",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "early sleep",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "eating out",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "family",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "friends",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "gaming",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "garden",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "good meal",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "guitar",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "headache",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "kids",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "laundry",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "meds",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "movies / tv",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "mum's place",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "music",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "nature walk",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "naïve hope",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "Netflix/Disney+",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "no alcohol",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "overtime",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "party",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "period",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "pets",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "piano",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "rain",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "reading",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "relax",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "rest, relax",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "rock & roll",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "shopping",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "sleep < 6h",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "sleep > 8h",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "snow",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "sport",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "stomachache",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "stress / frustration",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "sun",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "therapy",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "tired",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "vacation",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "vegetarian day",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "volunteering",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "work",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "über-tired",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "ŻÓŁW",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "🏃 run",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "🧘 yoga",
+   "group": "Imported from Daylio"
+  }
+ ],
+ "counts": {
+  "entries": 29,
+  "skipped": 0,
+  "moods": 5,
+  "activities": 59,
+  "photos": 0
+ },
+ "_meta": {
+  "confidence": "mixed",
+  "assumptions": [
+   "activity names may contain commas, &, <, >, +, /, emoji; only \" | \" separates them",
+   "a \"<\" in an activity name is NOT treated as HTML (only notes get HTML handling)"
+  ]
+ }
+}

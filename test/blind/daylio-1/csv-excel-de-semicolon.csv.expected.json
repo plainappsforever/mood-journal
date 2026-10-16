@@ -1,0 +1,10 @@
+{
+ "refused": "unrecognized_header",
+ "_meta": {
+  "confidence": "sourced",
+  "assumptions": [
+   "German Excel re-save: \";\" separator, full_date as 28.09.2021, quotes dropped; refused, not guessed"
+  ],
+  "data_rows": 16
+ }
+}

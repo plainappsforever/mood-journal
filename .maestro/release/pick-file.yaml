@@ -1,0 +1,79 @@
+appId: ${APP_ID}
+---
+# Picks the file whose name starts with NAME inside FOLDER (on iOS the only file in it) in the system document picker (Android DocumentsUI Downloads/
+# FOLDER; iOS Files → On My iPhone → FOLDER). Used by the Release flows.
+- runFlow:
+    when:
+      platform: Android
+    commands:
+      - extendedWaitUntil:
+          visible: Show roots
+          timeout: 30000
+      - tapOn: Show roots
+      - waitForAnimationToEnd
+      - tapOn: Downloads
+      - extendedWaitUntil:
+          visible: "MoodR.*"
+          timeout: 8000
+          optional: true
+      # The drawer sometimes swallows the first tap (it stayed on "Recent"): once more
+      - runFlow:
+          when:
+            notVisible: "MoodR.*"
+          commands:
+            - tapOn: Show roots
+            - waitForAnimationToEnd
+            - tapOn: Downloads
+      - scrollUntilVisible:
+          element: ${FOLDER}
+      - tapOn: ${FOLDER}
+      - extendedWaitUntil:
+          visible: "${NAME}.*"
+          timeout: 15000
+      - tapOn: "${NAME}.*"
+      # In DocumentsUI's grid a tap on the title may only select the card; then its icon opens it
+      - tapOn:
+          id: "com.google.android.documentsui:id/icon_mime_lg"
+          above: "${NAME}.*"
+          optional: true
+- runFlow:
+    when:
+      platform: iOS
+    commands:
+      - extendedWaitUntil:
+          visible: Browse
+          timeout: 30000
+      - tapOn: Browse
+      - tapOn: Browse
+      - waitForAnimationToEnd
+      - extendedWaitUntil:
+          visible: On My iPhone
+          timeout: 10000
+      - tapOn: On My iPhone
+      - waitForAnimationToEnd
+      - extendedWaitUntil:
+          visible: "${FOLDER}, .*items?"
+          timeout: 8000
+          optional: true
+      # iOS 27's picker sometimes ignores the first tap on a location
+      - runFlow:
+          when:
+            notVisible: "${FOLDER}, .*items?"
+          commands:
+            - tapOn: On My iPhone
+            - waitForAnimationToEnd
+      - tapOn: "${FOLDER}, .*items?"
+      - extendedWaitUntil:
+          visible: "${NAME}.*"
+          timeout: 15000
+      - waitForAnimationToEnd
+      - tapOn: "${NAME}.*"
+      - waitForAnimationToEnd
+      # iOS 27's grid does not open a file from a tap on its name, only from its tile: the folder holds one file, so its
+      # tile is the first one (P11, seen on the 27.0 simulator)
+      - runFlow:
+          when:
+            visible: "${NAME}.*"
+          commands:
+            - tapOn:
+                point: "18%,27%"

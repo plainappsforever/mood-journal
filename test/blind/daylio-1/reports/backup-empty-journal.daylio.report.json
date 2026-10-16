@@ -1,0 +1,8 @@
+{
+  "file": "backup-empty-journal.daylio",
+  "status": "error",
+  "error": "noEntries",
+  "entries": [],
+  "skipped": [],
+  "warnings": []
+}

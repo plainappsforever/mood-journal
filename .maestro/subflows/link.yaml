@@ -1,0 +1,11 @@
+appId: ${APP_ID}
+---
+# Opens a dev link (env LINK, without the scheme) and waits until Home is back.
+- openLink: moodjournal-dev://${LINK}
+- tapOn:
+    text: Open
+    optional: true
+- extendedWaitUntil:
+    visible:
+      id: home-screen
+    timeout: 60000

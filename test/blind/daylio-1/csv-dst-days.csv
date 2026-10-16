@@ -1,0 +1,9 @@
+full_date,date,weekday,time,mood,activities,note_title,note
+2024-11-03,3 November,Sunday,01:30,good,"","","New York repeated hour"
+2024-10-27,27 October,Sunday,02:45,meh,"","","second hour"
+2024-10-27,27 October,Sunday,02:30,bad,"bad sleep","","first 02:30 (CEST)"
+2024-10-26,26 October,Saturday,23:30,rad,"party","","night before fall-back"
+2024-03-31,31 March,Sunday,03:15,good,"","","after"
+2024-03-31,31 March,Sunday,02:30,meh,"","","02:30 does not exist in Berlin today"
+2024-03-31,31 March,Sunday,01:45,good,"sport","","before spring-forward (Berlin)"
+2024-03-10,10 March,Sunday,02:15,awful,"","","New York spring-forward gap"

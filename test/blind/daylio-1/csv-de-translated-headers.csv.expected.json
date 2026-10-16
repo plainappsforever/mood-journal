@@ -1,0 +1,203 @@
+{
+ "fixture": "csv-de-translated-headers.csv",
+ "kind": "daylio_csv",
+ "header": "current8",
+ "options": {
+  "today": "2026-10-16",
+  "mapping": {
+   "super": 5,
+   "gut": 4,
+   "ok": 3,
+   "schlecht": 2,
+   "lausig": 1
+  }
+ },
+ "entries": [
+  {
+   "date": "2024-02-25",
+   "time": "18:06",
+   "mood": "super",
+   "level": 5,
+   "activities": [],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2024-02-26",
+   "time": "16:56",
+   "mood": "lausig",
+   "level": 1,
+   "activities": [],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2024-02-27",
+   "time": "14:08",
+   "mood": "gut",
+   "level": 4,
+   "activities": [],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2024-02-29",
+   "time": "09:06",
+   "mood": "lausig",
+   "level": 1,
+   "activities": [
+    "Gemütlich"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2024-02-29",
+   "time": "12:00",
+   "mood": "super",
+   "level": 5,
+   "activities": [
+    "Familie"
+   ],
+   "title": "Schalttag",
+   "note": "Der 29. Februar, endlich.",
+   "photos": 0
+  },
+  {
+   "date": "2024-02-29",
+   "time": "23:10",
+   "mood": "lausig",
+   "level": 1,
+   "activities": [],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2024-03-01",
+   "time": "10:46",
+   "mood": "lausig",
+   "level": 1,
+   "activities": [],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2024-03-02",
+   "time": "09:27",
+   "mood": "gut",
+   "level": 4,
+   "activities": [
+    "Arbeit",
+    "Freunde",
+    "Ärger",
+    "Übelkeit"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2024-03-04",
+   "time": "08:39",
+   "mood": "lausig",
+   "level": 1,
+   "activities": [
+    "Familie",
+    "Freunde",
+    "Straßenbahn",
+    "Übelkeit"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2024-03-05",
+   "time": "14:17",
+   "mood": "schlecht",
+   "level": 2,
+   "activities": [
+    "Schlecht geschlafen",
+    "Übelkeit"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  }
+ ],
+ "skipped": [],
+ "warnings": [],
+ "moods": [
+  {
+   "name": "super",
+   "level": 5
+  },
+  {
+   "name": "lausig",
+   "level": 1
+  },
+  {
+   "name": "gut",
+   "level": 4
+  },
+  {
+   "name": "schlecht",
+   "level": 2
+  }
+ ],
+ "activities": [
+  {
+   "name": "Arbeit",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "Familie",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "Freunde",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "Gemütlich",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "Schlecht geschlafen",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "Straßenbahn",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "Ärger",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "Übelkeit",
+   "group": "Imported from Daylio"
+  }
+ ],
+ "counts": {
+  "entries": 10,
+  "skipped": 0,
+  "moods": 4,
+  "activities": 8,
+  "photos": 0
+ },
+ "_meta": {
+  "confidence": "assumed",
+  "assumptions": [
+   "translated header (invented); importer recognises 8 columns by position / ISO first column",
+   "if real German exports keep English headers this fixture only tests robustness"
+  ],
+  "also_acceptable": "refused:unrecognized_header"
+ }
+}

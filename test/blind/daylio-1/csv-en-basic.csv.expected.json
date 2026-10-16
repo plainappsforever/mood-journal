@@ -1,0 +1,762 @@
+{
+ "fixture": "csv-en-basic.csv",
+ "kind": "daylio_csv",
+ "header": "current8",
+ "options": {
+  "today": "2026-10-16",
+  "mapping": {}
+ },
+ "entries": [
+  {
+   "date": "2021-09-02",
+   "time": "09:00",
+   "mood": "bad",
+   "level": 2,
+   "activities": [
+    "bad sleep",
+    "early sleep",
+    "eating out"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2021-09-02",
+   "time": "11:21",
+   "mood": "bad",
+   "level": 2,
+   "activities": [
+    "party"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2021-09-04",
+   "time": "20:00",
+   "mood": "sad",
+   "level": null,
+   "activities": [],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2021-09-05",
+   "time": "10:54",
+   "mood": "meh",
+   "level": 3,
+   "activities": [],
+   "title": "",
+   "note": "Quiet evening, nothing special.",
+   "photos": 0
+  },
+  {
+   "date": "2021-09-05",
+   "time": "17:05",
+   "mood": "rad",
+   "level": 5,
+   "activities": [],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2021-09-07",
+   "time": "10:41",
+   "mood": "bad",
+   "level": 2,
+   "activities": [
+    "family",
+    "music",
+    "relax"
+   ],
+   "title": "Weekend",
+   "note": "Hiked up the hill, saw the lake.",
+   "photos": 0
+  },
+  {
+   "date": "2021-09-07",
+   "time": "13:30",
+   "mood": "good",
+   "level": 4,
+   "activities": [
+    "cleaning",
+    "nature walk",
+    "relax"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2021-09-07",
+   "time": "18:42",
+   "mood": "awful",
+   "level": 1,
+   "activities": [
+    "bad sleep",
+    "family",
+    "relax",
+    "shopping",
+    "work"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2021-09-08",
+   "time": "17:44",
+   "mood": "awful",
+   "level": 1,
+   "activities": [
+    "good meal",
+    "music",
+    "party",
+    "shopping",
+    "work"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2021-09-09",
+   "time": "12:10",
+   "mood": "awful",
+   "level": 1,
+   "activities": [
+    "early sleep",
+    "tired"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2021-09-10",
+   "time": "11:08",
+   "mood": "awful",
+   "level": 1,
+   "activities": [
+    "cleaning",
+    "cooking",
+    "reading",
+    "stress / frustration",
+    "work"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2021-09-10",
+   "time": "15:11",
+   "mood": "rad",
+   "level": 5,
+   "activities": [
+    "bad sleep",
+    "cleaning",
+    "date",
+    "music",
+    "stress / frustration"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2021-09-11",
+   "time": "13:42",
+   "mood": "bad",
+   "level": 2,
+   "activities": [
+    "early sleep",
+    "family"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2021-09-13",
+   "time": "13:43",
+   "mood": "awful",
+   "level": 1,
+   "activities": [
+    "family",
+    "gaming",
+    "music",
+    "reading",
+    "relax"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2021-09-13",
+   "time": "16:52",
+   "mood": "awful",
+   "level": 1,
+   "activities": [
+    "cleaning",
+    "cooking",
+    "music",
+    "relax"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2021-09-13",
+   "time": "17:07",
+   "mood": "sad",
+   "level": null,
+   "activities": [
+    "bad sleep",
+    "sport"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2021-09-14",
+   "time": "07:05",
+   "mood": "rad",
+   "level": 5,
+   "activities": [
+    "gaming",
+    "movies / tv",
+    "music",
+    "nature walk",
+    "work"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2021-09-14",
+   "time": "13:32",
+   "mood": "good",
+   "level": 4,
+   "activities": [
+    "cleaning",
+    "nature walk",
+    "tired"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2021-09-14",
+   "time": "20:22",
+   "mood": "awful",
+   "level": 1,
+   "activities": [
+    "cleaning",
+    "early sleep",
+    "family",
+    "work"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2021-09-15",
+   "time": "12:39",
+   "mood": "awful",
+   "level": 1,
+   "activities": [
+    "eating out",
+    "family",
+    "reading",
+    "relax"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2021-09-15",
+   "time": "14:49",
+   "mood": "rad",
+   "level": 5,
+   "activities": [
+    "date",
+    "nature walk",
+    "reading",
+    "sport"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2021-09-16",
+   "time": "08:25",
+   "mood": "bad",
+   "level": 2,
+   "activities": [],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2021-09-18",
+   "time": "08:52",
+   "mood": "good",
+   "level": 4,
+   "activities": [
+    "cleaning",
+    "date",
+    "reading",
+    "shopping"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2021-09-20",
+   "time": "11:39",
+   "mood": "rad",
+   "level": 5,
+   "activities": [
+    "bad sleep",
+    "early sleep",
+    "good meal",
+    "party",
+    "shopping"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2021-09-21",
+   "time": "20:35",
+   "mood": "rad",
+   "level": 5,
+   "activities": [
+    "sport"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2021-09-22",
+   "time": "10:34",
+   "mood": "good",
+   "level": 4,
+   "activities": [
+    "cooking",
+    "family",
+    "relax",
+    "work"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2021-09-22",
+   "time": "23:40",
+   "mood": "sad",
+   "level": null,
+   "activities": [],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2021-09-23",
+   "time": "15:38",
+   "mood": "bad",
+   "level": 2,
+   "activities": [
+    "eating out",
+    "music",
+    "nature walk",
+    "relax",
+    "work"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2021-09-24",
+   "time": "13:44",
+   "mood": "rad",
+   "level": 5,
+   "activities": [
+    "eating out",
+    "good meal",
+    "stress / frustration",
+    "tired",
+    "work"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2021-09-25",
+   "time": "10:37",
+   "mood": "meh",
+   "level": 3,
+   "activities": [],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2021-09-28",
+   "time": "09:42",
+   "mood": "rad",
+   "level": 5,
+   "activities": [
+    "movies / tv",
+    "sport",
+    "tired"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2021-09-29",
+   "time": "17:04",
+   "mood": "bad",
+   "level": 2,
+   "activities": [
+    "tired"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2021-09-29",
+   "time": "20:59",
+   "mood": "awful",
+   "level": 1,
+   "activities": [
+    "stomachache"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2021-10-01",
+   "time": "16:47",
+   "mood": "sad",
+   "level": null,
+   "activities": [
+    "early sleep",
+    "gaming",
+    "party",
+    "tired",
+    "work"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2021-10-02",
+   "time": "07:17",
+   "mood": "meh",
+   "level": 3,
+   "activities": [
+    "cooking",
+    "stomachache"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2021-10-04",
+   "time": "23:50",
+   "mood": "meh",
+   "level": 3,
+   "activities": [
+    "gaming",
+    "good meal",
+    "movies / tv",
+    "work"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2021-10-05",
+   "time": "16:20",
+   "mood": "bad",
+   "level": 2,
+   "activities": [
+    "nature walk",
+    "stress / frustration"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2021-10-05",
+   "time": "22:54",
+   "mood": "good",
+   "level": 4,
+   "activities": [
+    "date",
+    "friends",
+    "movies / tv",
+    "relax"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2021-10-07",
+   "time": "12:40",
+   "mood": "meh",
+   "level": 3,
+   "activities": [
+    "cleaning",
+    "good meal",
+    "music",
+    "sport"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2021-10-09",
+   "time": "19:12",
+   "mood": "rad",
+   "level": 5,
+   "activities": [
+    "movies / tv",
+    "nature walk",
+    "tired"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2021-10-09",
+   "time": "20:18",
+   "mood": "rad",
+   "level": 5,
+   "activities": [
+    "friends",
+    "work"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2021-10-09",
+   "time": "23:17",
+   "mood": "awful",
+   "level": 1,
+   "activities": [
+    "good meal",
+    "movies / tv",
+    "party"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2021-10-10",
+   "time": "08:18",
+   "mood": "rad",
+   "level": 5,
+   "activities": [
+    "tired"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2021-10-10",
+   "time": "16:23",
+   "mood": "awful",
+   "level": 1,
+   "activities": [
+    "cleaning",
+    "shopping"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2021-10-10",
+   "time": "16:44",
+   "mood": "meh",
+   "level": 3,
+   "activities": [
+    "bad sleep",
+    "friends",
+    "party",
+    "sport"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  }
+ ],
+ "skipped": [],
+ "warnings": [],
+ "moods": [
+  {
+   "name": "bad",
+   "level": 2
+  },
+  {
+   "name": "sad",
+   "level": null
+  },
+  {
+   "name": "meh",
+   "level": 3
+  },
+  {
+   "name": "rad",
+   "level": 5
+  },
+  {
+   "name": "good",
+   "level": 4
+  },
+  {
+   "name": "awful",
+   "level": 1
+  }
+ ],
+ "activities": [
+  {
+   "name": "bad sleep",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "cleaning",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "cooking",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "date",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "early sleep",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "eating out",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "family",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "friends",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "gaming",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "good meal",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "movies / tv",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "music",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "nature walk",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "party",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "reading",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "relax",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "shopping",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "sport",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "stomachache",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "stress / frustration",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "tired",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "work",
+   "group": "Imported from Daylio"
+  }
+ ],
+ "counts": {
+  "entries": 45,
+  "skipped": 0,
+  "moods": 6,
+  "activities": 22,
+  "photos": 0
+ },
+ "_meta": {
+  "confidence": "sourced",
+  "assumptions": [
+   "levels pre-filled only for Daylio default names; \"sad \" (custom, trailing space as in sample.csv) has level null",
+   "12 h times zero-padded like \"09:05 am\" (sample.csv only shows \"10:00 pm\")"
+  ]
+ }
+}

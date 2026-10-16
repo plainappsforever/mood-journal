@@ -1,0 +1,119 @@
+appId: ${APP_ID}
+name: Release 20k - Daylio CSV import of 20,000 rows, then automatic backup and restore of that journal (timings)
+tags:
+  - release
+---
+# Run by scripts/release-e2e.sh (puts FILE into a new folder FOLDER and makes an empty BFOLDER for the automatic backup:
+# Android Downloads, iOS On My iPhone). Real system
+# pickers, real code paths, Release JS. Timings = the Maestro durations of the waits (scripts/maestro-durations.py).
+- launchApp:
+    clearState: true
+    stopApp: true
+- extendedWaitUntil:
+    visible:
+      id: home-empty
+    timeout: 90000
+- tapOn:
+    id: tab-more
+- tapOn:
+    id: more-import
+- tapOn:
+    id: import-pick
+- runFlow:
+    file: pick-file.yaml
+    env:
+      NAME: ${FILE}
+- extendedWaitUntil:
+    visible:
+      id: map-row-0
+    timeout: 180000
+    label: "T import read (file picked to mapping shown)"
+# The preview card is below the mapping rows (off screen on iPhone): scroll to it
+- scrollUntilVisible:
+    element:
+      id: import-confirm
+    timeout: 180000
+    label: "T import plan (preview shown)"
+- assertVisible: "New entries: 20,?000"
+- tapOn:
+    id: import-confirm
+- extendedWaitUntil:
+    visible:
+      id: import-result
+    timeout: 300000
+    label: "T import transaction"
+- assertVisible: "Added: 20,?000"
+- runFlow: ../subflows/go-back.yaml
+- tapOn:
+    id: tab-entries
+- extendedWaitUntil:
+    visible:
+      id: home-screen
+    timeout: 30000
+    label: "T Home after import"
+# Automatic backup into the same folder (encrypted with the generated password), written by "Back up to the folder now"
+- tapOn:
+    id: tab-more
+- tapOn:
+    id: more-backup
+- scrollUntilVisible:
+    element:
+      id: auto-backup-toggle
+- tapOn:
+    id: auto-backup-toggle
+- runFlow:
+    file: ../subflows/pick-folder.yaml
+    env:
+      FOLDER: ${BFOLDER}
+- extendedWaitUntil:
+    visible:
+      id: auto-backup-save
+    timeout: 15000
+- copyTextFrom:
+    id: auto-backup-password
+- tapOn:
+    id: auto-backup-save
+- scrollUntilVisible:
+    element:
+      id: auto-backup-now
+- tapOn:
+    id: auto-backup-now
+- extendedWaitUntil:
+    visible: "Last automatic backup: .*mood-auto-.*\\.moodbackup\\..*"
+    timeout: 300000
+    label: "T automatic backup of 20k"
+- scrollUntilVisible:
+    element:
+      id: restore
+    direction: UP
+- tapOn:
+    id: restore
+- runFlow:
+    file: pick-file.yaml
+    env:
+      FOLDER: ${BFOLDER}
+      NAME: mood-auto-
+- extendedWaitUntil:
+    visible: This backup is encrypted\. Enter its password\.
+    timeout: 120000
+- tapOn:
+    id: restore-password
+- pasteText
+- runFlow: ../subflows/hide-keyboard.yaml
+- tapOn:
+    id: restore-open
+- extendedWaitUntil:
+    visible:
+      id: restore-counts
+    timeout: 300000
+    label: "T restore open (decrypt + checks)"
+- assertVisible: "Backup from .*: 20,?000 entries, 0 photos\\."
+- tapOn:
+    id: restore-confirm
+- tapOn: Replace
+- extendedWaitUntil:
+    visible:
+      id: backup-result
+      text: "Restored: 20,?000 entries, 0 photos\\."
+    timeout: 300000
+    label: "T restore transaction"

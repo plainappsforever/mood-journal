@@ -1,0 +1,88 @@
+{
+ "fixture": "csv-duplicate-rows.csv",
+ "kind": "daylio_csv",
+ "header": "current8",
+ "options": {
+  "today": "2026-10-16",
+  "mapping": {}
+ },
+ "entries": [
+  {
+   "date": "2022-02-01",
+   "time": "09:00",
+   "mood": "meh",
+   "level": 3,
+   "activities": [],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2022-02-02",
+   "time": "20:20",
+   "mood": "good",
+   "level": 4,
+   "activities": [
+    "friends",
+    "music"
+   ],
+   "title": "Same",
+   "note": "Same note, twice!",
+   "photos": 0
+  },
+  {
+   "date": "2022-02-02",
+   "time": "20:20",
+   "mood": "good",
+   "level": 4,
+   "activities": [
+    "friends",
+    "music"
+   ],
+   "title": "Same",
+   "note": "Same note, twice",
+   "photos": 0
+  }
+ ],
+ "skipped": [
+  {
+   "line": 4,
+   "row": 3,
+   "reason": "duplicate"
+  }
+ ],
+ "warnings": [],
+ "moods": [
+  {
+   "name": "good",
+   "level": 4
+  },
+  {
+   "name": "meh",
+   "level": 3
+  }
+ ],
+ "activities": [
+  {
+   "name": "friends",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "music",
+   "group": "Imported from Daylio"
+  }
+ ],
+ "counts": {
+  "entries": 3,
+  "skipped": 1,
+  "moods": 2,
+  "activities": 2,
+  "photos": 0
+ },
+ "_meta": {
+  "confidence": "assumed",
+  "assumptions": [
+   "two byte-identical rows have the same dedupe hash -> second is not imported (UNIQUE(source, import_ref)); it may be reported as skipped or silently merged — compare entries only"
+  ]
+ }
+}

@@ -1,0 +1,281 @@
+{
+ "fixture": "backup-html-notes.daylio",
+ "kind": "daylio_backup",
+ "version": 15,
+ "options": {
+  "today": "2026-10-16",
+  "mapping": {}
+ },
+ "entries": [
+  {
+   "date": "2025-08-01",
+   "time": "21:00",
+   "mood": "rad",
+   "level": 5,
+   "activities": [
+    "reading"
+   ],
+   "title": "A title, with comma",
+   "note": "Line one\nLine two",
+   "photos": 0,
+   "daylio_id": 1,
+   "utc_ms": 1754074800000,
+   "tz_offset_min": 120
+  },
+  {
+   "date": "2025-08-02",
+   "time": "21:00",
+   "mood": "good",
+   "level": 4,
+   "activities": [
+    "reading"
+   ],
+   "title": "",
+   "note": "Bold and italic & more",
+   "photos": 0,
+   "daylio_id": 2,
+   "utc_ms": 1754161200000,
+   "tz_offset_min": 120
+  },
+  {
+   "date": "2025-08-03",
+   "time": "21:00",
+   "mood": "meh",
+   "level": 3,
+   "activities": [
+    "reading"
+   ],
+   "title": "Quote \"title\"",
+   "note": "1 < 2 > 0, \"quoted\" and it's",
+   "photos": 0,
+   "daylio_id": 3,
+   "utc_ms": 1754247600000,
+   "tz_offset_min": 120
+  },
+  {
+   "date": "2025-08-04",
+   "time": "21:00",
+   "mood": "bad",
+   "level": 2,
+   "activities": [
+    "reading"
+   ],
+   "title": "",
+   "note": "First paragraph\nSecond paragraph",
+   "photos": 0,
+   "daylio_id": 4,
+   "utc_ms": 1754334000000,
+   "tz_offset_min": 120
+  },
+  {
+   "date": "2025-08-05",
+   "time": "21:00",
+   "mood": "awful",
+   "level": 1,
+   "activities": [
+    "reading"
+   ],
+   "title": "A title, with comma",
+   "note": "Emoji 🎉👨‍👩‍👧 and \nself-closing\ntags",
+   "photos": 0,
+   "daylio_id": 5,
+   "utc_ms": 1754420400000,
+   "tz_offset_min": 120
+  },
+  {
+   "date": "2025-08-06",
+   "time": "21:00",
+   "mood": "rad",
+   "level": 5,
+   "activities": [
+    "reading"
+   ],
+   "title": "",
+   "note": "Plain, no HTML; \"quotes\" and = sign",
+   "photos": 0,
+   "daylio_id": 6,
+   "utc_ms": 1754506800000,
+   "tz_offset_min": 120
+  },
+  {
+   "date": "2025-08-07",
+   "time": "21:00",
+   "mood": "good",
+   "level": 4,
+   "activities": [
+    "reading"
+   ],
+   "title": "Quote \"title\"",
+   "note": "Ümlaut, ß, 日本語, عربى",
+   "photos": 0,
+   "daylio_id": 7,
+   "utc_ms": 1754593200000,
+   "tz_offset_min": 120
+  },
+  {
+   "date": "2025-08-08",
+   "time": "21:00",
+   "mood": "meh",
+   "level": 3,
+   "activities": [
+    "reading"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0,
+   "daylio_id": 8,
+   "utc_ms": 1754679600000,
+   "tz_offset_min": 120
+  },
+  {
+   "date": "2025-08-09",
+   "time": "21:00",
+   "mood": "bad",
+   "level": 2,
+   "activities": [
+    "reading"
+   ],
+   "title": "A title, with comma",
+   "note": "a\n\n\nb",
+   "photos": 0,
+   "daylio_id": 9,
+   "utc_ms": 1754766000000,
+   "tz_offset_min": 120
+  }
+ ],
+ "skipped": [],
+ "warnings": [
+  "goals_not_imported"
+ ],
+ "moods": [
+  {
+   "name": "rad",
+   "level": 5,
+   "daylio_id": 1,
+   "state": 0,
+   "used": true
+  },
+  {
+   "name": "good",
+   "level": 4,
+   "daylio_id": 2,
+   "state": 0,
+   "used": true
+  },
+  {
+   "name": "meh",
+   "level": 3,
+   "daylio_id": 3,
+   "state": 0,
+   "used": true
+  },
+  {
+   "name": "bad",
+   "level": 2,
+   "daylio_id": 4,
+   "state": 0,
+   "used": true
+  },
+  {
+   "name": "awful",
+   "level": 1,
+   "daylio_id": 5,
+   "state": 0,
+   "used": true
+  }
+ ],
+ "activities": [
+  {
+   "name": "bad sleep",
+   "group": "Sleep",
+   "daylio_id": 108,
+   "state": 0
+  },
+  {
+   "name": "date",
+   "group": "Social",
+   "daylio_id": 102,
+   "state": 0
+  },
+  {
+   "name": "family",
+   "group": "Social",
+   "daylio_id": 100,
+   "state": 0
+  },
+  {
+   "name": "friends",
+   "group": "Social",
+   "daylio_id": 101,
+   "state": 0
+  },
+  {
+   "name": "gaming",
+   "group": "Hobbies",
+   "daylio_id": 104,
+   "state": 0
+  },
+  {
+   "name": "good sleep",
+   "group": "Sleep",
+   "daylio_id": 107,
+   "state": 0
+  },
+  {
+   "name": "meds",
+   "group": "Health",
+   "daylio_id": 111,
+   "state": 0
+  },
+  {
+   "name": "movies / tv",
+   "group": "Hobbies",
+   "daylio_id": 105,
+   "state": 0
+  },
+  {
+   "name": "music",
+   "group": "Hobbies",
+   "daylio_id": 106,
+   "state": 0
+  },
+  {
+   "name": "reading",
+   "group": "Hobbies",
+   "daylio_id": 103,
+   "state": 0
+  },
+  {
+   "name": "sport",
+   "group": "Health",
+   "daylio_id": 109,
+   "state": 0
+  },
+  {
+   "name": "walk",
+   "group": "Health",
+   "daylio_id": 110,
+   "state": 0
+  }
+ ],
+ "groups": [
+  "Social",
+  "Hobbies",
+  "Sleep",
+  "Health"
+ ],
+ "counts": {
+  "entries": 9,
+  "skipped": 0,
+  "moods": 5,
+  "activities": 12,
+  "photos": 0
+ },
+ "_meta": {
+  "confidence": "mixed",
+  "assumptions": [
+   "note HTML -> text per SPEC (<br>, </p> -> newline; tags dropped; entities decoded); trailing newline of a final </p> dropped",
+   "JSON uses \\uXXXX escapes for all non-ASCII and Gson-style \\u003c for < > & ' = (a standard JSON parser handles it)"
+  ]
+ }
+}

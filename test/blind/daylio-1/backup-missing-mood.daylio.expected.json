@@ -1,0 +1,176 @@
+{
+ "fixture": "backup-missing-mood.daylio",
+ "kind": "daylio_backup",
+ "version": 15,
+ "options": {
+  "today": "2026-10-16",
+  "mapping": {}
+ },
+ "entries": [
+  {
+   "date": "2022-02-01",
+   "time": "10:00",
+   "mood": "good",
+   "level": 4,
+   "activities": [],
+   "title": "",
+   "note": "fine",
+   "photos": 0,
+   "daylio_id": 1,
+   "utc_ms": 1643706000000,
+   "tz_offset_min": 60
+  },
+  {
+   "date": "2022-02-02",
+   "time": "10:00",
+   "mood": "awful",
+   "level": 1,
+   "activities": [],
+   "title": "",
+   "note": "fine too",
+   "photos": 0,
+   "daylio_id": 3,
+   "utc_ms": 1643792400000,
+   "tz_offset_min": 60
+  }
+ ],
+ "skipped": [
+  {
+   "daylio_id": 2,
+   "reason": "unknown_mood"
+  }
+ ],
+ "warnings": [
+  "goals_not_imported"
+ ],
+ "moods": [
+  {
+   "name": "rad",
+   "level": 5,
+   "daylio_id": 1,
+   "state": 0,
+   "used": false
+  },
+  {
+   "name": "good",
+   "level": 4,
+   "daylio_id": 2,
+   "state": 0,
+   "used": true
+  },
+  {
+   "name": "meh",
+   "level": 3,
+   "daylio_id": 3,
+   "state": 0,
+   "used": false
+  },
+  {
+   "name": "bad",
+   "level": 2,
+   "daylio_id": 4,
+   "state": 0,
+   "used": false
+  },
+  {
+   "name": "awful",
+   "level": 1,
+   "daylio_id": 5,
+   "state": 0,
+   "used": true
+  }
+ ],
+ "activities": [
+  {
+   "name": "bad sleep",
+   "group": "Sleep",
+   "daylio_id": 108,
+   "state": 0
+  },
+  {
+   "name": "date",
+   "group": "Social",
+   "daylio_id": 102,
+   "state": 0
+  },
+  {
+   "name": "family",
+   "group": "Social",
+   "daylio_id": 100,
+   "state": 0
+  },
+  {
+   "name": "friends",
+   "group": "Social",
+   "daylio_id": 101,
+   "state": 0
+  },
+  {
+   "name": "gaming",
+   "group": "Hobbies",
+   "daylio_id": 104,
+   "state": 0
+  },
+  {
+   "name": "good sleep",
+   "group": "Sleep",
+   "daylio_id": 107,
+   "state": 0
+  },
+  {
+   "name": "meds",
+   "group": "Health",
+   "daylio_id": 111,
+   "state": 0
+  },
+  {
+   "name": "movies / tv",
+   "group": "Hobbies",
+   "daylio_id": 105,
+   "state": 0
+  },
+  {
+   "name": "music",
+   "group": "Hobbies",
+   "daylio_id": 106,
+   "state": 0
+  },
+  {
+   "name": "reading",
+   "group": "Hobbies",
+   "daylio_id": 103,
+   "state": 0
+  },
+  {
+   "name": "sport",
+   "group": "Health",
+   "daylio_id": 109,
+   "state": 0
+  },
+  {
+   "name": "walk",
+   "group": "Health",
+   "daylio_id": 110,
+   "state": 0
+  }
+ ],
+ "groups": [
+  "Social",
+  "Hobbies",
+  "Sleep",
+  "Health"
+ ],
+ "counts": {
+  "entries": 2,
+  "skipped": 1,
+  "moods": 5,
+  "activities": 12,
+  "photos": 0
+ },
+ "_meta": {
+  "confidence": "assumed",
+  "assumptions": [
+   "an entry whose mood id is not in customMoods is skipped and listed; the rest imports"
+  ]
+ }
+}

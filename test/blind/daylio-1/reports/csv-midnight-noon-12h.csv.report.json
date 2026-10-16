@@ -1,0 +1,83 @@
+{
+  "file": "csv-midnight-noon-12h.csv",
+  "status": "ok",
+  "kind": "daylio_csv",
+  "entries": [
+    {
+      "date": "2024-01-02",
+      "time": "11:59",
+      "mood": "good",
+      "level": 4,
+      "activities": [],
+      "title": "",
+      "note": "11:59 am",
+      "photos": 0
+    },
+    {
+      "date": "2024-01-01",
+      "time": "13:00",
+      "mood": "bad",
+      "level": 2,
+      "activities": [],
+      "title": "",
+      "note": "01:00 pm",
+      "photos": 0
+    },
+    {
+      "date": "2024-01-01",
+      "time": "12:30",
+      "mood": "meh",
+      "level": 3,
+      "activities": [],
+      "title": "",
+      "note": "12:30 pm",
+      "photos": 0
+    },
+    {
+      "date": "2024-01-01",
+      "time": "12:00",
+      "mood": "meh",
+      "level": 3,
+      "activities": [],
+      "title": "",
+      "note": "noon = 12:00 pm",
+      "photos": 0
+    },
+    {
+      "date": "2024-01-01",
+      "time": "00:05",
+      "mood": "good",
+      "level": 4,
+      "activities": [],
+      "title": "",
+      "note": "12:05 am",
+      "photos": 0
+    },
+    {
+      "date": "2024-01-01",
+      "time": "00:00",
+      "mood": "rad",
+      "level": 5,
+      "activities": [
+        "party"
+      ],
+      "title": "",
+      "note": "midnight = 12:00 am",
+      "photos": 0
+    },
+    {
+      "date": "2023-12-31",
+      "time": "23:59",
+      "mood": "rad",
+      "level": 5,
+      "activities": [
+        "party"
+      ],
+      "title": "NYE",
+      "note": "last minute of the year",
+      "photos": 0
+    }
+  ],
+  "skipped": [],
+  "warnings": []
+}

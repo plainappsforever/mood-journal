@@ -1,0 +1,9 @@
+{
+ "refused": "encrypted",
+ "_meta": {
+  "confidence": "sourced",
+  "assumptions": [
+   "ZipCrypto-encrypted member (flag bit 0); SPEC: encrypted -> message"
+  ]
+ }
+}

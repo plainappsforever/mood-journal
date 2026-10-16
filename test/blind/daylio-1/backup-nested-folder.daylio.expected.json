@@ -1,0 +1,10 @@
+{
+ "refused": "not_daylio",
+ "_meta": {
+  "confidence": "assumed",
+  "assumptions": [
+   "user unzipped and re-zipped the folder: member is not at the root (theluckystrike requires the root member)"
+  ],
+  "also_acceptable": "ok"
+ }
+}

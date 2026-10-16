@@ -1,0 +1,41 @@
+{
+  "version": 15,
+  "customMoods": [
+    { "id": 1, "custom_name": "", "mood_group_id": 1, "mood_group_order": 0, "icon_id": 1, "predefined_name_id": 1, "state": 0, "createdAt": 1600000000000 },
+    { "id": 2, "custom_name": "", "mood_group_id": 2, "mood_group_order": 0, "icon_id": 2, "predefined_name_id": 2, "state": 0, "createdAt": 1600000000000 },
+    { "id": 3, "custom_name": "", "mood_group_id": 3, "mood_group_order": 0, "icon_id": 3, "predefined_name_id": 3, "state": 0, "createdAt": 1600000000000 },
+    { "id": 4, "custom_name": "", "mood_group_id": 4, "mood_group_order": 0, "icon_id": 4, "predefined_name_id": 4, "state": 0, "createdAt": 1600000000000 },
+    { "id": 5, "custom_name": "", "mood_group_id": 5, "mood_group_order": 0, "icon_id": 5, "predefined_name_id": 5, "state": 0, "createdAt": 1600000000000 },
+    { "id": 12, "custom_name": "tired", "mood_group_id": 3, "mood_group_order": 1, "icon_id": 31, "predefined_name_id": -1, "state": 0, "createdAt": 1650000000000 },
+    { "id": 13, "custom_name": "sad", "mood_group_id": 4, "mood_group_order": 1, "icon_id": 41, "predefined_name_id": -1, "state": 1, "createdAt": 1650000000000 }
+  ],
+  "tag_groups": [
+    { "id": 1, "name": "Hobbies", "is_expanded": true, "order": 1 },
+    { "id": 2, "name": "People", "is_expanded": true, "order": 0 }
+  ],
+  "tags": [
+    { "id": 1, "name": "sport", "icon": 10, "order": 0, "state": 0, "id_tag_group": 1, "createdAt": 1600000000000 },
+    { "id": 2, "name": "friends", "icon": 11, "order": 2, "state": 0, "id_tag_group": 2, "createdAt": 1600000000000 },
+    { "id": 3, "name": "reading", "icon": 12, "order": 1, "state": 0, "id_tag_group": 1, "createdAt": 1600000000000 },
+    { "id": 4, "name": "old hobby", "icon": 13, "order": 3, "state": 1, "id_tag_group": 1, "createdAt": 1600000000000 },
+    { "id": 5, "name": "café &amp; cake", "icon": 14, "order": 4, "state": 0, "id_tag_group": 9, "createdAt": 1600000000000 }
+  ],
+  "dayEntries": [
+    { "id": 101, "datetime": 1784057400000, "timeZoneOffset": 7200000, "year": 2026, "month": 6, "day": 14, "hour": 21, "minute": 30, "mood": 1, "note": "<p>Lake swim</p><p>Cold &amp; clear<br>again</p>", "note_title": "Summer", "tags": [1, 2], "assets": [1] },
+    { "id": 102, "datetime": 1768028700000, "timeZoneOffset": 3600000, "year": 2026, "month": 1, "day": 10, "hour": 8, "minute": 5, "mood": 12, "note": "", "note_title": "", "tags": [3], "assets": [2] },
+    { "id": 103, "datetime": 1772938800000, "timeZoneOffset": -18000000, "year": 2026, "month": 2, "day": 7, "hour": 22, "minute": 0, "mood": 13, "note": "Long day", "note_title": "", "tags": [4, 99], "assets": [] },
+    { "id": 104, "datetime": 1767223800000, "timeZoneOffset": 3600000, "year": 2026, "month": 0, "day": 1, "hour": 0, "minute": 30, "mood": 3, "note": "", "note_title": "", "tags": [5], "assets": [3] },
+    { "id": 105, "datetime": 1769947200000, "timeZoneOffset": 0, "year": 2026, "month": 5, "day": 9, "hour": 12, "minute": 0, "mood": 2, "note": "", "note_title": "", "tags": [], "assets": [] },
+    { "id": 106, "datetime": 1770033600000, "timeZoneOffset": 0, "year": 2026, "month": 1, "day": 2, "hour": 12, "minute": 0, "mood": 77, "note": "", "note_title": "", "tags": [], "assets": [] },
+    { "id": 107, "timeZoneOffset": 0, "year": 2026, "month": 1, "day": 3, "hour": 12, "minute": 0, "mood": 2, "note": "", "note_title": "", "tags": [], "assets": [] }
+  ],
+  "assets": [
+    { "id": 1, "checksum": "abc123", "type": 1 },
+    { "id": 2, "checksum": "missing99", "type": 1 },
+    { "id": 3, "checksum": "vid", "type": 2 }
+  ],
+  "goals": [{ "id": 1, "id_tag": 1 }],
+  "goalEntries": [],
+  "goalSuccessWeeks": [],
+  "metadata": { "number_of_entries": 7, "created_at": 1790000000000, "is_auto_backup": false, "platform": "android", "android_version": 34, "number_of_photos": 1, "photos_size": 4 }
+}

@@ -1,0 +1,38 @@
+appId: ${APP_ID}
+name: Year in Pixels - a year of colours, other years empty
+tags:
+  - p6
+---
+- runFlow: subflows/reset.yaml
+- runFlow:
+    file: subflows/link.yaml
+    env:
+      LINK: debug/seed?days=60&perDay=2
+- tapOn:
+    id: tab-calendar
+- tapOn:
+    id: cal-mode-year
+- extendedWaitUntil:
+    visible:
+      id: pixels-grid
+    timeout: 10000
+- assertVisible:
+    id: pixels-legend
+# 60 seeded days fall in this year or (early in the year) partly the previous one
+- assertVisible:
+    id: pixels-logged
+    text: "Days logged: [1-9][0-9]?"
+- tapOn:
+    id: pixels-next
+- assertVisible:
+    id: pixels-logged
+    text: "Days logged: 0"
+- tapOn:
+    id: pixels-prev
+- tapOn:
+    id: pixels-prev
+- tapOn:
+    id: pixels-prev
+- assertVisible:
+    id: pixels-logged
+    text: "Days logged: 0"

@@ -1,0 +1,15 @@
+full_date,date,weekday,time,mood,activities,note_title,note
+2023-03-05,5 March,Sunday,22:10,good,"reading","","First line
+Second line"
+2023-03-05,5 March,Sunday,09:00,meh,"","Paragraphs","Para one.
+
+Para two, with a comma."
+2023-03-04,4 March,Saturday,20:00,rad,"friends | party","","Looks like a row:
+2021-01-01,1 January,Friday,10:00,rad,"""","""",""""
+but it is my note"
+2023-03-04,4 March,Saturday,07:30,bad,"bad sleep","","full_date,date,weekday,time,mood,activities,note_title,note
+(I pasted the header into my note)"
+2023-03-02,2 March,Thursday,23:59,awful,"stress / frustration","Ugh","""Quote on its own line""
+""""
+end"
+2023-03-01,1 March,Wednesday,12:00,good,"work","","single line"

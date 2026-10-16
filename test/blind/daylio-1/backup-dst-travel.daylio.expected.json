@@ -1,0 +1,400 @@
+{
+ "fixture": "backup-dst-travel.daylio",
+ "kind": "daylio_backup",
+ "version": 15,
+ "options": {
+  "today": "2026-10-16",
+  "mapping": {}
+ },
+ "entries": [
+  {
+   "date": "2024-01-10",
+   "time": "23:45",
+   "mood": "good",
+   "level": 4,
+   "activities": [
+    "walk"
+   ],
+   "title": "",
+   "note": "Lord Howe +11 (DST, 30-min shift zone)",
+   "photos": 0,
+   "daylio_id": 12,
+   "utc_ms": 1704890700000,
+   "tz_offset_min": 660
+  },
+  {
+   "date": "2024-01-16",
+   "time": "00:05",
+   "mood": "meh",
+   "level": 3,
+   "activities": [
+    "walk"
+   ],
+   "title": "",
+   "note": "Chatham +13:45",
+   "photos": 0,
+   "daylio_id": 13,
+   "utc_ms": 1705314000000,
+   "tz_offset_min": 825
+  },
+  {
+   "date": "2024-02-02",
+   "time": "00:00",
+   "mood": "bad",
+   "level": 2,
+   "activities": [
+    "walk"
+   ],
+   "title": "",
+   "note": "Kiritimati +14, exactly midnight",
+   "photos": 0,
+   "daylio_id": 14,
+   "utc_ms": 1706781600000,
+   "tz_offset_min": 840
+  },
+  {
+   "date": "2024-02-02",
+   "time": "23:59",
+   "mood": "awful",
+   "level": 1,
+   "activities": [
+    "walk"
+   ],
+   "title": "",
+   "note": "Pago Pago -11, 23:59",
+   "photos": 0,
+   "daylio_id": 15,
+   "utc_ms": 1706957970000,
+   "tz_offset_min": -660
+  },
+  {
+   "date": "2024-02-29",
+   "time": "23:30",
+   "mood": "rad",
+   "level": 5,
+   "activities": [
+    "walk"
+   ],
+   "title": "",
+   "note": "leap day in London (UTC+0)",
+   "photos": 0,
+   "daylio_id": 16,
+   "utc_ms": 1709249400000,
+   "tz_offset_min": 0
+  },
+  {
+   "date": "2024-03-01",
+   "time": "00:30",
+   "mood": "good",
+   "level": 4,
+   "activities": [
+    "walk"
+   ],
+   "title": "",
+   "note": "same instant in Berlin = 1 March",
+   "photos": 0,
+   "daylio_id": 17,
+   "utc_ms": 1709249400000,
+   "tz_offset_min": 60
+  },
+  {
+   "date": "2024-03-10",
+   "time": "01:30",
+   "mood": "awful",
+   "level": 1,
+   "activities": [
+    "walk"
+   ],
+   "title": "",
+   "note": "NY 01:30 EST",
+   "photos": 0,
+   "daylio_id": 5,
+   "utc_ms": 1710052200000,
+   "tz_offset_min": -300
+  },
+  {
+   "date": "2024-03-10",
+   "time": "03:30",
+   "mood": "rad",
+   "level": 5,
+   "activities": [
+    "walk"
+   ],
+   "title": "",
+   "note": "NY 03:30 EDT",
+   "photos": 0,
+   "daylio_id": 6,
+   "utc_ms": 1710055800000,
+   "tz_offset_min": -240
+  },
+  {
+   "date": "2024-03-31",
+   "time": "01:30",
+   "mood": "rad",
+   "level": 5,
+   "activities": [
+    "walk"
+   ],
+   "title": "",
+   "note": "Berlin 01:30 CET before spring-forward",
+   "photos": 0,
+   "daylio_id": 1,
+   "utc_ms": 1711845059999,
+   "tz_offset_min": 60
+  },
+  {
+   "date": "2024-03-31",
+   "time": "03:30",
+   "mood": "good",
+   "level": 4,
+   "activities": [
+    "walk"
+   ],
+   "title": "",
+   "note": "Berlin 03:30 CEST after spring-forward",
+   "photos": 0,
+   "daylio_id": 2,
+   "utc_ms": 1711848600000,
+   "tz_offset_min": 120
+  },
+  {
+   "date": "2024-05-02",
+   "time": "01:30",
+   "mood": "bad",
+   "level": 2,
+   "activities": [
+    "walk"
+   ],
+   "title": "",
+   "note": "Tokyo, next local day",
+   "photos": 0,
+   "daylio_id": 9,
+   "utc_ms": 1714581000000,
+   "tz_offset_min": 540
+  },
+  {
+   "date": "2024-05-04",
+   "time": "00:15",
+   "mood": "awful",
+   "level": 1,
+   "activities": [
+    "walk"
+   ],
+   "title": "",
+   "note": "Kolkata +05:30 just after midnight",
+   "photos": 0,
+   "daylio_id": 10,
+   "utc_ms": 1714761900000,
+   "tz_offset_min": 330
+  },
+  {
+   "date": "2024-06-30",
+   "time": "23:30",
+   "mood": "rad",
+   "level": 5,
+   "activities": [
+    "walk"
+   ],
+   "title": "",
+   "note": "St. John's -02:30, previous local day",
+   "photos": 0,
+   "daylio_id": 11,
+   "utc_ms": 1719799200000,
+   "tz_offset_min": -150
+  },
+  {
+   "date": "2024-10-27",
+   "time": "02:30",
+   "mood": "meh",
+   "level": 3,
+   "activities": [
+    "walk"
+   ],
+   "title": "",
+   "note": "Berlin first 02:30 (CEST)",
+   "photos": 0,
+   "daylio_id": 3,
+   "utc_ms": 1729989000001,
+   "tz_offset_min": 120
+  },
+  {
+   "date": "2024-10-27",
+   "time": "02:30",
+   "mood": "bad",
+   "level": 2,
+   "activities": [
+    "walk"
+   ],
+   "title": "",
+   "note": "Berlin second 02:30 (CET)",
+   "photos": 0,
+   "daylio_id": 4,
+   "utc_ms": 1729992600002,
+   "tz_offset_min": 60
+  },
+  {
+   "date": "2024-11-03",
+   "time": "01:30",
+   "mood": "good",
+   "level": 4,
+   "activities": [
+    "walk"
+   ],
+   "title": "",
+   "note": "NY first 01:30 (EDT)",
+   "photos": 0,
+   "daylio_id": 7,
+   "utc_ms": 1730611800000,
+   "tz_offset_min": -240
+  },
+  {
+   "date": "2024-11-03",
+   "time": "01:30",
+   "mood": "meh",
+   "level": 3,
+   "activities": [
+    "walk"
+   ],
+   "title": "",
+   "note": "NY second 01:30 (EST)",
+   "photos": 0,
+   "daylio_id": 8,
+   "utc_ms": 1730615400000,
+   "tz_offset_min": -300
+  }
+ ],
+ "skipped": [],
+ "warnings": [
+  "goals_not_imported"
+ ],
+ "moods": [
+  {
+   "name": "rad",
+   "level": 5,
+   "daylio_id": 1,
+   "state": 0,
+   "used": true
+  },
+  {
+   "name": "good",
+   "level": 4,
+   "daylio_id": 2,
+   "state": 0,
+   "used": true
+  },
+  {
+   "name": "meh",
+   "level": 3,
+   "daylio_id": 3,
+   "state": 0,
+   "used": true
+  },
+  {
+   "name": "bad",
+   "level": 2,
+   "daylio_id": 4,
+   "state": 0,
+   "used": true
+  },
+  {
+   "name": "awful",
+   "level": 1,
+   "daylio_id": 5,
+   "state": 0,
+   "used": true
+  }
+ ],
+ "activities": [
+  {
+   "name": "bad sleep",
+   "group": "Sleep",
+   "daylio_id": 108,
+   "state": 0
+  },
+  {
+   "name": "date",
+   "group": "Social",
+   "daylio_id": 102,
+   "state": 0
+  },
+  {
+   "name": "family",
+   "group": "Social",
+   "daylio_id": 100,
+   "state": 0
+  },
+  {
+   "name": "friends",
+   "group": "Social",
+   "daylio_id": 101,
+   "state": 0
+  },
+  {
+   "name": "gaming",
+   "group": "Hobbies",
+   "daylio_id": 104,
+   "state": 0
+  },
+  {
+   "name": "good sleep",
+   "group": "Sleep",
+   "daylio_id": 107,
+   "state": 0
+  },
+  {
+   "name": "meds",
+   "group": "Health",
+   "daylio_id": 111,
+   "state": 0
+  },
+  {
+   "name": "movies / tv",
+   "group": "Hobbies",
+   "daylio_id": 105,
+   "state": 0
+  },
+  {
+   "name": "music",
+   "group": "Hobbies",
+   "daylio_id": 106,
+   "state": 0
+  },
+  {
+   "name": "reading",
+   "group": "Hobbies",
+   "daylio_id": 103,
+   "state": 0
+  },
+  {
+   "name": "sport",
+   "group": "Health",
+   "daylio_id": 109,
+   "state": 0
+  },
+  {
+   "name": "walk",
+   "group": "Health",
+   "daylio_id": 110,
+   "state": 0
+  }
+ ],
+ "groups": [
+  "Social",
+  "Hobbies",
+  "Sleep",
+  "Health"
+ ],
+ "counts": {
+  "entries": 17,
+  "skipped": 0,
+  "moods": 5,
+  "activities": 12,
+  "photos": 0
+ },
+ "_meta": {
+  "confidence": "sourced",
+  "assumptions": [
+   "per-entry timeZoneOffset decides the local date/time (SPEC); seconds truncated, never rounded (59.999 s stays in its minute)"
+  ]
+ }
+}

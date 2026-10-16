@@ -1,0 +1,67 @@
+appId: ${APP_ID}
+name: Release core - fresh install shows no dialog, two-tap entry, Stats, About with disclaimer and privacy link, dev links inert
+tags:
+  - release
+---
+# Preview/production Release builds (P11). No dev links exist there, so the start state is a cleared app (fresh install).
+- launchApp:
+    clearState: true
+    stopApp: true
+- extendedWaitUntil:
+    visible:
+      id: home-empty
+    timeout: 90000
+# A2: nothing asks anything at the first launch
+- assertNotVisible: ".*Allow.*"
+- assertNotVisible: ".*Notifications.*"
+# A1: face → activity → Save
+- tapOn:
+    id: mood-level-4
+- extendedWaitUntil:
+    visible:
+      id: entry-editor
+    timeout: 15000
+- tapOn:
+    id: activity-11
+- tapOn:
+    id: entry-save
+- extendedWaitUntil:
+    visible:
+      id: entry-row-1
+    timeout: 15000
+- assertVisible:
+    id: streak-text
+    text: "1 day in a row.*"
+- tapOn:
+    id: tab-stats
+- extendedWaitUntil:
+    visible:
+      id: stat-average
+    timeout: 15000
+- tapOn:
+    id: tab-more
+- tapOn:
+    id: more-about
+- extendedWaitUntil:
+    visible:
+      id: about-disclaimer
+    timeout: 10000
+- assertVisible: ".*not a medical device.*"
+- scrollUntilVisible:
+    element:
+      id: about-privacy-link
+- assertVisible: "Privacy policy.*"
+- takeScreenshot: release-about
+# Development links do nothing in a Release build: the journal is not reset
+- openLink: ${SCHEME}://debug/reset
+- tapOn:
+    text: Open
+    optional: true
+- extendedWaitUntil:
+    visible:
+      id: home-screen
+    timeout: 20000
+- tapOn:
+    id: tab-entries
+- assertVisible:
+    id: entry-row-1

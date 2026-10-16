@@ -1,0 +1,8 @@
+{
+  "file": "backup-bad-base64.daylio",
+  "status": "error",
+  "error": "damaged",
+  "entries": [],
+  "skipped": [],
+  "warnings": []
+}

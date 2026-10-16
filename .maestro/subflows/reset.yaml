@@ -1,0 +1,28 @@
+appId: ${APP_ID}
+---
+# Absolute precondition: fresh process, empty journal with the default moods/activities (ids restart at 1, see
+# src/db/dev.ts), real clock, no scheduled reminders, app lock off (also when an earlier run left it on and locked).
+- launchApp:
+    stopApp: true
+- tapOn:
+    text: Open
+    optional: true
+- extendedWaitUntil:
+    visible:
+      id: home-screen
+    timeout: 60000
+    optional: true
+- openLink: moodjournal-dev://debug/reset
+- tapOn:
+    text: Open
+    optional: true
+# Lock runs on iOS (scripts/lock-ios.sh): a Face ID sheet left from the lock screen is answered so the UI is reachable.
+- runFlow:
+    when:
+      platform: iOS
+    commands:
+      - runScript: ../scripts/face-match.js
+- extendedWaitUntil:
+    visible:
+      id: home-empty
+    timeout: 30000

@@ -1,0 +1,5 @@
+full_date,date,weekday,time,mood,activities,note_title,note
+2022-02-02,2 February,Wednesday,20:20,good,"friends | music","Same","Same note, twice!"
+2022-02-02,2 February,Wednesday,20:20,good,"friends | music","Same","Same note, twice"
+2022-02-02,2 February,Wednesday,20:20,good,"friends | music","Same","Same note, twice"
+2022-02-01,1 February,Tuesday,09:00,meh,"","",""

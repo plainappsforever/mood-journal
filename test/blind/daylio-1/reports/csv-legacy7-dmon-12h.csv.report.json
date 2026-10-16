@@ -1,0 +1,364 @@
+{
+  "file": "csv-legacy7-dmon-12h.csv",
+  "status": "ok",
+  "kind": "daylio_csv",
+  "entries": [
+    {
+      "date": "2018-01-15",
+      "time": "23:40",
+      "mood": "good",
+      "level": 4,
+      "activities": [
+        "bad sleep",
+        "work"
+      ],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2018-01-15",
+      "time": "09:09",
+      "mood": "rad",
+      "level": 5,
+      "activities": [
+        "date",
+        "family",
+        "gaming",
+        "sport",
+        "stomachache"
+      ],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2018-01-15",
+      "time": "08:10",
+      "mood": "awful",
+      "level": 1,
+      "activities": [
+        "early sleep"
+      ],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2018-01-14",
+      "time": "19:37",
+      "mood": "meh",
+      "level": 3,
+      "activities": [
+        "cooking",
+        "early sleep",
+        "sport",
+        "stomachache",
+        "work"
+      ],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2018-01-10",
+      "time": "17:44",
+      "mood": "awful",
+      "level": 1,
+      "activities": [
+        "cooking",
+        "early sleep",
+        "gaming",
+        "stress / frustration"
+      ],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2018-01-09",
+      "time": "21:47",
+      "mood": "good",
+      "level": 4,
+      "activities": [
+        "stomachache"
+      ],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2018-01-09",
+      "time": "09:18",
+      "mood": "meh",
+      "level": 3,
+      "activities": [
+        "eating out",
+        "movies / tv",
+        "reading"
+      ],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2018-01-07",
+      "time": "17:15",
+      "mood": "bad",
+      "level": 2,
+      "activities": [
+        "cleaning",
+        "stomachache"
+      ],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2018-01-05",
+      "time": "20:11",
+      "mood": "rad",
+      "level": 5,
+      "activities": [
+        "cooking",
+        "date",
+        "good meal",
+        "shopping"
+      ],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2018-01-04",
+      "time": "20:07",
+      "mood": "good",
+      "level": 4,
+      "activities": [
+        "eating out",
+        "friends",
+        "party",
+        "tired"
+      ],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2018-01-04",
+      "time": "14:09",
+      "mood": "bad",
+      "level": 2,
+      "activities": [
+        "family",
+        "gaming",
+        "reading",
+        "shopping"
+      ],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2018-01-04",
+      "time": "09:14",
+      "mood": "meh",
+      "level": 3,
+      "activities": [
+        "cooking",
+        "family",
+        "gaming",
+        "party",
+        "work"
+      ],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2018-01-02",
+      "time": "22:44",
+      "mood": "awful",
+      "level": 1,
+      "activities": [
+        "early sleep",
+        "reading",
+        "stress / frustration"
+      ],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2018-01-02",
+      "time": "19:56",
+      "mood": "rad",
+      "level": 5,
+      "activities": [],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2018-01-02",
+      "time": "09:00",
+      "mood": "rad",
+      "level": 5,
+      "activities": [
+        "relax"
+      ],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2018-01-01",
+      "time": "14:09",
+      "mood": "meh",
+      "level": 3,
+      "activities": [],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2018-01-01",
+      "time": "08:14",
+      "mood": "meh",
+      "level": 3,
+      "activities": [
+        "eating out",
+        "gaming",
+        "sport",
+        "stress / frustration"
+      ],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2017-12-31",
+      "time": "10:34",
+      "mood": "bad",
+      "level": 2,
+      "activities": [],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2017-12-30",
+      "time": "08:50",
+      "mood": "rad",
+      "level": 5,
+      "activities": [
+        "cooking",
+        "date"
+      ],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2017-12-29",
+      "time": "11:55",
+      "mood": "rad",
+      "level": 5,
+      "activities": [],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2017-12-28",
+      "time": "16:24",
+      "mood": "meh",
+      "level": 3,
+      "activities": [],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2017-12-27",
+      "time": "18:18",
+      "mood": "bad",
+      "level": 2,
+      "activities": [],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2017-12-26",
+      "time": "21:22",
+      "mood": "good",
+      "level": 4,
+      "activities": [
+        "music"
+      ],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2017-12-24",
+      "time": "21:11",
+      "mood": "awful",
+      "level": 1,
+      "activities": [
+        "date",
+        "friends",
+        "gaming",
+        "relax"
+      ],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2017-12-23",
+      "time": "20:49",
+      "mood": "awful",
+      "level": 1,
+      "activities": [
+        "bad sleep",
+        "cooking",
+        "eating out",
+        "friends",
+        "stomachache"
+      ],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2017-12-22",
+      "time": "20:32",
+      "mood": "bad",
+      "level": 2,
+      "activities": [
+        "party"
+      ],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2017-12-20",
+      "time": "22:46",
+      "mood": "good",
+      "level": 4,
+      "activities": [
+        "bad sleep",
+        "music",
+        "tired"
+      ],
+      "title": "",
+      "note": "Old format, note with comma, and \"quotes\"",
+      "photos": 0
+    }
+  ],
+  "skipped": [],
+  "warnings": []
+}

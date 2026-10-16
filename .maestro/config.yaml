@@ -1,0 +1,35 @@
+# Flows share one simulator and one database, so they run one after another in this order (by flow name).
+flows:
+  - "*"
+excludeTags:
+  - perf
+  - lock
+  - folder
+  - languages
+executionOrder:
+  continueOnFailure: true
+  flowsOrder:
+    - "Zero prompt - first launch shows no dialog"
+    - "First entry - two taps from Home, reminder card asks nothing until Turn on"
+    - "Edit and delete an entry"
+    - "Late night - before the day-end hour an entry belongs to yesterday"
+    - "Moods and activities - add, archive, delete, merge"
+    - "Groups and mood order - rename and archive a group, move a mood to the top of its level"
+    - "Smoke - theme and week start persist across a restart"
+    - "Calendar - fill a missed day from the month grid"
+    - "Year in Pixels - a year of colours, other years empty"
+    - "Stats - average, cards, honest labels (clear vs could be chance)"
+    - "Activity detail - entries, same day and next day comparisons"
+    - "Search - diacritics-insensitive with highlight and filters"
+    - "Goals - sport 3 times a week shows on Home"
+    - "Reminders - permission only on add, plan status, test reminder arrives"
+    - "Perf - 20k entries, Home and Stats All time (A12; not in the regular run; timings in the Metro log '[debug]')"
+    - "Widget - Android home-screen widget, a face opens the editor with that mood, the line follows the journal"
+    - "Backup and restore - plain and encrypted round trip replaces the journal"
+    - "Export - CSV and a 30-day PDF through the share sheet"
+    - "Import from Daylio - CSV with mood mapping, re-import adds nothing, backup file"
+    - "Automatic backup - folder picked once, written on leaving the app, still writes after a restart, rotation, restore"
+    - "Automatic backup - the folder is gone, red status and a dot on More, nothing else changes"
+    - "Lock - device credential switches it on, cover after leaving, unlock (emulator PIN 1234 / simulator Face ID)"
+    - "S9 - 20k-entry Daylio import and restore timing (perf; numbers in the Metro log '[debug] s9')"
+    - "Languages - the app follows the phone language (run per language by scripts/languages-e2e.sh)"

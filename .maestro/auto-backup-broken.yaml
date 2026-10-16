@@ -1,0 +1,37 @@
+appId: ${APP_ID}
+name: Automatic backup - the folder is gone, red status and a dot on More, nothing else changes
+tags:
+  - folder
+---
+# Second half of scripts/auto-backup-e2e.sh: runs right after auto-backup.yaml, once the script MOVED the folder away
+# (precondition: automatic backup on, folder FOLDER chosen, one good file). SPEC "Backup failures", A7.
+- launchApp:
+    stopApp: true
+- tapOn:
+    text: Open
+    optional: true
+- extendedWaitUntil:
+    visible:
+      id: home-screen
+    timeout: 60000
+- assertVisible:
+    id: entry-row-1
+- tapOn:
+    id: tab-more
+- tapOn:
+    id: more-backup
+- scrollUntilVisible:
+    element:
+      id: auto-backup-now
+- tapOn:
+    id: auto-backup-now
+- extendedWaitUntil:
+    visible: "Last automatic backup failed: .*\\. Choose the folder again\\."
+    timeout: 30000
+- assertVisible: "Last successful one: .*"
+- runFlow: subflows/go-back.yaml
+- assertVisible: ".*● Needs attention.*"
+- tapOn:
+    id: tab-entries
+- assertVisible:
+    id: entry-row-1

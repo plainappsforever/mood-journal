@@ -1,0 +1,42 @@
+appId: ${APP_ID}
+name: Calendar - fill a missed day from the month grid
+tags:
+  - p6
+---
+- runFlow: subflows/reset.yaml
+- runFlow:
+    file: subflows/link.yaml
+    env:
+      LINK: debug/seed?days=10&perDay=1
+- tapOn:
+    id: tab-calendar
+- extendedWaitUntil:
+    visible:
+      id: cal-title
+    timeout: 10000
+# Previous month: empty days there (the seed covers only the last 10 days)
+- tapOn:
+    id: cal-prev
+- tapOn:
+    id: cal-day-.*-15
+- extendedWaitUntil:
+    visible:
+      id: day-add-entry
+    timeout: 10000
+- assertVisible: No entries on this day.
+- tapOn:
+    id: day-add-entry
+- extendedWaitUntil:
+    visible:
+      id: entry-editor
+    timeout: 10000
+- tapOn:
+    id: mood-1
+- tapOn:
+    id: entry-save
+- extendedWaitUntil:
+    visible:
+      id: day-screen
+    timeout: 10000
+- assertVisible:
+    id: entry-row-11

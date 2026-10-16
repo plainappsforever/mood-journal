@@ -1,0 +1,30 @@
+appId: ${APP_ID}
+name: Smoke - theme and week start persist across a restart
+tags:
+  - p5
+---
+- runFlow: subflows/reset.yaml
+- tapOn:
+    id: tab-more
+- tapOn:
+    id: more-appearance
+- tapOn:
+    id: theme-dark
+- tapOn:
+    id: week-start-7
+- stopApp
+- runFlow: subflows/launch.yaml
+- tapOn:
+    id: tab-more
+- tapOn:
+    id: more-appearance
+- assertVisible:
+    id: theme-dark
+    selected: true
+- assertVisible:
+    id: week-start-7
+    selected: true
+- tapOn:
+    id: theme-system
+- tapOn:
+    id: week-start-1

@@ -1,0 +1,95 @@
+appId: ${APP_ID}
+name: Lock - device credential switches it on, cover after leaving, unlock (emulator PIN 1234 / simulator Face ID)
+tags:
+  - lock
+---
+# Precondition: Android `scripts/lock-prep.sh` (screen-lock PIN 1234); iOS run it with `scripts/lock-ios.sh` (enrols
+# simulated Face ID; the flow asks it for a match when the sheet is up). Excluded from the default run (tag lock).
+- runFlow: subflows/reset.yaml
+- tapOn:
+    id: tab-more
+- tapOn:
+    id: more-lock
+- tapOn:
+    id: lock-after-0
+- tapOn:
+    id: lock-toggle
+# Turning the lock on asks the phone first (no lock-out): Android shows its PIN screen
+- runFlow:
+    when:
+      platform: Android
+    commands:
+      - extendedWaitUntil:
+          visible: .*PIN.*
+          timeout: 15000
+      - inputText: "1234"
+      - pressKey: Enter
+- runFlow:
+    when:
+      platform: iOS
+    commands:
+      - extendedWaitUntil:
+          visible: Face ID
+          timeout: 10000
+          optional: true
+      - runScript: scripts/face-match.js
+- extendedWaitUntil:
+    visible:
+      id: lock-toggle
+      checked: true
+    timeout: 15000
+# Leave the app and come back: the lock screen covers it
+- pressKey: Home
+- launchApp
+# Nothing of the journal is reachable: the cover (lock-screen) is up, with the system Face ID / PIN sheet over it
+# (which hides the app's hierarchy from Maestro, so the check is on the content, not on the cover's id).
+- extendedWaitUntil:
+    notVisible:
+      id: home-screen
+    timeout: 15000
+- assertNotVisible:
+    id: lock-settings
+- assertNotVisible:
+    id: tab-more
+- runFlow:
+    when:
+      platform: iOS
+    commands:
+      - extendedWaitUntil:
+          visible: Face ID
+          timeout: 10000
+          optional: true
+      - runScript: scripts/face-match.js
+- runFlow:
+    when:
+      platform: Android
+    commands:
+      - extendedWaitUntil:
+          visible: .*PIN.*
+          timeout: 15000
+      - inputText: "1234"
+      - pressKey: Enter
+- extendedWaitUntil:
+    notVisible:
+      id: lock-screen
+    timeout: 15000
+# iOS relaunches the process (locked at start), Android resumes on the lock settings
+- runFlow:
+    when:
+      visible:
+        id: home-screen
+    commands:
+      - tapOn:
+          id: tab-more
+      - tapOn:
+          id: more-lock
+- assertVisible:
+    id: lock-settings
+# Off again (no prompt needed to switch it off)
+- tapOn:
+    id: lock-toggle
+- extendedWaitUntil:
+    visible:
+      id: lock-toggle
+      checked: false
+    timeout: 10000

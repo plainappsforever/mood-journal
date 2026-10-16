@@ -1,0 +1,9 @@
+{
+ "refused": "encoding",
+ "_meta": {
+  "confidence": "sourced",
+  "assumptions": [
+   "re-saved by a Windows editor as Windows-1252: not valid UTF-8 -> refused, never imported with mojibake"
+  ]
+ }
+}

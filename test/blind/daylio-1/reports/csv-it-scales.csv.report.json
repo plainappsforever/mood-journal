@@ -1,0 +1,254 @@
+{
+  "file": "csv-it-scales.csv",
+  "status": "ok",
+  "kind": "daylio_csv",
+  "entries": [
+    {
+      "date": "2026-09-21",
+      "time": "22:26",
+      "mood": "alla grande",
+      "level": 5,
+      "activities": [
+        "malessere",
+        "noia",
+        "soddisfazione",
+        "speranza"
+      ],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2026-09-18",
+      "time": "19:20",
+      "mood": "alla grande",
+      "level": 5,
+      "activities": [
+        "contentezza",
+        "discreto",
+        "malessere",
+        "Sonno breve"
+      ],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2026-09-17",
+      "time": "20:51",
+      "mood": "male",
+      "level": 2,
+      "activities": [
+        "noia"
+      ],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2026-09-16",
+      "time": "22:16",
+      "mood": "male",
+      "level": 2,
+      "activities": [],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2026-09-16",
+      "time": "19:51",
+      "mood": "alla grande",
+      "level": 5,
+      "activities": [
+        "discreto"
+      ],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2026-09-14",
+      "time": "22:48",
+      "mood": "alla grande",
+      "level": 5,
+      "activities": [
+        "noia",
+        "stanchezza",
+        "terapia casa"
+      ],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2026-09-13",
+      "time": "19:56",
+      "mood": "così così",
+      "level": 3,
+      "activities": [
+        "gratitudine",
+        "stanchezza"
+      ],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2026-09-12",
+      "time": "22:39",
+      "mood": "bene",
+      "level": 4,
+      "activities": [
+        "ambiente affollato",
+        "buon sonno",
+        "malessere",
+        "preoccupazione"
+      ],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2026-09-11",
+      "time": "19:38",
+      "mood": "malissimo",
+      "level": 1,
+      "activities": [
+        "discreto",
+        "preoccupazione"
+      ],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2026-09-10",
+      "time": "21:56",
+      "mood": "male",
+      "level": 2,
+      "activities": [
+        "buon sonno",
+        "malessere"
+      ],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2026-09-08",
+      "time": "20:53",
+      "mood": "male",
+      "level": 2,
+      "activities": [
+        "buon sonno",
+        "preoccupazione"
+      ],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2026-09-07",
+      "time": "21:59",
+      "mood": "malissimo",
+      "level": 1,
+      "activities": [
+        "noia"
+      ],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2026-09-06",
+      "time": "22:51",
+      "mood": "alla grande",
+      "level": 5,
+      "activities": [
+        "ambiente affollato",
+        "malessere",
+        "noia",
+        "preoccupazione",
+        "speranza"
+      ],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2026-09-05",
+      "time": "22:32",
+      "mood": "così così",
+      "level": 3,
+      "activities": [
+        "contentezza",
+        "gratitudine",
+        "terapia casa"
+      ],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2026-09-03",
+      "time": "21:01",
+      "mood": "così così",
+      "level": 3,
+      "activities": [
+        "contentezza",
+        "malessere",
+        "terapia casa"
+      ],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2026-09-02",
+      "time": "19:49",
+      "mood": "alla grande",
+      "level": 5,
+      "activities": [
+        "ambiente affollato",
+        "contentezza",
+        "soddisfazione"
+      ],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2026-09-01",
+      "time": "19:49",
+      "mood": "male",
+      "level": 2,
+      "activities": [
+        "gratitudine",
+        "soddisfazione",
+        "terapia casa"
+      ],
+      "title": "",
+      "note": "Giornata lunga, però bella.",
+      "photos": 0
+    },
+    {
+      "date": "2026-09-01",
+      "time": "19:32",
+      "mood": "bene",
+      "level": 4,
+      "activities": [
+        "ambiente affollato",
+        "contentezza",
+        "gratitudine",
+        "noia",
+        "preoccupazione"
+      ],
+      "title": "",
+      "note": "",
+      "photos": 0
+    }
+  ],
+  "skipped": [],
+  "warnings": []
+}

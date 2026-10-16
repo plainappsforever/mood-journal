@@ -1,0 +1,15 @@
+appId: ${APP_ID}
+name: S9 - 20k-entry Daylio import and restore timing (perf; numbers in the Metro log '[debug] s9')
+tags:
+  - perf
+---
+- runFlow: subflows/reset.yaml
+- openLink: moodjournal-dev://debug/s9?days=4000&perDay=5&stay=1
+- tapOn:
+    text: Open
+    optional: true
+- extendedWaitUntil:
+    visible:
+      id: debug-done
+    timeout: 900000
+- assertVisible: "s9 rows=20000 .*restored=20000.*"

@@ -1,0 +1,10 @@
+{
+ "refused": "bad_payload",
+ "_meta": {
+  "confidence": "assumed",
+  "assumptions": [
+   "backup.daylio holding plain JSON instead of base64 (a third-party tool wrote it)"
+  ],
+  "also_acceptable": "ok_as_backup"
+ }
+}

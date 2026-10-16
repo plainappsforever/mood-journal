@@ -1,0 +1,79 @@
+appId: ${APP_ID}
+name: Reminders - permission only on add, plan status, test reminder arrives
+tags:
+  - p7
+---
+- runFlow: subflows/reset.yaml
+- tapOn:
+    id: tab-more
+- tapOn:
+    id: more-reminders
+- extendedWaitUntil:
+    visible:
+      id: reminder-status
+    timeout: 10000
+- tapOn:
+    id: reminder-add
+# First time only: the system asks now (never at launch, A2)
+- tapOn:
+    text: Allow
+    optional: true
+- extendedWaitUntil:
+    visible:
+      id: reminder-1
+    timeout: 15000
+- extendedWaitUntil:
+    visible:
+      id: reminder-status
+      text: "On\\. [0-9]+ reminders planned.*"
+    timeout: 15000
+- assertVisible:
+    id: reminder-1-toggle
+# Text never contains journal content (A13): the default text
+- scrollUntilVisible:
+    element:
+      id: reminder-test
+- tapOn:
+    id: reminder-test
+- assertVisible:
+    id: reminder-test-sent
+# Leave Mood: the notification must arrive from the system (the text field's placeholder says the same words, so the
+# check runs outside the app). iOS: the banner on the home screen; Android: the notification shade.
+- pressKey: Home
+- runFlow:
+    when:
+      platform: Android
+    commands:
+      - swipe:
+          start: 50%,2%
+          end: 50%,70%
+          duration: 500
+- extendedWaitUntil:
+    visible: How was your day\?
+    timeout: 40000
+- runFlow:
+    when:
+      platform: Android
+    commands:
+      - pressKey: Back
+- runFlow: subflows/launch.yaml
+- tapOn:
+    id: tab-more
+- tapOn:
+    id: more-reminders
+- extendedWaitUntil:
+    visible:
+      id: reminders-screen
+    timeout: 15000
+# Off → nothing planned
+- scrollUntilVisible:
+    element:
+      id: reminder-1-toggle
+    direction: UP
+- tapOn:
+    id: reminder-1-toggle
+- extendedWaitUntil:
+    visible:
+      id: reminder-status
+      text: "On\\. 0 reminders planned\\."
+    timeout: 15000

@@ -1,0 +1,9 @@
+{
+ "refused": "encoding",
+ "_meta": {
+  "confidence": "sourced",
+  "assumptions": [
+   "decoded payload is Latin-1, not UTF-8 -> refused (theluckystrike uses a fatal UTF-8 decoder)"
+  ]
+ }
+}

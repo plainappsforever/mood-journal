@@ -1,0 +1,100 @@
+{
+  "file": "csv-excel-us-dates.csv",
+  "status": "ok",
+  "kind": "daylio_csv",
+  "entries": [],
+  "skipped": [
+    {
+      "where": "2",
+      "reason": "unreadable date"
+    },
+    {
+      "where": "3",
+      "reason": "unreadable date"
+    },
+    {
+      "where": "4",
+      "reason": "unreadable date"
+    },
+    {
+      "where": "5",
+      "reason": "unreadable date"
+    },
+    {
+      "where": "6",
+      "reason": "unreadable date"
+    },
+    {
+      "where": "7",
+      "reason": "unreadable date"
+    },
+    {
+      "where": "8",
+      "reason": "unreadable date"
+    },
+    {
+      "where": "9",
+      "reason": "unreadable date"
+    },
+    {
+      "where": "10",
+      "reason": "unreadable date"
+    },
+    {
+      "where": "11",
+      "reason": "unreadable date"
+    },
+    {
+      "where": "12",
+      "reason": "unreadable date"
+    },
+    {
+      "where": "13",
+      "reason": "unreadable date"
+    },
+    {
+      "where": "14",
+      "reason": "unreadable date"
+    },
+    {
+      "where": "15",
+      "reason": "unreadable date"
+    },
+    {
+      "where": "16",
+      "reason": "unreadable date"
+    },
+    {
+      "where": "17",
+      "reason": "unreadable date"
+    },
+    {
+      "where": "18",
+      "reason": "unreadable date"
+    },
+    {
+      "where": "19",
+      "reason": "unreadable date"
+    }
+  ],
+  "warnings": [
+    "badRow",
+    "badRow",
+    "badRow",
+    "badRow",
+    "badRow",
+    "badRow",
+    "badRow",
+    "badRow",
+    "badRow",
+    "badRow",
+    "badRow",
+    "badRow",
+    "badRow",
+    "badRow",
+    "badRow",
+    "badRow",
+    "badRow",
+    "badRow"
+  ]
+}

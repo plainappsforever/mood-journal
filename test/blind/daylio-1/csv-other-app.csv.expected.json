@@ -1,0 +1,9 @@
+{
+ "refused": "unrecognized_header",
+ "_meta": {
+  "confidence": "sourced",
+  "assumptions": [
+   "a CSV from another mood app is not guessed at"
+  ]
+ }
+}

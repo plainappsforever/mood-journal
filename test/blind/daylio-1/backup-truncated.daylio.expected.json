@@ -1,0 +1,9 @@
+{
+ "refused": "damaged_archive",
+ "_meta": {
+  "confidence": "sourced",
+  "assumptions": [
+   "cut at 60 %: no end-of-central-directory"
+  ]
+ }
+}

@@ -1,0 +1,98 @@
+appId: ${APP_ID}
+name: Groups and mood order - rename and archive a group, move a mood to the top of its level
+tags:
+  - p8
+---
+- runFlow: subflows/reset.yaml
+# Rename group 3 (People) and archive group 4 (Sleep)
+- tapOn:
+    id: tab-more
+- tapOn:
+    id: more-activities
+- scrollUntilVisible:
+    element:
+      id: group-edit-3
+- tapOn:
+    id: group-edit-3
+- tapOn:
+    id: group-rename
+- eraseText: 20
+- inputText: Company
+- runFlow: subflows/hide-keyboard.yaml
+- tapOn:
+    id: group-rename-save
+- assertVisible: "(?i).*company.*"
+- scrollUntilVisible:
+    element:
+      id: group-edit-4
+- tapOn:
+    id: group-edit-4
+- scrollUntilVisible:
+    element:
+      id: group-archive
+- tapOn:
+    id: group-archive
+- assertVisible: "(?i)sleep \\(archived\\)"
+- runFlow: subflows/go-back.yaml
+# The editor no longer offers the archived group; the renamed one is there
+- tapOn:
+    id: tab-entries
+- tapOn:
+    id: mood-level-4
+- extendedWaitUntil:
+    visible:
+      id: entry-editor
+    timeout: 10000
+- scrollUntilVisible:
+    element:
+      id: activity-17
+- assertVisible: "(?i).*company.*"
+- assertNotVisible:
+    id: activity-21
+- tapOn:
+    id: activity-17
+- tapOn:
+    id: entry-save
+- extendedWaitUntil:
+    visible:
+      id: entry-row-1
+    timeout: 10000
+# A second mood on level 4, moved to the top: Home's level-4 face becomes it
+- tapOn:
+    id: tab-more
+- tapOn:
+    id: more-moods
+- tapOn:
+    id: mood-add
+- tapOn:
+    id: mood-name
+- inputText: Fine
+- runFlow: subflows/hide-keyboard.yaml
+- scrollUntilVisible:
+    element:
+      id: mood-level-pick-4
+- tapOn:
+    id: mood-level-pick-4
+- scrollUntilVisible:
+    element:
+      id: mood-save
+- tapOn:
+    id: mood-save
+- extendedWaitUntil:
+    visible:
+      id: mood-row-6
+    timeout: 10000
+- tapOn:
+    id: mood-row-6
+- scrollUntilVisible:
+    element:
+      id: mood-move-up
+- tapOn:
+    id: mood-move-up
+- runFlow: subflows/go-back.yaml
+- runFlow: subflows/go-back.yaml
+- tapOn:
+    id: tab-entries
+- assertVisible:
+    id: mood-level-4
+    text: ".*Fine.*"

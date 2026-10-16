@@ -1,0 +1,68 @@
+appId: ${APP_ID}
+name: Late night - before the day-end hour an entry belongs to yesterday
+tags:
+  - p5
+---
+- runFlow: subflows/reset.yaml
+# My day ends at 3:00 (Appearance)
+- tapOn:
+    id: tab-more
+- tapOn:
+    id: more-appearance
+- tapOn:
+    id: day-end-3
+- assertVisible:
+    id: day-end-3
+    selected: true
+- runFlow: subflows/go-back.yaml
+- tapOn:
+    id: tab-entries
+# The clock says 01:30 today (dev link pins the app clock)
+- runFlow:
+    file: subflows/link.yaml
+    env:
+      LINK: debug/clock?at=01:30
+- tapOn:
+    id: mood-level-3
+- extendedWaitUntil:
+    visible:
+      id: entry-when
+    timeout: 10000
+- assertVisible:
+    id: entry-when
+    text: Yesterday, 01:30
+- tapOn:
+    id: entry-save
+- extendedWaitUntil:
+    visible:
+      id: entry-row-1
+    timeout: 10000
+- assertVisible: YESTERDAY|Yesterday
+# Streak counts the journal day (D54): yesterday is today's journal day at 01:30
+- assertVisible:
+    id: streak-text
+    text: 1 day in a row \(longest 1\)
+# Midnight rule again → the same moment is today
+- tapOn:
+    id: tab-more
+- tapOn:
+    id: more-appearance
+- tapOn:
+    id: day-end-0
+- runFlow: subflows/go-back.yaml
+- tapOn:
+    id: tab-entries
+- tapOn:
+    id: mood-level-4
+- extendedWaitUntil:
+    visible:
+      id: entry-when
+    timeout: 10000
+- assertVisible:
+    id: entry-when
+    text: Today, 01:30
+- runFlow: subflows/go-back.yaml
+- runFlow:
+    file: subflows/link.yaml
+    env:
+      LINK: debug/clock

@@ -1,0 +1,129 @@
+appId: ${APP_ID}
+name: Backup and restore - plain and encrypted round trip replaces the journal
+tags:
+  - p8
+---
+- runFlow: subflows/reset.yaml
+- tapOn:
+    id: mood-level-5
+- tapOn:
+    id: activity-10
+- tapOn:
+    id: entry-save
+- extendedWaitUntil:
+    visible:
+      id: entry-row-1
+    timeout: 10000
+# Plain backup → share sheet
+- tapOn:
+    id: tab-more
+- tapOn:
+    id: more-backup
+- tapOn:
+    id: backup-now
+- tapOn:
+    id: backup-create
+- runFlow: subflows/dismiss-share.yaml
+- assertVisible:
+    id: backup-result
+    text: "mood-.*\\.moodbackup: 1 entries, 0 photos, .*"
+# A change after the backup
+- runFlow: subflows/go-back.yaml
+- tapOn:
+    id: tab-entries
+- tapOn:
+    id: mood-level-1
+- tapOn:
+    id: entry-save
+- extendedWaitUntil:
+    visible:
+      id: entry-row-2
+    timeout: 10000
+# Restore the file (dev link: the next pick is the backup just made; the system picker is not drivable)
+- runFlow:
+    file: subflows/link.yaml
+    env:
+      LINK: debug/pick?last=backup
+- tapOn:
+    id: tab-more
+- tapOn:
+    id: more-backup
+- tapOn:
+    id: restore
+- extendedWaitUntil:
+    visible:
+      id: restore-counts
+    timeout: 15000
+- assertVisible: "Backup from .*: 1 entries, 0 photos\\."
+- tapOn:
+    id: restore-confirm
+- assertVisible: Replace your journal\?
+- tapOn: Replace
+- extendedWaitUntil:
+    visible:
+      id: backup-result
+      text: "Restored: 1 entries, 0 photos\\."
+    timeout: 30000
+- runFlow: subflows/go-back.yaml
+- tapOn:
+    id: tab-entries
+- assertVisible:
+    id: entry-row-1
+- assertNotVisible:
+    id: entry-row-2
+# Encrypted: wrong password changes nothing, the right one restores
+- tapOn:
+    id: tab-more
+- tapOn:
+    id: more-backup
+- tapOn:
+    id: backup-now
+- tapOn:
+    id: backup-password
+- inputText: mood-test-pass
+- runFlow: subflows/hide-keyboard.yaml
+- tapOn:
+    id: backup-create
+- runFlow: subflows/dismiss-share.yaml
+- runFlow: subflows/go-back.yaml
+- runFlow:
+    file: subflows/link.yaml
+    env:
+      LINK: debug/pick?last=backup
+- tapOn:
+    id: tab-more
+- tapOn:
+    id: more-backup
+- tapOn:
+    id: restore
+- extendedWaitUntil:
+    visible: This backup is encrypted\. Enter its password\.
+    timeout: 15000
+- tapOn:
+    id: restore-password
+- inputText: wrong
+- runFlow: subflows/hide-keyboard.yaml
+- tapOn:
+    id: restore-open
+- extendedWaitUntil:
+    visible: Wrong password.*
+    timeout: 30000
+- tapOn:
+    id: restore-password
+- eraseText: 10
+- inputText: mood-test-pass
+- runFlow: subflows/hide-keyboard.yaml
+- tapOn:
+    id: restore-open
+- extendedWaitUntil:
+    visible:
+      id: restore-counts
+    timeout: 30000
+- tapOn:
+    id: restore-confirm
+- tapOn: Replace
+- extendedWaitUntil:
+    visible:
+      id: backup-result
+      text: "Restored: 1 entries, 0 photos\\."
+    timeout: 30000

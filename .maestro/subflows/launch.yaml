@@ -1,0 +1,12 @@
+appId: ${APP_ID}
+---
+- launchApp:
+    stopApp: true
+# iOS asks "Open in “Mood Dev”?" for a pending dev link (also the dev-client URL native.sh opens after a build).
+- tapOn:
+    text: Open
+    optional: true
+- extendedWaitUntil:
+    visible:
+      id: home-screen
+    timeout: 90000

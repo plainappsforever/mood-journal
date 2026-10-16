@@ -1,0 +1,10 @@
+{
+ "refused": "damaged_csv",
+ "_meta": {
+  "confidence": "sourced",
+  "assumptions": [
+   "file cut inside an open quoted note: no row boundary can be trusted -> whole file refused"
+  ],
+  "data_rows": 22
+ }
+}

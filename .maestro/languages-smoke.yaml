@@ -1,0 +1,30 @@
+appId: ${APP_ID}
+name: Languages - the app follows the phone language (run per language by scripts/languages-e2e.sh)
+tags:
+  - languages
+---
+# Env from the script: QUESTION (Home question), MOOD4 (default level-4 mood, seeded in that language), BACKUP (More row).
+- runFlow: subflows/reset.yaml
+- assertVisible: "${QUESTION}.*"
+- assertVisible:
+    id: mood-level-4
+    text: ".*${MOOD4}.*"
+- tapOn:
+    id: mood-level-4
+- extendedWaitUntil:
+    visible:
+      id: entry-editor
+    timeout: 10000
+- tapOn:
+    id: entry-save
+- extendedWaitUntil:
+    visible:
+      id: entry-row-1
+    timeout: 10000
+- tapOn:
+    id: tab-more
+- assertVisible: ".*${BACKUP}.*"
+- tapOn:
+    id: tab-entries
+- assertVisible:
+    id: entry-row-1

@@ -1,0 +1,8 @@
+full_date,date,weekday,time,mood,activities,note_title,note
+2024-01-02,2 January,Tuesday,11:59 am,good,"","","11:59 am"
+2024-01-01,1 January,Monday,01:00 pm,bad,"","","01:00 pm"
+2024-01-01,1 January,Monday,12:30 pm,meh,"","","12:30 pm"
+2024-01-01,1 January,Monday,12:00 pm,meh,"","","noon = 12:00 pm"
+2024-01-01,1 January,Monday,12:05 am,good,"","","12:05 am"
+2024-01-01,1 January,Monday,12:00 am,rad,"party","","midnight = 12:00 am"
+2023-12-31,31 December,Sunday,11:59 pm,rad,"party","NYE","last minute of the year"

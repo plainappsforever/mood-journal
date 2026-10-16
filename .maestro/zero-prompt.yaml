@@ -1,0 +1,28 @@
+appId: ${APP_ID}
+name: Zero prompt - first launch shows no dialog
+tags:
+  - p5
+---
+- runFlow: subflows/reset.yaml
+# A fresh process on an empty journal is the first-launch experience (A2): no onboarding, no permission prompt.
+- launchApp:
+    stopApp: true
+- extendedWaitUntil:
+    visible:
+      id: home-empty
+    timeout: 90000
+- assertVisible: How are you\?
+- assertVisible:
+    id: mood-level-5
+- assertVisible:
+    id: mood-level-1
+- assertNotVisible:
+    text: Allow.*
+- assertNotVisible:
+    text: Don.t Allow.*
+- assertNotVisible:
+    id: .*permission_allow.*
+- assertNotVisible:
+    text: .*[Nn]otifications.*
+- assertNotVisible:
+    text: .*Rate .*

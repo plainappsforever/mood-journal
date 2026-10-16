@@ -1,0 +1,15 @@
+appId: ${APP_ID}
+---
+- runFlow:
+    when:
+      platform: iOS
+    commands:
+      - swipe:
+          start: 50%,45%
+          end: 50%,43%
+          duration: 200
+- runFlow:
+    when:
+      platform: Android
+    commands:
+      - hideKeyboard

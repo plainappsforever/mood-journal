@@ -1,0 +1,55 @@
+appId: ${APP_ID}
+name: Stats - average, cards, honest labels (clear vs could be chance)
+tags:
+  - p6
+---
+- runFlow: subflows/reset.yaml
+- runFlow:
+    file: subflows/link.yaml
+    env:
+      LINK: debug/fixture?name=stats
+- tapOn:
+    id: tab-stats
+- extendedWaitUntil:
+    visible:
+      id: stat-average
+    timeout: 15000
+# 30 days, one entry each: (10×3.5 + 10×3.0 + 10×5) / 30 = 3.83 → 3.8
+- assertVisible:
+    id: stat-average-value
+    text: "3.8"
+- assertVisible:
+    id: stat-average-basis
+    text: from 30 days, 30 entries
+- assertVisible:
+    id: stat-chart
+- scrollUntilVisible:
+    element:
+      id: stat-weekday
+- scrollUntilVisible:
+    element:
+      id: stat-activity-10
+- tapOn:
+    id: stat-activity-10
+- extendedWaitUntil:
+    visible:
+      id: cmp-result
+    timeout: 10000
+- assertVisible:
+    id: cmp-label
+    text: Clear difference
+- assertVisible: "Entries with sport: 5.0 \\(10\\). Without: 3.3 \\(20\\)."
+- runFlow: subflows/go-back.yaml
+- scrollUntilVisible:
+    element:
+      id: stat-activity-11
+- tapOn:
+    id: stat-activity-11
+- extendedWaitUntil:
+    visible:
+      id: cmp-label
+    timeout: 10000
+- assertVisible:
+    id: cmp-label
+    text: Could be chance
+- assertNotVisible: .*[Ss]mall difference.*

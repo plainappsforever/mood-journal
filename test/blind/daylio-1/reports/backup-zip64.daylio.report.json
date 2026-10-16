@@ -1,0 +1,8 @@
+{
+  "file": "backup-zip64.daylio",
+  "status": "error",
+  "error": "zip64",
+  "entries": [],
+  "skipped": [],
+  "warnings": []
+}

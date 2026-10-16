@@ -1,0 +1,139 @@
+appId: ${APP_ID}
+name: Moods and activities - add, archive, delete, merge
+tags:
+  - p5
+---
+- runFlow: subflows/reset.yaml
+# New mood on level 4
+- tapOn:
+    id: tab-more
+- tapOn:
+    id: more-moods
+- tapOn:
+    id: mood-add
+- tapOn:
+    id: mood-name
+- inputText: Content
+- runFlow: subflows/hide-keyboard.yaml
+- tapOn:
+    id: mood-emoji
+- tapOn:
+    id: emoji-6
+- scrollUntilVisible:
+    element:
+      id: mood-level-pick-4
+- tapOn:
+    id: mood-level-pick-4
+- tapOn:
+    id: mood-color-3
+- scrollUntilVisible:
+    element:
+      id: mood-save
+- tapOn:
+    id: mood-save
+- extendedWaitUntil:
+    visible:
+      id: mood-row-6
+    timeout: 10000
+- runFlow: subflows/go-back.yaml
+# New activity, then delete it (unused → plain confirmation)
+- tapOn:
+    id: more-activities
+- scrollUntilVisible:
+    element:
+      id: activity-add-2
+- tapOn:
+    id: activity-add-2
+- tapOn:
+    id: activity-name
+- inputText: Yoga
+- runFlow: subflows/hide-keyboard.yaml
+- scrollUntilVisible:
+    element:
+      id: activity-save
+- tapOn:
+    id: activity-save
+- scrollUntilVisible:
+    element:
+      id: activity-row-28
+- tapOn:
+    id: activity-row-28
+- scrollUntilVisible:
+    element:
+      id: activity-delete
+- tapOn:
+    id: activity-delete
+- assertVisible: .*not used in any entry.*
+- tapOn: Delete
+- assertNotVisible:
+    id: activity-row-28
+# Archive "walk": hidden in the editor, history kept
+- scrollUntilVisible:
+    element:
+      id: activity-row-11
+    direction: UP
+- tapOn:
+    id: activity-row-11
+- scrollUntilVisible:
+    element:
+      id: activity-archive
+- tapOn:
+    id: activity-archive
+- extendedWaitUntil:
+    visible:
+      id: activities-screen
+    timeout: 10000
+- runFlow: subflows/go-back.yaml
+- tapOn:
+    id: tab-entries
+# Long-press the level-4 face: its two moods
+- longPressOn:
+    id: mood-level-4
+- tapOn:
+    id: level-mood-6
+- extendedWaitUntil:
+    visible:
+      id: entry-editor
+    timeout: 10000
+- assertVisible:
+    id: mood-6
+    selected: true
+- assertNotVisible:
+    id: activity-11
+- tapOn:
+    id: entry-save
+- extendedWaitUntil:
+    visible:
+      id: entry-row-1
+    timeout: 10000
+- assertVisible: .*Content.*
+# Merge "Content" into "Good": the entry moves, the mood is gone
+- tapOn:
+    id: tab-more
+- tapOn:
+    id: more-moods
+- tapOn:
+    id: mood-row-6
+- scrollUntilVisible:
+    element:
+      id: mood-merge
+- tapOn:
+    id: mood-merge
+- scrollUntilVisible:
+    element:
+      id: merge-into-2
+- tapOn:
+    id: merge-into-2
+- assertVisible: Merge moods\?
+- tapOn: Merge
+- extendedWaitUntil:
+    visible:
+      id: moods-screen
+    timeout: 10000
+- assertNotVisible:
+    id: mood-row-6
+- runFlow: subflows/go-back.yaml
+- tapOn:
+    id: tab-entries
+- assertVisible:
+    id: entry-row-1

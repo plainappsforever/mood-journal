@@ -1,0 +1,128 @@
+{
+  "file": "csv-de-translated-headers.csv",
+  "status": "ok",
+  "kind": "daylio_csv",
+  "entries": [
+    {
+      "date": "2024-03-05",
+      "time": "14:17",
+      "mood": "schlecht",
+      "level": 2,
+      "activities": [
+        "Schlecht geschlafen",
+        "Übelkeit"
+      ],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2024-03-04",
+      "time": "08:39",
+      "mood": "lausig",
+      "level": 1,
+      "activities": [
+        "Familie",
+        "Freunde",
+        "Straßenbahn",
+        "Übelkeit"
+      ],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2024-03-02",
+      "time": "09:27",
+      "mood": "gut",
+      "level": 4,
+      "activities": [
+        "Arbeit",
+        "Ärger",
+        "Freunde",
+        "Übelkeit"
+      ],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2024-03-01",
+      "time": "10:46",
+      "mood": "lausig",
+      "level": 1,
+      "activities": [],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2024-02-29",
+      "time": "23:10",
+      "mood": "lausig",
+      "level": 1,
+      "activities": [],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2024-02-29",
+      "time": "12:00",
+      "mood": "super",
+      "level": 5,
+      "activities": [
+        "Familie"
+      ],
+      "title": "Schalttag",
+      "note": "Der 29. Februar, endlich.",
+      "photos": 0
+    },
+    {
+      "date": "2024-02-29",
+      "time": "09:06",
+      "mood": "lausig",
+      "level": 1,
+      "activities": [
+        "Gemütlich"
+      ],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2024-02-27",
+      "time": "14:08",
+      "mood": "gut",
+      "level": 4,
+      "activities": [],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2024-02-26",
+      "time": "16:56",
+      "mood": "lausig",
+      "level": 1,
+      "activities": [],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2024-02-25",
+      "time": "18:06",
+      "mood": "super",
+      "level": 5,
+      "activities": [],
+      "title": "",
+      "note": "",
+      "photos": 0
+    }
+  ],
+  "skipped": [],
+  "warnings": [
+    "headerGuessed"
+  ]
+}

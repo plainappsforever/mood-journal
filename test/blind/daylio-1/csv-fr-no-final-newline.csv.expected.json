@@ -1,0 +1,339 @@
+{
+ "fixture": "csv-fr-no-final-newline.csv",
+ "kind": "daylio_csv",
+ "header": "current8",
+ "options": {
+  "today": "2026-10-16",
+  "mapping": {
+   "super": 5,
+   "bien": 4,
+   "mouais": 3,
+   "mauvais": 2,
+   "horrible": 1
+  }
+ },
+ "entries": [
+  {
+   "date": "2025-07-25",
+   "time": "09:21",
+   "mood": "mouais",
+   "level": 3,
+   "activities": [
+    "famille"
+   ],
+   "title": "",
+   "note": "C'était « génial », vraiment !",
+   "photos": 0
+  },
+  {
+   "date": "2025-07-26",
+   "time": "08:22",
+   "mood": "mauvais",
+   "level": 2,
+   "activities": [
+    "amis",
+    "famille",
+    "théâtre",
+    "travail"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2025-07-26",
+   "time": "12:42",
+   "mood": "super",
+   "level": 5,
+   "activities": [
+    "amis",
+    "famille",
+    "ménage",
+    "sieste",
+    "travail"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2025-07-28",
+   "time": "08:04",
+   "mood": "bien",
+   "level": 4,
+   "activities": [
+    "amis",
+    "café",
+    "sieste"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2025-07-28",
+   "time": "18:44",
+   "mood": "mouais",
+   "level": 3,
+   "activities": [
+    "amis",
+    "café",
+    "famille",
+    "ménage",
+    "théâtre"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2025-07-28",
+   "time": "20:12",
+   "mood": "super",
+   "level": 5,
+   "activities": [
+    "amis",
+    "famille"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2025-07-29",
+   "time": "13:27",
+   "mood": "mauvais",
+   "level": 2,
+   "activities": [
+    "amis",
+    "café",
+    "famille"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2025-07-30",
+   "time": "17:11",
+   "mood": "super",
+   "level": 5,
+   "activities": [],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2025-07-30",
+   "time": "23:27",
+   "mood": "super",
+   "level": 5,
+   "activities": [
+    "amis",
+    "café",
+    "ménage",
+    "théâtre"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2025-07-31",
+   "time": "22:39",
+   "mood": "horrible",
+   "level": 1,
+   "activities": [],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2025-08-02",
+   "time": "08:10",
+   "mood": "horrible",
+   "level": 1,
+   "activities": [
+    "amis"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2025-08-02",
+   "time": "13:47",
+   "mood": "horrible",
+   "level": 1,
+   "activities": [
+    "café"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2025-08-02",
+   "time": "14:10",
+   "mood": "mouais",
+   "level": 3,
+   "activities": [
+    "amis",
+    "café",
+    "famille",
+    "sieste",
+    "vélo"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2025-08-03",
+   "time": "07:35",
+   "mood": "mauvais",
+   "level": 2,
+   "activities": [],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2025-08-04",
+   "time": "17:25",
+   "mood": "horrible",
+   "level": 1,
+   "activities": [
+    "café",
+    "famille",
+    "travail",
+    "vélo"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2025-08-05",
+   "time": "21:48",
+   "mood": "horrible",
+   "level": 1,
+   "activities": [
+    "amis",
+    "ménage"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2025-08-06",
+   "time": "10:23",
+   "mood": "super",
+   "level": 5,
+   "activities": [
+    "café",
+    "famille",
+    "théâtre",
+    "vélo"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2025-08-07",
+   "time": "14:34",
+   "mood": "super",
+   "level": 5,
+   "activities": [
+    "ménage",
+    "travail"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2025-08-08",
+   "time": "15:49",
+   "mood": "super",
+   "level": 5,
+   "activities": [],
+   "title": "",
+   "note": "",
+   "photos": 0
+  }
+ ],
+ "skipped": [],
+ "warnings": [],
+ "moods": [
+  {
+   "name": "mouais",
+   "level": 3
+  },
+  {
+   "name": "mauvais",
+   "level": 2
+  },
+  {
+   "name": "super",
+   "level": 5
+  },
+  {
+   "name": "bien",
+   "level": 4
+  },
+  {
+   "name": "horrible",
+   "level": 1
+  }
+ ],
+ "activities": [
+  {
+   "name": "amis",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "café",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "famille",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "ménage",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "sieste",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "théâtre",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "travail",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "vélo",
+   "group": "Imported from Daylio"
+  }
+ ],
+ "counts": {
+  "entries": 19,
+  "skipped": 0,
+  "moods": 5,
+  "activities": 8,
+  "photos": 0
+ },
+ "_meta": {
+  "confidence": "mixed",
+  "assumptions": [
+   "French date cell \"28 septembre\"; last row has no trailing newline"
+  ]
+ }
+}

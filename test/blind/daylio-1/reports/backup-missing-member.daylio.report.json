@@ -1,0 +1,8 @@
+{
+  "file": "backup-missing-member.daylio",
+  "status": "error",
+  "error": "notDaylio",
+  "entries": [],
+  "skipped": [],
+  "warnings": []
+}

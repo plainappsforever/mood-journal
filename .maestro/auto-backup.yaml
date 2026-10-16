@@ -1,0 +1,169 @@
+appId: ${APP_ID}
+name: Automatic backup - folder picked once, written on leaving the app, still writes after a restart, rotation, restore
+tags:
+  - folder
+---
+# Run through scripts/auto-backup-e2e.sh (it makes the empty folder FOLDER first). SPEC flow 7, A7.
+- runFlow: subflows/reset.yaml
+- tapOn:
+    id: mood-level-4
+- tapOn:
+    id: entry-save
+- extendedWaitUntil:
+    visible:
+      id: entry-row-1
+    timeout: 10000
+- tapOn:
+    id: tab-more
+- tapOn:
+    id: more-backup
+- scrollUntilVisible:
+    element:
+      id: auto-backup-toggle
+- tapOn:
+    id: auto-backup-toggle
+- runFlow: subflows/pick-folder.yaml
+# Password step: generated, shown once, encryption on by default (D18)
+- extendedWaitUntil:
+    visible:
+      id: auto-backup-save
+    timeout: 15000
+- assertVisible: "Folder: .*${FOLDER}"
+- assertVisible: "Write this password down now.*"
+- copyTextFrom:
+    id: auto-backup-password
+- tapOn:
+    id: auto-backup-save
+- scrollUntilVisible:
+    element:
+      id: auto-backup-status
+- assertVisible: "No automatic backup yet.*"
+- assertVisible: "Encrypted with the saved password."
+# Leaving the app writes the first file (background trigger)
+- pressKey: Home
+- waitForAnimationToEnd:
+    timeout: 8000
+- launchApp:
+    stopApp: false
+- tapOn:
+    text: Open
+    optional: true
+- scrollUntilVisible:
+    element:
+      id: auto-backup-status
+- extendedWaitUntil:
+    visible: "Last automatic backup: .*mood-auto-.*\\.moodbackup\\. Automatic backups in this folder: 1\\."
+    timeout: 30000
+# Same day again: not written twice on its own
+- pressKey: Home
+- waitForAnimationToEnd:
+    timeout: 5000
+- launchApp:
+    stopApp: false
+- tapOn:
+    text: Open
+    optional: true
+- scrollUntilVisible:
+    element:
+      id: auto-backup-status
+- assertVisible: ".*Automatic backups in this folder: 1\\."
+# A restart keeps the folder access (bookmark / persisted SAF permission): "Back up now" writes file 2
+- launchApp:
+    stopApp: true
+- tapOn:
+    text: Open
+    optional: true
+- extendedWaitUntil:
+    visible:
+      id: home-screen
+    timeout: 60000
+- tapOn:
+    id: tab-more
+- tapOn:
+    id: more-backup
+- scrollUntilVisible:
+    element:
+      id: auto-backup-now
+- tapOn:
+    id: auto-backup-now
+- extendedWaitUntil:
+    visible: "Last automatic backup: .*-2\\.moodbackup\\. Automatic backups in this folder: 2\\."
+    timeout: 30000
+# Rotation deletes only the app's own older files (dev link: keep 1)
+- runFlow:
+    file: subflows/link.yaml
+    env:
+      LINK: debug/auto-keep?n=1
+- tapOn:
+    id: tab-more
+- tapOn:
+    id: more-backup
+- scrollUntilVisible:
+    element:
+      id: auto-backup-now
+- tapOn:
+    id: auto-backup-now
+- extendedWaitUntil:
+    visible: "Last automatic backup: .*-3\\.moodbackup\\. Automatic backups in this folder: 1\\."
+    timeout: 30000
+# The automatic file restores with the saved password (Android: picked from the folder in the system picker)
+- scrollUntilVisible:
+    element:
+      id: restore
+    direction: UP
+- runFlow:
+    when:
+      platform: iOS
+    file: subflows/link.yaml
+    env:
+      LINK: debug/pick?last=backup
+- runFlow:
+    when:
+      platform: iOS
+    commands:
+      - tapOn:
+          id: tab-more
+      - tapOn:
+          id: more-backup
+- tapOn:
+    id: restore
+- runFlow:
+    when:
+      platform: Android
+    commands:
+      - extendedWaitUntil:
+          visible: Show roots
+          timeout: 20000
+      - tapOn: Show roots
+      - tapOn: Downloads
+      - scrollUntilVisible:
+          element: ${FOLDER}
+      - tapOn: ${FOLDER}
+      - extendedWaitUntil:
+          visible: ".*-3\\.moodbackup"
+          timeout: 10000
+      # The file card's icon: a tap on its title text does not pick it in DocumentsUI's grid
+      - tapOn:
+          id: "com.google.android.documentsui:id/icon_mime_lg"
+- extendedWaitUntil:
+    visible: This backup is encrypted\. Enter its password\.
+    timeout: 20000
+- tapOn:
+    id: restore-password
+- pasteText
+- runFlow: subflows/hide-keyboard.yaml
+- tapOn:
+    id: restore-open
+- extendedWaitUntil:
+    visible:
+      id: restore-counts
+    timeout: 30000
+- assertVisible: "Backup from .*: 1 entries, 0 photos\\."
+- tapOn:
+    id: restore-confirm
+- tapOn: Replace
+- extendedWaitUntil:
+    visible:
+      id: backup-result
+      text: "Restored: 1 entries, 0 photos\\."
+    timeout: 30000

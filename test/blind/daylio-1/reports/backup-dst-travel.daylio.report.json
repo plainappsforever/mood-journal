@@ -1,0 +1,215 @@
+{
+  "file": "backup-dst-travel.daylio",
+  "status": "ok",
+  "kind": "daylio_backup",
+  "entries": [
+    {
+      "date": "2024-11-03",
+      "time": "01:30",
+      "mood": "meh",
+      "level": 3,
+      "activities": [
+        "walk"
+      ],
+      "title": "",
+      "note": "NY second 01:30 (EST)",
+      "photos": 0
+    },
+    {
+      "date": "2024-11-03",
+      "time": "01:30",
+      "mood": "good",
+      "level": 4,
+      "activities": [
+        "walk"
+      ],
+      "title": "",
+      "note": "NY first 01:30 (EDT)",
+      "photos": 0
+    },
+    {
+      "date": "2024-10-27",
+      "time": "02:30",
+      "mood": "bad",
+      "level": 2,
+      "activities": [
+        "walk"
+      ],
+      "title": "",
+      "note": "Berlin second 02:30 (CET)",
+      "photos": 0
+    },
+    {
+      "date": "2024-10-27",
+      "time": "02:30",
+      "mood": "meh",
+      "level": 3,
+      "activities": [
+        "walk"
+      ],
+      "title": "",
+      "note": "Berlin first 02:30 (CEST)",
+      "photos": 0
+    },
+    {
+      "date": "2024-06-30",
+      "time": "23:30",
+      "mood": "rad",
+      "level": 5,
+      "activities": [
+        "walk"
+      ],
+      "title": "",
+      "note": "St. John's -02:30, previous local day",
+      "photos": 0
+    },
+    {
+      "date": "2024-05-04",
+      "time": "00:15",
+      "mood": "awful",
+      "level": 1,
+      "activities": [
+        "walk"
+      ],
+      "title": "",
+      "note": "Kolkata +05:30 just after midnight",
+      "photos": 0
+    },
+    {
+      "date": "2024-05-02",
+      "time": "01:30",
+      "mood": "bad",
+      "level": 2,
+      "activities": [
+        "walk"
+      ],
+      "title": "",
+      "note": "Tokyo, next local day",
+      "photos": 0
+    },
+    {
+      "date": "2024-03-31",
+      "time": "03:30",
+      "mood": "good",
+      "level": 4,
+      "activities": [
+        "walk"
+      ],
+      "title": "",
+      "note": "Berlin 03:30 CEST after spring-forward",
+      "photos": 0
+    },
+    {
+      "date": "2024-03-31",
+      "time": "01:30",
+      "mood": "rad",
+      "level": 5,
+      "activities": [
+        "walk"
+      ],
+      "title": "",
+      "note": "Berlin 01:30 CET before spring-forward",
+      "photos": 0
+    },
+    {
+      "date": "2024-03-10",
+      "time": "03:30",
+      "mood": "rad",
+      "level": 5,
+      "activities": [
+        "walk"
+      ],
+      "title": "",
+      "note": "NY 03:30 EDT",
+      "photos": 0
+    },
+    {
+      "date": "2024-03-10",
+      "time": "01:30",
+      "mood": "awful",
+      "level": 1,
+      "activities": [
+        "walk"
+      ],
+      "title": "",
+      "note": "NY 01:30 EST",
+      "photos": 0
+    },
+    {
+      "date": "2024-02-29",
+      "time": "23:30",
+      "mood": "rad",
+      "level": 5,
+      "activities": [
+        "walk"
+      ],
+      "title": "",
+      "note": "leap day in London (UTC+0)",
+      "photos": 0
+    },
+    {
+      "date": "2024-03-01",
+      "time": "00:30",
+      "mood": "good",
+      "level": 4,
+      "activities": [
+        "walk"
+      ],
+      "title": "",
+      "note": "same instant in Berlin = 1 March",
+      "photos": 0
+    },
+    {
+      "date": "2024-02-02",
+      "time": "23:59",
+      "mood": "awful",
+      "level": 1,
+      "activities": [
+        "walk"
+      ],
+      "title": "",
+      "note": "Pago Pago -11, 23:59",
+      "photos": 0
+    },
+    {
+      "date": "2024-02-02",
+      "time": "00:00",
+      "mood": "bad",
+      "level": 2,
+      "activities": [
+        "walk"
+      ],
+      "title": "",
+      "note": "Kiritimati +14, exactly midnight",
+      "photos": 0
+    },
+    {
+      "date": "2024-01-16",
+      "time": "00:05",
+      "mood": "meh",
+      "level": 3,
+      "activities": [
+        "walk"
+      ],
+      "title": "",
+      "note": "Chatham +13:45",
+      "photos": 0
+    },
+    {
+      "date": "2024-01-10",
+      "time": "23:45",
+      "mood": "good",
+      "level": 4,
+      "activities": [
+        "walk"
+      ],
+      "title": "",
+      "note": "Lord Howe +11 (DST, 30-min shift zone)",
+      "photos": 0
+    }
+  ],
+  "skipped": [],
+  "warnings": [
+    "goalsNotImported"
+  ]
+}

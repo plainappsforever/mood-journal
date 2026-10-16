@@ -1,0 +1,6 @@
+appId: ${APP_ID}
+name: Release clear - the app's data is cleared without launching it (scripts/release-e2e.sh, before a language run)
+tags:
+  - release
+---
+- clearState

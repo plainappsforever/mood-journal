@@ -1,0 +1,10 @@
+{
+ "refused": "not_daylio",
+ "_meta": {
+  "confidence": "assumed",
+  "assumptions": [
+   "the inner base64 text without the ZIP; Daylio never writes this, daylio-backup accepts it"
+  ],
+  "also_acceptable": "ok_as_backup"
+ }
+}

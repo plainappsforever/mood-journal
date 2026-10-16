@@ -1,0 +1,9 @@
+{
+ "refused": "damaged_archive",
+ "_meta": {
+  "confidence": "sourced",
+  "assumptions": [
+   "stored member whose bytes no longer match the CRC-32; decoded JSON is still valid, so only a CRC check catches it"
+  ]
+ }
+}

@@ -1,0 +1,91 @@
+appId: ${APP_ID}
+name: Import from Daylio - CSV with mood mapping, re-import adds nothing, backup file
+tags:
+  - p8
+---
+- runFlow: subflows/reset.yaml
+- runFlow:
+    file: subflows/link.yaml
+    env:
+      LINK: debug/import-fixture?name=csv
+- tapOn:
+    id: tab-more
+- tapOn:
+    id: more-import
+- tapOn:
+    id: import-pick
+- extendedWaitUntil:
+    visible:
+      id: map-row-0
+    timeout: 15000
+# "sleepy" is not a Daylio default: the user must choose its level before anything can be imported
+- assertVisible:
+    id: import-missing
+- assertNotVisible:
+    id: import-confirm
+- scrollUntilVisible:
+    element:
+      id: map-2-level-2
+- tapOn:
+    id: map-2-level-2
+- scrollUntilVisible:
+    element:
+      id: import-confirm
+- assertVisible: "New entries: 4"
+- tapOn:
+    id: import-confirm
+- scrollUntilVisible:
+    element:
+      id: import-result
+- assertVisible: "Added: 4"
+# Same file again: nothing new
+- runFlow: subflows/go-back.yaml
+- runFlow:
+    file: subflows/link.yaml
+    env:
+      LINK: debug/import-fixture?name=csv
+- tapOn:
+    id: tab-more
+- tapOn:
+    id: more-import
+- tapOn:
+    id: import-pick
+- extendedWaitUntil:
+    visible:
+      id: map-row-0
+    timeout: 15000
+- scrollUntilVisible:
+    element:
+      id: import-preview
+- assertVisible: "New entries: 0"
+- assertVisible: "Already imported: 4.*"
+# A Daylio backup file (.daylio, tuning fixture)
+- runFlow: subflows/go-back.yaml
+- runFlow:
+    file: subflows/link.yaml
+    env:
+      LINK: debug/import-fixture?name=backup
+- tapOn:
+    id: tab-more
+- tapOn:
+    id: more-import
+- tapOn:
+    id: import-pick
+- extendedWaitUntil:
+    visible:
+      id: map-row-0
+    timeout: 15000
+- scrollUntilVisible:
+    element:
+      id: import-confirm
+- tapOn:
+    id: import-confirm
+- scrollUntilVisible:
+    element:
+      id: import-result
+- assertVisible: "Added: [1-9][0-9]*"
+- runFlow: subflows/go-back.yaml
+- tapOn:
+    id: tab-entries
+- assertVisible:
+    id: entry-row-1

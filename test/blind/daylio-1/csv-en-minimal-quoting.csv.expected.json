@@ -1,0 +1,145 @@
+{
+ "fixture": "csv-en-minimal-quoting.csv",
+ "kind": "daylio_csv",
+ "header": "current8",
+ "options": {
+  "today": "2026-10-16",
+  "mapping": {
+   "good": 4,
+   "great": 5,
+   "bad": 2,
+   "okay": 3
+  }
+ },
+ "entries": [
+  {
+   "date": "2023-01-02",
+   "time": "19:45",
+   "mood": "great",
+   "level": 5,
+   "activities": [
+    "Friends"
+   ],
+   "title": "New year",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2023-01-06",
+   "time": "08:05",
+   "mood": "okay",
+   "level": 3,
+   "activities": [],
+   "title": "",
+   "note": "Cold, grey, windy",
+   "photos": 0
+  },
+  {
+   "date": "2023-01-06",
+   "time": "22:00",
+   "mood": "bad",
+   "level": 2,
+   "activities": [
+    "Shoulder pain",
+    "Stress"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2023-01-07",
+   "time": "22:00",
+   "mood": "great",
+   "level": 5,
+   "activities": [
+    "Friends",
+    "Sleep 8 hours",
+    "Walk 10k steps",
+    "Workout"
+   ],
+   "title": "",
+   "note": "Met John and Mary at the gym.",
+   "photos": 0
+  },
+  {
+   "date": "2023-01-08",
+   "time": "13:12",
+   "mood": "good",
+   "level": 4,
+   "activities": [
+    "Meditated",
+    "Read book",
+    "Sleep 8 hours"
+   ],
+   "title": "",
+   "note": "Got back to reading novels this afternoon.",
+   "photos": 0
+  }
+ ],
+ "skipped": [],
+ "warnings": [],
+ "moods": [
+  {
+   "name": "good",
+   "level": 4
+  },
+  {
+   "name": "great",
+   "level": 5
+  },
+  {
+   "name": "bad",
+   "level": 2
+  },
+  {
+   "name": "okay",
+   "level": 3
+  }
+ ],
+ "activities": [
+  {
+   "name": "Friends",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "Meditated",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "Read book",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "Shoulder pain",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "Sleep 8 hours",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "Stress",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "Walk 10k steps",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "Workout",
+   "group": "Imported from Daylio"
+  }
+ ],
+ "counts": {
+  "entries": 5,
+  "skipped": 0,
+  "moods": 4,
+  "activities": 8,
+  "photos": 0
+ },
+ "_meta": {
+  "confidence": "sourced",
+  "assumptions": []
+ }
+}

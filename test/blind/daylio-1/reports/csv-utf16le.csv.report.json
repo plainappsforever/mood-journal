@@ -1,0 +1,8 @@
+{
+  "file": "csv-utf16le.csv",
+  "status": "error",
+  "error": "notZip",
+  "entries": [],
+  "skipped": [],
+  "warnings": []
+}

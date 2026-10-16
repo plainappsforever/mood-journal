@@ -1,0 +1,742 @@
+{
+ "fixture": "csv-custom-moods.csv",
+ "kind": "daylio_csv",
+ "header": "current8",
+ "options": {
+  "today": "2026-10-16",
+  "mapping": {
+   "ecstatic 🤩": 5,
+   "rad": 5,
+   "pretty good": 4,
+   "good": 4,
+   "meh": 3,
+   "meh+": 4,
+   "tired, but ok": 3,
+   "😴 sleepy": 3,
+   "bad": 2,
+   "anxious": 2,
+   "awful": 1,
+   "ärgerlich": 2
+  }
+ },
+ "entries": [
+  {
+   "date": "2025-01-01",
+   "time": "18:40",
+   "mood": "good",
+   "level": 4,
+   "activities": [
+    "eating out"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2025-01-02",
+   "time": "17:56",
+   "mood": "rad",
+   "level": 5,
+   "activities": [
+    "movies / tv"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2025-01-02",
+   "time": "19:31",
+   "mood": "pretty good",
+   "level": 4,
+   "activities": [
+    "family",
+    "gaming",
+    "shopping",
+    "work"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2025-01-03",
+   "time": "07:14",
+   "mood": "meh",
+   "level": 3,
+   "activities": [
+    "date",
+    "movies / tv"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2025-01-04",
+   "time": "09:22",
+   "mood": "😴 sleepy",
+   "level": 3,
+   "activities": [
+    "cleaning",
+    "relax"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2025-01-04",
+   "time": "23:12",
+   "mood": "tired, but ok",
+   "level": 3,
+   "activities": [
+    "cleaning",
+    "stress / frustration",
+    "tired",
+    "work"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2025-01-05",
+   "time": "12:54",
+   "mood": "anxious",
+   "level": 2,
+   "activities": [
+    "bad sleep",
+    "eating out",
+    "nature walk",
+    "sport"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2025-01-06",
+   "time": "18:33",
+   "mood": "pretty good",
+   "level": 4,
+   "activities": [
+    "bad sleep",
+    "gaming",
+    "nature walk",
+    "reading",
+    "shopping"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2025-01-07",
+   "time": "14:50",
+   "mood": "tired, but ok",
+   "level": 3,
+   "activities": [
+    "sport",
+    "stomachache"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2025-01-08",
+   "time": "16:23",
+   "mood": "good",
+   "level": 4,
+   "activities": [
+    "tired"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2025-01-09",
+   "time": "08:15",
+   "mood": "ecstatic 🤩",
+   "level": 5,
+   "activities": [
+    "bad sleep",
+    "cooking",
+    "eating out"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2025-01-09",
+   "time": "09:14",
+   "mood": "Ärgerlich",
+   "level": 2,
+   "activities": [
+    "early sleep",
+    "friends",
+    "movies / tv",
+    "relax",
+    "work"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2025-01-10",
+   "time": "09:43",
+   "mood": "meh+",
+   "level": 4,
+   "activities": [
+    "cleaning",
+    "eating out",
+    "gaming",
+    "sport",
+    "work"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2025-01-11",
+   "time": "22:23",
+   "mood": "anxious",
+   "level": 2,
+   "activities": [
+    "early sleep",
+    "friends",
+    "gaming",
+    "relax",
+    "stomachache"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2025-01-12",
+   "time": "16:57",
+   "mood": "pretty good",
+   "level": 4,
+   "activities": [
+    "gaming",
+    "good meal",
+    "reading",
+    "shopping",
+    "tired"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2025-01-13",
+   "time": "22:22",
+   "mood": "rad",
+   "level": 5,
+   "activities": [
+    "reading"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2025-01-14",
+   "time": "20:46",
+   "mood": "rad",
+   "level": 5,
+   "activities": [
+    "bad sleep",
+    "eating out",
+    "friends",
+    "good meal"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2025-01-15",
+   "time": "12:18",
+   "mood": "tired, but ok",
+   "level": 3,
+   "activities": [],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2025-01-16",
+   "time": "17:11",
+   "mood": "ecstatic 🤩",
+   "level": 5,
+   "activities": [
+    "cleaning",
+    "date",
+    "early sleep",
+    "friends",
+    "music"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2025-01-17",
+   "time": "16:33",
+   "mood": "good",
+   "level": 4,
+   "activities": [
+    "early sleep",
+    "music",
+    "relax",
+    "stress / frustration"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2025-01-18",
+   "time": "15:33",
+   "mood": "good",
+   "level": 4,
+   "activities": [
+    "movies / tv",
+    "reading",
+    "sport",
+    "stress / frustration",
+    "work"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2025-01-19",
+   "time": "13:04",
+   "mood": "meh",
+   "level": 3,
+   "activities": [
+    "tired"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2025-01-20",
+   "time": "14:15",
+   "mood": "meh+",
+   "level": 4,
+   "activities": [],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2025-01-21",
+   "time": "19:56",
+   "mood": "anxious",
+   "level": 2,
+   "activities": [],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2025-01-22",
+   "time": "12:13",
+   "mood": "😴 sleepy",
+   "level": 3,
+   "activities": [
+    "bad sleep"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2025-01-23",
+   "time": "08:02",
+   "mood": "pretty good",
+   "level": 4,
+   "activities": [
+    "music",
+    "work"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2025-01-26",
+   "time": "12:15",
+   "mood": "meh",
+   "level": 3,
+   "activities": [
+    "cooking",
+    "stomachache"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2025-01-29",
+   "time": "21:57",
+   "mood": "meh",
+   "level": 3,
+   "activities": [
+    "cleaning",
+    "friends",
+    "nature walk",
+    "work"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2025-01-31",
+   "time": "22:14",
+   "mood": "pretty good",
+   "level": 4,
+   "activities": [
+    "family",
+    "movies / tv",
+    "relax",
+    "stress / frustration"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2025-02-02",
+   "time": "11:30",
+   "mood": "Ärgerlich",
+   "level": 2,
+   "activities": [
+    "friends"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2025-02-03",
+   "time": "11:04",
+   "mood": "anxious",
+   "level": 2,
+   "activities": [
+    "cooking",
+    "gaming",
+    "tired"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2025-02-03",
+   "time": "15:52",
+   "mood": "bad",
+   "level": 2,
+   "activities": [],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2025-02-04",
+   "time": "09:20",
+   "mood": "pretty good",
+   "level": 4,
+   "activities": [
+    "cleaning",
+    "cooking",
+    "nature walk",
+    "shopping"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2025-02-05",
+   "time": "08:28",
+   "mood": "pretty good",
+   "level": 4,
+   "activities": [
+    "family",
+    "friends"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2025-02-06",
+   "time": "19:13",
+   "mood": "awful",
+   "level": 1,
+   "activities": [
+    "date",
+    "good meal"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2025-02-07",
+   "time": "21:13",
+   "mood": "tired, but ok",
+   "level": 3,
+   "activities": [
+    "cooking",
+    "early sleep",
+    "friends",
+    "party",
+    "shopping"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2025-02-08",
+   "time": "12:08",
+   "mood": "bad",
+   "level": 2,
+   "activities": [],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2025-02-08",
+   "time": "14:40",
+   "mood": "bad",
+   "level": 2,
+   "activities": [],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2025-02-09",
+   "time": "22:59",
+   "mood": "tired, but ok",
+   "level": 3,
+   "activities": [
+    "cleaning"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2025-02-11",
+   "time": "11:27",
+   "mood": "anxious",
+   "level": 2,
+   "activities": [
+    "bad sleep"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2025-02-11",
+   "time": "13:59",
+   "mood": "good",
+   "level": 4,
+   "activities": [
+    "bad sleep",
+    "cooking",
+    "early sleep",
+    "gaming"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2025-02-13",
+   "time": "15:32",
+   "mood": "rad",
+   "level": 5,
+   "activities": [
+    "movies / tv"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  }
+ ],
+ "skipped": [],
+ "warnings": [],
+ "moods": [
+  {
+   "name": "good",
+   "level": 4
+  },
+  {
+   "name": "rad",
+   "level": 5
+  },
+  {
+   "name": "pretty good",
+   "level": 4
+  },
+  {
+   "name": "meh",
+   "level": 3
+  },
+  {
+   "name": "😴 sleepy",
+   "level": 3
+  },
+  {
+   "name": "tired, but ok",
+   "level": 3
+  },
+  {
+   "name": "anxious",
+   "level": 2
+  },
+  {
+   "name": "ecstatic 🤩",
+   "level": 5
+  },
+  {
+   "name": "Ärgerlich",
+   "level": 2
+  },
+  {
+   "name": "meh+",
+   "level": 4
+  },
+  {
+   "name": "bad",
+   "level": 2
+  },
+  {
+   "name": "awful",
+   "level": 1
+  }
+ ],
+ "activities": [
+  {
+   "name": "bad sleep",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "cleaning",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "cooking",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "date",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "early sleep",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "eating out",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "family",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "friends",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "gaming",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "good meal",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "movies / tv",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "music",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "nature walk",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "party",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "reading",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "relax",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "shopping",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "sport",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "stomachache",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "stress / frustration",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "tired",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "work",
+   "group": "Imported from Daylio"
+  }
+ ],
+ "counts": {
+  "entries": 42,
+  "skipped": 0,
+  "moods": 12,
+  "activities": 22,
+  "photos": 0
+ },
+ "_meta": {
+  "confidence": "mixed",
+  "assumptions": [
+   "a mood name containing a comma is written quoted",
+   "mapping is keyed by lower-cased trimmed name (report contract)"
+  ]
+ }
+}

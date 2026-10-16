@@ -1,0 +1,8 @@
+{
+  "file": "image-renamed.csv",
+  "status": "error",
+  "error": "notZip",
+  "entries": [],
+  "skipped": [],
+  "warnings": []
+}

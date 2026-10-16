@@ -1,0 +1,58 @@
+appId: ${APP_ID}
+name: Edit and delete an entry
+tags:
+  - p5
+---
+- runFlow: subflows/reset.yaml
+- tapOn:
+    id: mood-level-3
+- tapOn:
+    id: entry-save
+- extendedWaitUntil:
+    visible:
+      id: entry-row-1
+    timeout: 10000
+- tapOn:
+    id: entry-row-1
+- extendedWaitUntil:
+    visible:
+      id: mood-3
+    timeout: 10000
+- assertVisible:
+    id: mood-3
+    selected: true
+- tapOn:
+    id: mood-1
+- tapOn:
+    id: activity-10
+- scrollUntilVisible:
+    element:
+      id: note-title
+- tapOn:
+    id: note-title
+- inputText: Edited title
+- runFlow: subflows/hide-keyboard.yaml
+- tapOn:
+    id: entry-save
+- extendedWaitUntil:
+    visible:
+      id: entry-row-1
+    timeout: 10000
+- assertVisible: .*Edited title.*
+- assertVisible: .*sport.*
+# Delete asks first
+- tapOn:
+    id: entry-row-1
+- scrollUntilVisible:
+    element:
+      id: entry-delete
+- tapOn:
+    id: entry-delete
+- assertVisible: Delete this entry\?
+- tapOn: Delete
+- extendedWaitUntil:
+    visible:
+      id: home-empty
+    timeout: 10000
+- assertNotVisible:
+    id: entry-row-1

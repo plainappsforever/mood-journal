@@ -1,0 +1,36 @@
+appId: ${APP_ID}
+name: Release languages - fresh install in the phone language (scripts/release-e2e.sh lang)
+tags:
+  - release
+---
+# Env: QUESTION, MOOD4, BACKUP (scripts/l10n-words.mjs). The script cleared the app and set its language first, so the
+# default moods are seeded in that language at this launch. Android Arabic restarts itself once to mirror (D69).
+- launchApp:
+    stopApp: true
+- extendedWaitUntil:
+    visible:
+      id: home-empty
+    timeout: 90000
+- assertVisible: "${QUESTION}.*"
+- assertVisible:
+    id: mood-level-4
+    text: ".*${MOOD4}.*"
+- tapOn:
+    id: mood-level-4
+- extendedWaitUntil:
+    visible:
+      id: entry-editor
+    timeout: 15000
+- tapOn:
+    id: entry-save
+- extendedWaitUntil:
+    visible:
+      id: entry-row-1
+    timeout: 15000
+- tapOn:
+    id: tab-more
+- assertVisible: ".*${BACKUP}.*"
+- tapOn:
+    id: tab-entries
+- assertVisible:
+    id: entry-row-1

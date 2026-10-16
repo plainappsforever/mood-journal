@@ -1,0 +1,8 @@
+{
+  "file": "empty.csv",
+  "status": "error",
+  "error": "noEntries",
+  "entries": [],
+  "skipped": [],
+  "warnings": []
+}

@@ -1,0 +1,298 @@
+{
+  "file": "csv-en-bom.csv",
+  "status": "ok",
+  "kind": "daylio_csv",
+  "entries": [
+    {
+      "date": "2021-01-09",
+      "time": "20:26",
+      "mood": "meh",
+      "level": 3,
+      "activities": [
+        "party",
+        "reading",
+        "work"
+      ],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2021-01-08",
+      "time": "20:40",
+      "mood": "awful",
+      "level": 1,
+      "activities": [
+        "gaming",
+        "good meal",
+        "movies / tv"
+      ],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2021-01-07",
+      "time": "11:16",
+      "mood": "rad",
+      "level": 5,
+      "activities": [
+        "eating out",
+        "movies / tv",
+        "work"
+      ],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2021-01-06",
+      "time": "13:55",
+      "mood": "good",
+      "level": 4,
+      "activities": [],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2021-01-05",
+      "time": "15:15",
+      "mood": "rad",
+      "level": 5,
+      "activities": [
+        "friends"
+      ],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2021-01-04",
+      "time": "12:19",
+      "mood": "good",
+      "level": 4,
+      "activities": [
+        "date",
+        "eating out",
+        "good meal",
+        "reading",
+        "shopping"
+      ],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2021-01-03",
+      "time": "22:40",
+      "mood": "meh",
+      "level": 3,
+      "activities": [
+        "good meal"
+      ],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2021-01-02",
+      "time": "21:40",
+      "mood": "good",
+      "level": 4,
+      "activities": [],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2021-01-02",
+      "time": "12:02",
+      "mood": "bad",
+      "level": 2,
+      "activities": [],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2020-12-31",
+      "time": "23:18",
+      "mood": "bad",
+      "level": 2,
+      "activities": [
+        "cleaning",
+        "music",
+        "sport"
+      ],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2020-12-31",
+      "time": "17:38",
+      "mood": "good",
+      "level": 4,
+      "activities": [
+        "party"
+      ],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2020-12-30",
+      "time": "20:26",
+      "mood": "rad",
+      "level": 5,
+      "activities": [
+        "cleaning",
+        "cooking",
+        "tired"
+      ],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2020-12-29",
+      "time": "11:22",
+      "mood": "meh",
+      "level": 3,
+      "activities": [],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2020-12-27",
+      "time": "17:10",
+      "mood": "meh",
+      "level": 3,
+      "activities": [
+        "cleaning",
+        "date",
+        "early sleep",
+        "good meal",
+        "shopping"
+      ],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2020-12-26",
+      "time": "09:29",
+      "mood": "meh",
+      "level": 3,
+      "activities": [
+        "date",
+        "good meal"
+      ],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2020-12-25",
+      "time": "21:57",
+      "mood": "rad",
+      "level": 5,
+      "activities": [
+        "cooking",
+        "eating out",
+        "gaming",
+        "reading",
+        "shopping"
+      ],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2020-12-24",
+      "time": "23:45",
+      "mood": "meh",
+      "level": 3,
+      "activities": [
+        "reading"
+      ],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2020-12-23",
+      "time": "09:15",
+      "mood": "rad",
+      "level": 5,
+      "activities": [],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2020-12-22",
+      "time": "13:57",
+      "mood": "good",
+      "level": 4,
+      "activities": [],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2020-12-22",
+      "time": "11:46",
+      "mood": "good",
+      "level": 4,
+      "activities": [
+        "cooking"
+      ],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2020-12-21",
+      "time": "16:16",
+      "mood": "awful",
+      "level": 1,
+      "activities": [],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2020-12-20",
+      "time": "20:34",
+      "mood": "meh",
+      "level": 3,
+      "activities": [
+        "party"
+      ],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2020-12-20",
+      "time": "18:47",
+      "mood": "rad",
+      "level": 5,
+      "activities": [
+        "bad sleep",
+        "eating out",
+        "family",
+        "music",
+        "relax"
+      ],
+      "title": "",
+      "note": "",
+      "photos": 0
+    }
+  ],
+  "skipped": [],
+  "warnings": []
+}

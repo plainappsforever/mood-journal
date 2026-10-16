@@ -1,0 +1,42 @@
+appId: ${APP_ID}
+name: Export - CSV and a 30-day PDF through the share sheet
+tags:
+  - p8
+---
+- runFlow: subflows/reset.yaml
+- runFlow:
+    file: subflows/link.yaml
+    env:
+      LINK: debug/fixture?name=stats
+- tapOn:
+    id: tab-more
+- tapOn:
+    id: more-backup
+- scrollUntilVisible:
+    element:
+      id: export-csv
+- tapOn:
+    id: export-csv
+- runFlow: subflows/dismiss-share.yaml
+- scrollUntilVisible:
+    element:
+      id: backup-result
+    direction: UP
+- assertVisible:
+    id: backup-result
+    text: CSV with 30 entries ready\.
+- scrollUntilVisible:
+    element:
+      id: export-pdf
+- tapOn:
+    id: pdf-period-30d
+- tapOn:
+    id: export-pdf
+- runFlow: subflows/dismiss-share.yaml
+- scrollUntilVisible:
+    element:
+      id: backup-result
+    direction: UP
+- assertVisible:
+    id: backup-result
+    text: "PDF ready: [1-9][0-9]* pages, 30 entries\\."

@@ -1,0 +1,16 @@
+appId: ${APP_ID}
+---
+# Back one screen: iOS the header back button area, Android the system Back.
+- runFlow:
+    when:
+      platform: iOS
+    commands:
+      - swipe:
+          start: 1%,50%
+          end: 80%,50%
+          duration: 400
+- runFlow:
+    when:
+      platform: Android
+    commands:
+      - back

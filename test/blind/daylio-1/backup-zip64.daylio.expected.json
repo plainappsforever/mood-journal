@@ -1,0 +1,9 @@
+{
+ "refused": "zip64",
+ "_meta": {
+  "confidence": "sourced",
+  "assumptions": [
+   "ZIP64 records although small; SPEC lists ZIP64 as refused (theluckystrike also rejects ZIP64)"
+  ]
+ }
+}

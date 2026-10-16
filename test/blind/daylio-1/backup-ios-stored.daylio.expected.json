@@ -1,0 +1,524 @@
+{
+ "fixture": "backup-ios-stored.daylio",
+ "kind": "daylio_backup",
+ "version": 15,
+ "options": {
+  "today": "2026-10-16",
+  "mapping": {}
+ },
+ "entries": [
+  {
+   "date": "2026-01-01",
+   "time": "07:32",
+   "mood": "meh+",
+   "level": 4,
+   "activities": [
+    "date"
+   ],
+   "title": "",
+   "note": "Walked to work, cold.",
+   "photos": 0,
+   "daylio_id": 1,
+   "utc_ms": 1767281563552,
+   "tz_offset_min": -480
+  },
+  {
+   "date": "2026-01-01",
+   "time": "11:11",
+   "mood": "rad",
+   "level": 5,
+   "activities": [
+    "date",
+    "family",
+    "meds",
+    "reading"
+   ],
+   "title": "",
+   "note": "Good talk with Sam\nfelt better",
+   "photos": 0,
+   "daylio_id": 2,
+   "utc_ms": 1767294713665,
+   "tz_offset_min": -480
+  },
+  {
+   "date": "2026-01-02",
+   "time": "20:31",
+   "mood": "rad",
+   "level": 5,
+   "activities": [
+    "date",
+    "movies / tv"
+   ],
+   "title": "Short title",
+   "note": "Rain all day; stayed in.",
+   "photos": 0,
+   "daylio_id": 3,
+   "utc_ms": 1767414680526,
+   "tz_offset_min": -480
+  },
+  {
+   "date": "2026-01-03",
+   "time": "08:39",
+   "mood": "meh",
+   "level": 3,
+   "activities": [
+    "date",
+    "reading"
+   ],
+   "title": "Short title",
+   "note": "",
+   "photos": 0,
+   "daylio_id": 4,
+   "utc_ms": 1767458395223,
+   "tz_offset_min": -480
+  },
+  {
+   "date": "2026-01-03",
+   "time": "13:57",
+   "mood": "meh",
+   "level": 3,
+   "activities": [
+    "date",
+    "reading",
+    "sport"
+   ],
+   "title": "Short title",
+   "note": "Walked to work, cold.",
+   "photos": 0,
+   "daylio_id": 5,
+   "utc_ms": 1767477465579,
+   "tz_offset_min": -480
+  },
+  {
+   "date": "2026-01-05",
+   "time": "16:59",
+   "mood": "bad",
+   "level": 2,
+   "activities": [
+    "friends",
+    "gaming",
+    "reading",
+    "sport"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0,
+   "daylio_id": 6,
+   "utc_ms": 1767661145806,
+   "tz_offset_min": -480
+  },
+  {
+   "date": "2026-01-06",
+   "time": "21:54",
+   "mood": "bad",
+   "level": 2,
+   "activities": [
+    "bad sleep",
+    "sport"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0,
+   "daylio_id": 7,
+   "utc_ms": 1767765280748,
+   "tz_offset_min": -480
+  },
+  {
+   "date": "2026-01-10",
+   "time": "14:37",
+   "mood": "meh+",
+   "level": 4,
+   "activities": [
+    "family",
+    "reading",
+    "sport"
+   ],
+   "title": "Short title",
+   "note": "",
+   "photos": 0,
+   "daylio_id": 8,
+   "utc_ms": 1768084675130,
+   "tz_offset_min": -480
+  },
+  {
+   "date": "2026-01-10",
+   "time": "19:20",
+   "mood": "good",
+   "level": 4,
+   "activities": [
+    "date",
+    "meds",
+    "reading"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0,
+   "daylio_id": 9,
+   "utc_ms": 1768101659376,
+   "tz_offset_min": -480
+  },
+  {
+   "date": "2026-01-11",
+   "time": "12:45",
+   "mood": "good",
+   "level": 4,
+   "activities": [],
+   "title": "",
+   "note": "",
+   "photos": 0,
+   "daylio_id": 10,
+   "utc_ms": 1768164350646,
+   "tz_offset_min": -480
+  },
+  {
+   "date": "2026-01-12",
+   "time": "14:09",
+   "mood": "meh",
+   "level": 3,
+   "activities": [
+    "bad sleep",
+    "reading"
+   ],
+   "title": "Short title",
+   "note": "Good talk with Sam\nfelt better",
+   "photos": 0,
+   "daylio_id": 11,
+   "utc_ms": 1768255771208,
+   "tz_offset_min": -480
+  },
+  {
+   "date": "2026-01-13",
+   "time": "07:42",
+   "mood": "rad",
+   "level": 5,
+   "activities": [
+    "movies / tv",
+    "music"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0,
+   "daylio_id": 12,
+   "utc_ms": 1768318940476,
+   "tz_offset_min": -480
+  },
+  {
+   "date": "2026-01-13",
+   "time": "09:41",
+   "mood": "meh+",
+   "level": 4,
+   "activities": [],
+   "title": "Short title",
+   "note": "Walked to work, cold.",
+   "photos": 0,
+   "daylio_id": 13,
+   "utc_ms": 1768326094411,
+   "tz_offset_min": -480
+  },
+  {
+   "date": "2026-01-13",
+   "time": "21:05",
+   "mood": "awful",
+   "level": 1,
+   "activities": [
+    "bad sleep",
+    "gaming",
+    "walk"
+   ],
+   "title": "",
+   "note": "Rain all day; stayed in.",
+   "photos": 0,
+   "daylio_id": 14,
+   "utc_ms": 1768367116786,
+   "tz_offset_min": -480
+  },
+  {
+   "date": "2026-01-14",
+   "time": "13:14",
+   "mood": "rad",
+   "level": 5,
+   "activities": [],
+   "title": "Short title",
+   "note": "Walked to work, cold.",
+   "photos": 0,
+   "daylio_id": 15,
+   "utc_ms": 1768425287490,
+   "tz_offset_min": -480
+  },
+  {
+   "date": "2026-01-15",
+   "time": "07:19",
+   "mood": "good",
+   "level": 4,
+   "activities": [
+    "family",
+    "movies / tv",
+    "sport",
+    "walk"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0,
+   "daylio_id": 16,
+   "utc_ms": 1768490350814,
+   "tz_offset_min": -480
+  },
+  {
+   "date": "2026-01-15",
+   "time": "11:27",
+   "mood": "bad",
+   "level": 2,
+   "activities": [],
+   "title": "",
+   "note": "Rain all day; stayed in.",
+   "photos": 0,
+   "daylio_id": 17,
+   "utc_ms": 1768505247028,
+   "tz_offset_min": -480
+  },
+  {
+   "date": "2026-01-15",
+   "time": "12:12",
+   "mood": "bad",
+   "level": 2,
+   "activities": [],
+   "title": "",
+   "note": "Walked to work, cold.",
+   "photos": 0,
+   "daylio_id": 18,
+   "utc_ms": 1768507921907,
+   "tz_offset_min": -480
+  },
+  {
+   "date": "2026-01-16",
+   "time": "19:27",
+   "mood": "bad",
+   "level": 2,
+   "activities": [
+    "bad sleep",
+    "good sleep",
+    "movies / tv",
+    "music"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0,
+   "daylio_id": 19,
+   "utc_ms": 1768620435145,
+   "tz_offset_min": -480
+  },
+  {
+   "date": "2026-01-18",
+   "time": "18:55",
+   "mood": "bad",
+   "level": 2,
+   "activities": [],
+   "title": "",
+   "note": "",
+   "photos": 0,
+   "daylio_id": 20,
+   "utc_ms": 1768791325757,
+   "tz_offset_min": -480
+  },
+  {
+   "date": "2026-01-19",
+   "time": "17:45",
+   "mood": "meh+",
+   "level": 4,
+   "activities": [
+    "friends",
+    "meds",
+    "movies / tv",
+    "reading"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0,
+   "daylio_id": 21,
+   "utc_ms": 1768873558744,
+   "tz_offset_min": -480
+  },
+  {
+   "date": "2026-01-20",
+   "time": "07:13",
+   "mood": "rad",
+   "level": 5,
+   "activities": [
+    "date"
+   ],
+   "title": "Short title",
+   "note": "Rain all day; stayed in.",
+   "photos": 0,
+   "daylio_id": 22,
+   "utc_ms": 1768922039629,
+   "tz_offset_min": -480
+  },
+  {
+   "date": "2026-01-20",
+   "time": "10:35",
+   "mood": "meh+",
+   "level": 4,
+   "activities": [],
+   "title": "",
+   "note": "Rain all day; stayed in.",
+   "photos": 0,
+   "daylio_id": 23,
+   "utc_ms": 1768934107779,
+   "tz_offset_min": -480
+  },
+  {
+   "date": "2026-01-21",
+   "time": "07:45",
+   "mood": "rad",
+   "level": 5,
+   "activities": [],
+   "title": "",
+   "note": "iPhone photo",
+   "photos": 1,
+   "daylio_id": 24,
+   "utc_ms": 1769010300000,
+   "tz_offset_min": -480
+  }
+ ],
+ "skipped": [],
+ "warnings": [
+  "goals_not_imported"
+ ],
+ "moods": [
+  {
+   "name": "rad",
+   "level": 5,
+   "daylio_id": 1,
+   "state": 0,
+   "used": true
+  },
+  {
+   "name": "good",
+   "level": 4,
+   "daylio_id": 2,
+   "state": 0,
+   "used": true
+  },
+  {
+   "name": "meh",
+   "level": 3,
+   "daylio_id": 3,
+   "state": 0,
+   "used": true
+  },
+  {
+   "name": "bad",
+   "level": 2,
+   "daylio_id": 4,
+   "state": 0,
+   "used": true
+  },
+  {
+   "name": "awful",
+   "level": 1,
+   "daylio_id": 5,
+   "state": 0,
+   "used": true
+  },
+  {
+   "name": "meh+",
+   "level": 4,
+   "daylio_id": 6,
+   "state": 0,
+   "used": true
+  }
+ ],
+ "activities": [
+  {
+   "name": "bad sleep",
+   "group": "Sleep",
+   "daylio_id": 108,
+   "state": 0
+  },
+  {
+   "name": "date",
+   "group": "Social",
+   "daylio_id": 102,
+   "state": 0
+  },
+  {
+   "name": "family",
+   "group": "Social",
+   "daylio_id": 100,
+   "state": 0
+  },
+  {
+   "name": "friends",
+   "group": "Social",
+   "daylio_id": 101,
+   "state": 0
+  },
+  {
+   "name": "gaming",
+   "group": "Hobbies",
+   "daylio_id": 104,
+   "state": 0
+  },
+  {
+   "name": "good sleep",
+   "group": "Sleep",
+   "daylio_id": 107,
+   "state": 0
+  },
+  {
+   "name": "meds",
+   "group": "Health",
+   "daylio_id": 111,
+   "state": 0
+  },
+  {
+   "name": "movies / tv",
+   "group": "Hobbies",
+   "daylio_id": 105,
+   "state": 0
+  },
+  {
+   "name": "music",
+   "group": "Hobbies",
+   "daylio_id": 106,
+   "state": 0
+  },
+  {
+   "name": "reading",
+   "group": "Hobbies",
+   "daylio_id": 103,
+   "state": 0
+  },
+  {
+   "name": "sport",
+   "group": "Health",
+   "daylio_id": 109,
+   "state": 0
+  },
+  {
+   "name": "walk",
+   "group": "Health",
+   "daylio_id": 110,
+   "state": 0
+  }
+ ],
+ "groups": [
+  "Social",
+  "Hobbies",
+  "Sleep",
+  "Health"
+ ],
+ "counts": {
+  "entries": 24,
+  "skipped": 0,
+  "moods": 6,
+  "activities": 12,
+  "photos": 1
+ },
+ "_meta": {
+  "confidence": "assumed",
+  "assumptions": [
+   "iOS backups: metadata.platform \"ios\", no android_metadata, isFavorite on entries; ZIP members stored (method 0)"
+  ]
+ }
+}

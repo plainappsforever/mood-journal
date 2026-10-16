@@ -1,0 +1,58 @@
+appId: ${APP_ID}
+name: Search - diacritics-insensitive with highlight and filters
+tags:
+  - p6
+---
+- runFlow: subflows/reset.yaml
+- tapOn:
+    id: mood-level-4
+- tapOn:
+    id: activity-10
+- scrollUntilVisible:
+    element:
+      id: note-input
+- tapOn:
+    id: note-input
+- inputText: Coffee at the Cafe with Zoe
+- runFlow: subflows/hide-keyboard.yaml
+- tapOn:
+    id: entry-save
+- extendedWaitUntil:
+    visible:
+      id: entry-row-1
+    timeout: 10000
+- tapOn:
+    id: mood-level-2
+- tapOn:
+    id: entry-save
+- extendedWaitUntil:
+    visible:
+      id: entry-row-2
+    timeout: 10000
+- tapOn:
+    id: open-search
+- extendedWaitUntil:
+    visible:
+      id: search-input
+    timeout: 10000
+- inputText: CAFÉ
+- extendedWaitUntil:
+    visible:
+      id: search-result-1
+    timeout: 10000
+- assertNotVisible:
+    id: search-result-2
+- assertVisible: .*Cafe with Zoe.*
+- assertVisible: "Entries found: 1"
+# Filters: level 2 has no café entry
+- tapOn:
+    id: filter-level-2
+- assertVisible: "Entries found: 0"
+- tapOn:
+    id: filter-level-2
+- tapOn:
+    id: filter-activity
+- tapOn:
+    id: filter-activity-10
+- assertVisible:
+    id: search-result-1

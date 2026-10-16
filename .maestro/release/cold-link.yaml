@@ -1,0 +1,22 @@
+appId: ${APP_ID}
+name: Release cold start from a widget link - the editor opens with that mood, Save lands on Home
+tags:
+  - release
+---
+# Run by scripts/release-e2e.sh: the app process is stopped first and the widget's own URL (<scheme>://new?mood=3) is sent
+# cold (Android: am start with the widget's exact intent; iOS: simctl openurl). Maestro only checks what appears.
+- extendedWaitUntil:
+    visible:
+      id: entry-editor
+    timeout: 60000
+- assertVisible:
+    id: mood-3
+    selected: true
+- tapOn:
+    id: entry-save
+- extendedWaitUntil:
+    visible:
+      id: home-screen
+    timeout: 15000
+- assertVisible:
+    id: entry-row-2

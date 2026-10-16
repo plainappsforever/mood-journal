@@ -1,0 +1,56 @@
+{
+  "file": "csv-future-and-ancient.csv",
+  "status": "ok",
+  "kind": "daylio_csv",
+  "entries": [
+    {
+      "date": "2026-10-17",
+      "time": "08:00",
+      "mood": "good",
+      "level": 4,
+      "activities": [],
+      "title": "",
+      "note": "tomorrow is allowed (today + 1)",
+      "photos": 0
+    },
+    {
+      "date": "2026-10-16",
+      "time": "07:00",
+      "mood": "good",
+      "level": 4,
+      "activities": [],
+      "title": "",
+      "note": "today",
+      "photos": 0
+    },
+    {
+      "date": "1900-01-01",
+      "time": "12:00",
+      "mood": "meh",
+      "level": 3,
+      "activities": [],
+      "title": "",
+      "note": "oldest allowed day",
+      "photos": 0
+    }
+  ],
+  "skipped": [
+    {
+      "where": "2",
+      "reason": "date in the future"
+    },
+    {
+      "where": "3",
+      "reason": "date in the future"
+    },
+    {
+      "where": "7",
+      "reason": "date out of range"
+    }
+  ],
+  "warnings": [
+    "badRow",
+    "badRow",
+    "badRow"
+  ]
+}

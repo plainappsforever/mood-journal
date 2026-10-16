@@ -1,0 +1,385 @@
+{
+ "fixture": "csv-en-crlf.csv",
+ "kind": "daylio_csv",
+ "header": "current8",
+ "options": {
+  "today": "2026-10-16",
+  "mapping": {}
+ },
+ "entries": [
+  {
+   "date": "2022-05-01",
+   "time": "13:45",
+   "mood": "bad",
+   "level": 2,
+   "activities": [
+    "date",
+    "family",
+    "movies / tv"
+   ],
+   "title": "",
+   "note": "Note with a LF\ninside a CRLF file",
+   "photos": 0
+  },
+  {
+   "date": "2022-05-02",
+   "time": "23:53",
+   "mood": "good",
+   "level": 4,
+   "activities": [],
+   "title": "",
+   "note": "Commas, and \"quotes\"",
+   "photos": 0
+  },
+  {
+   "date": "2022-05-03",
+   "time": "20:18",
+   "mood": "meh",
+   "level": 3,
+   "activities": [
+    "party"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2022-05-04",
+   "time": "17:56",
+   "mood": "good",
+   "level": 4,
+   "activities": [
+    "gaming",
+    "sport"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2022-05-04",
+   "time": "20:46",
+   "mood": "meh",
+   "level": 3,
+   "activities": [
+    "eating out",
+    "shopping"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2022-05-04",
+   "time": "21:08",
+   "mood": "awful",
+   "level": 1,
+   "activities": [],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2022-05-05",
+   "time": "11:14",
+   "mood": "bad",
+   "level": 2,
+   "activities": [
+    "relax"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2022-05-06",
+   "time": "20:57",
+   "mood": "good",
+   "level": 4,
+   "activities": [
+    "family",
+    "music",
+    "shopping",
+    "tired"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2022-05-06",
+   "time": "21:46",
+   "mood": "bad",
+   "level": 2,
+   "activities": [
+    "shopping",
+    "stomachache",
+    "work"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2022-05-06",
+   "time": "23:04",
+   "mood": "meh",
+   "level": 3,
+   "activities": [
+    "reading",
+    "relax",
+    "shopping"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2022-05-07",
+   "time": "07:47",
+   "mood": "awful",
+   "level": 1,
+   "activities": [
+    "eating out",
+    "music",
+    "sport"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2022-05-08",
+   "time": "09:28",
+   "mood": "bad",
+   "level": 2,
+   "activities": [
+    "date"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2022-05-08",
+   "time": "18:29",
+   "mood": "bad",
+   "level": 2,
+   "activities": [
+    "eating out"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2022-05-09",
+   "time": "19:44",
+   "mood": "meh",
+   "level": 3,
+   "activities": [
+    "eating out",
+    "gaming",
+    "good meal",
+    "nature walk"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2022-05-12",
+   "time": "17:30",
+   "mood": "meh",
+   "level": 3,
+   "activities": [
+    "party"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2022-05-12",
+   "time": "21:42",
+   "mood": "bad",
+   "level": 2,
+   "activities": [
+    "shopping"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2022-05-14",
+   "time": "23:27",
+   "mood": "rad",
+   "level": 5,
+   "activities": [
+    "good meal",
+    "stress / frustration"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2022-05-15",
+   "time": "09:36",
+   "mood": "awful",
+   "level": 1,
+   "activities": [
+    "date",
+    "shopping",
+    "stomachache",
+    "stress / frustration",
+    "work"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2022-05-17",
+   "time": "13:30",
+   "mood": "meh",
+   "level": 3,
+   "activities": [
+    "family",
+    "good meal",
+    "reading",
+    "tired"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2022-05-20",
+   "time": "11:57",
+   "mood": "good",
+   "level": 4,
+   "activities": [
+    "bad sleep",
+    "gaming",
+    "party",
+    "work"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  }
+ ],
+ "skipped": [],
+ "warnings": [],
+ "moods": [
+  {
+   "name": "bad",
+   "level": 2
+  },
+  {
+   "name": "good",
+   "level": 4
+  },
+  {
+   "name": "meh",
+   "level": 3
+  },
+  {
+   "name": "awful",
+   "level": 1
+  },
+  {
+   "name": "rad",
+   "level": 5
+  }
+ ],
+ "activities": [
+  {
+   "name": "bad sleep",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "date",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "eating out",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "family",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "gaming",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "good meal",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "movies / tv",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "music",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "nature walk",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "party",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "reading",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "relax",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "shopping",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "sport",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "stomachache",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "stress / frustration",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "tired",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "work",
+   "group": "Imported from Daylio"
+  }
+ ],
+ "counts": {
+  "entries": 20,
+  "skipped": 0,
+  "moods": 5,
+  "activities": 18,
+  "photos": 0
+ },
+ "_meta": {
+  "confidence": "assumed",
+  "assumptions": [
+   "CRLF line endings (Windows/Excel) must import like LF; the LF inside the quoted note stays LF"
+  ]
+ }
+}

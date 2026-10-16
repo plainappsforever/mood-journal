@@ -1,0 +1,105 @@
+{
+ "fixture": "csv-malformed-rows.csv",
+ "kind": "daylio_csv",
+ "header": "current8",
+ "options": {
+  "today": "2026-10-16",
+  "mapping": {}
+ },
+ "entries": [
+  {
+   "date": "2021-06-01",
+   "time": "09:00",
+   "mood": "rad",
+   "level": 5,
+   "activities": [
+    "sport"
+   ],
+   "title": "",
+   "note": "first",
+   "photos": 0
+  },
+  {
+   "date": "2021-06-04",
+   "time": "20:00",
+   "mood": "meh",
+   "level": 3,
+   "activities": [],
+   "title": "",
+   "note": "fine too",
+   "photos": 0
+  },
+  {
+   "date": "2021-06-05",
+   "time": "20:00",
+   "mood": "good",
+   "level": 4,
+   "activities": [
+    "work"
+   ],
+   "title": "",
+   "note": "fine",
+   "photos": 0
+  }
+ ],
+ "skipped": [
+  {
+   "line": 3,
+   "row": 2,
+   "reason": "column_count"
+  },
+  {
+   "line": 5,
+   "row": 4,
+   "reason": "bad_date"
+  },
+  {
+   "line": 6,
+   "row": 5,
+   "reason": "bad_time"
+  },
+  {
+   "line": 7,
+   "row": 6,
+   "reason": "column_count"
+  }
+ ],
+ "warnings": [],
+ "moods": [
+  {
+   "name": "good",
+   "level": 4
+  },
+  {
+   "name": "meh",
+   "level": 3
+  },
+  {
+   "name": "rad",
+   "level": 5
+  }
+ ],
+ "activities": [
+  {
+   "name": "sport",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "work",
+   "group": "Imported from Daylio"
+  }
+ ],
+ "counts": {
+  "entries": 3,
+  "skipped": 4,
+  "moods": 3,
+  "activities": 2,
+  "photos": 0
+ },
+ "_meta": {
+  "confidence": "sourced",
+  "assumptions": [
+   "spec: malformed rows are skipped and listed, the rest imports"
+  ]
+ }
+}

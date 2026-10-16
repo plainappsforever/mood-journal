@@ -1,0 +1,39 @@
+appId: ${APP_ID}
+---
+# The system folder picker (the consent for the automatic-backup folder). Env FOLDER = a folder the prep script made:
+# Android: Downloads/<FOLDER> in DocumentsUI + "Allow"; iOS: Files → On My iPhone → <FOLDER> → Open.
+- runFlow:
+    when:
+      platform: Android
+    commands:
+      - extendedWaitUntil:
+          visible: USE THIS FOLDER
+          timeout: 20000
+      - tapOn:
+          text: Download
+          optional: true
+      - scrollUntilVisible:
+          element: ${FOLDER}
+      - tapOn: ${FOLDER}
+      - tapOn: USE THIS FOLDER
+      - tapOn: ALLOW
+- runFlow:
+    when:
+      platform: iOS
+    commands:
+      - extendedWaitUntil:
+          visible: Open
+          timeout: 20000
+      # Browse tab twice = its root (Locations), whatever the picker showed last; then On My iPhone → FOLDER → Open
+      - tapOn: Browse
+      - tapOn: Browse
+      - waitForAnimationToEnd
+      - tapOn:
+          text: On My iPhone
+          index: 0
+          optional: true
+      - tapOn: "${FOLDER}, .*items?"
+      - extendedWaitUntil:
+          visible: "${FOLDER}, Actions Menu"
+          timeout: 10000
+      - tapOn: Open

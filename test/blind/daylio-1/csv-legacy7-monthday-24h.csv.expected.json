@@ -1,0 +1,260 @@
+{
+ "fixture": "csv-legacy7-monthday-24h.csv",
+ "kind": "daylio_csv",
+ "header": "legacy7",
+ "options": {
+  "today": "2026-10-16",
+  "mapping": {}
+ },
+ "entries": [
+  {
+   "date": "2016-02-20",
+   "time": "18:22",
+   "mood": "rad",
+   "level": 5,
+   "activities": [
+    "cooking",
+    "movies / tv"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2016-02-21",
+   "time": "17:58",
+   "mood": "rad",
+   "level": 5,
+   "activities": [
+    "nature walk",
+    "relax",
+    "stomachache"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2016-02-22",
+   "time": "14:30",
+   "mood": "good",
+   "level": 4,
+   "activities": [
+    "good meal",
+    "reading"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2016-02-24",
+   "time": "18:43",
+   "mood": "rad",
+   "level": 5,
+   "activities": [
+    "cooking",
+    "stress / frustration"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2016-02-27",
+   "time": "08:33",
+   "mood": "bad",
+   "level": 2,
+   "activities": [
+    "bad sleep",
+    "party",
+    "stress / frustration"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2016-02-28",
+   "time": "22:03",
+   "mood": "rad",
+   "level": 5,
+   "activities": [
+    "friends",
+    "music",
+    "nature walk",
+    "reading"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2016-02-29",
+   "time": "17:10",
+   "mood": "awful",
+   "level": 1,
+   "activities": [
+    "cooking",
+    "early sleep",
+    "stomachache"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2016-03-02",
+   "time": "18:19",
+   "mood": "meh",
+   "level": 3,
+   "activities": [
+    "cleaning",
+    "cooking"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2016-03-02",
+   "time": "20:26",
+   "mood": "meh",
+   "level": 3,
+   "activities": [],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2016-03-02",
+   "time": "23:39",
+   "mood": "meh",
+   "level": 3,
+   "activities": [
+    "good meal"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2016-03-03",
+   "time": "20:03",
+   "mood": "rad",
+   "level": 5,
+   "activities": [
+    "cooking",
+    "family",
+    "reading",
+    "work"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  }
+ ],
+ "skipped": [],
+ "warnings": [],
+ "moods": [
+  {
+   "name": "rad",
+   "level": 5
+  },
+  {
+   "name": "good",
+   "level": 4
+  },
+  {
+   "name": "bad",
+   "level": 2
+  },
+  {
+   "name": "awful",
+   "level": 1
+  },
+  {
+   "name": "meh",
+   "level": 3
+  }
+ ],
+ "activities": [
+  {
+   "name": "bad sleep",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "cleaning",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "cooking",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "early sleep",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "family",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "friends",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "good meal",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "movies / tv",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "music",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "nature walk",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "party",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "reading",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "relax",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "stomachache",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "stress / frustration",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "work",
+   "group": "Imported from Daylio"
+  }
+ ],
+ "counts": {
+  "entries": 11,
+  "skipped": 0,
+  "moods": 5,
+  "activities": 16,
+  "photos": 0
+ },
+ "_meta": {
+  "confidence": "mixed",
+  "assumptions": [
+   "24 h time in the legacy format"
+  ]
+ }
+}

@@ -1,0 +1,8 @@
+{
+  "file": "csv-truncated-in-quote.csv",
+  "status": "error",
+  "error": "damaged",
+  "entries": [],
+  "skipped": [],
+  "warnings": []
+}

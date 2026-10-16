@@ -1,0 +1,6 @@
+full_date,date,weekday,time,mood,activities,note_title,note
+2022-05-01,1 May,Sunday,25:00,good,"","",""
+not-a-date,,Sunday,10:00,good,"","",""
+2022-05-02,2 May,Monday,10:00,,"","",""
+2022-05-03,3 May
+2022-05-04,4 May,Wednesday,9:00 am,good,"walk","",""

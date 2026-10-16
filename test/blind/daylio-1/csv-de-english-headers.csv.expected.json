@@ -1,0 +1,815 @@
+{
+ "fixture": "csv-de-english-headers.csv",
+ "kind": "daylio_csv",
+ "header": "current8",
+ "options": {
+  "today": "2026-10-16",
+  "mapping": {
+   "super": 5,
+   "gut": 4,
+   "ok": 3,
+   "schlecht": 2,
+   "lausig": 1
+  }
+ },
+ "entries": [
+  {
+   "date": "2023-11-20",
+   "time": "15:16",
+   "mood": "gut",
+   "level": 4,
+   "activities": [
+    "Familie",
+    "Musik"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2023-11-20",
+   "time": "20:00",
+   "mood": "ok",
+   "level": 3,
+   "activities": [
+    "Fernsehen / Serien",
+    "Kochen",
+    "Schlecht geschlafen",
+    "Straßenbahn",
+    "Übelkeit"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2023-11-21",
+   "time": "20:41",
+   "mood": "schlecht",
+   "level": 2,
+   "activities": [
+    "Straßenbahn"
+   ],
+   "title": "",
+   "note": "Weihnachtsmarkt mit Jörg, Glühwein & Bratwurst; schön.",
+   "photos": 0
+  },
+  {
+   "date": "2023-11-22",
+   "time": "08:36",
+   "mood": "lausig",
+   "level": 1,
+   "activities": [
+    "Übelkeit"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2023-11-23",
+   "time": "18:18",
+   "mood": "super",
+   "level": 5,
+   "activities": [
+    "Freunde",
+    "Gemütlich",
+    "Kochen",
+    "Spaziergang"
+   ],
+   "title": "Überstunden",
+   "note": "Müde. „Nie wieder“, sagte ich.",
+   "photos": 0
+  },
+  {
+   "date": "2023-11-23",
+   "time": "20:42",
+   "mood": "ok",
+   "level": 3,
+   "activities": [
+    "Fernsehen / Serien",
+    "Spaziergang"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2023-11-24",
+   "time": "10:21",
+   "mood": "lausig",
+   "level": 1,
+   "activities": [
+    "Arbeit",
+    "Familie",
+    "Fernsehen / Serien",
+    "Freunde",
+    "Gemütlich"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2023-11-25",
+   "time": "13:09",
+   "mood": "lausig",
+   "level": 1,
+   "activities": [
+    "Einkaufen",
+    "Lesen",
+    "Musik"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2023-11-25",
+   "time": "22:34",
+   "mood": "super",
+   "level": 5,
+   "activities": [
+    "Fernsehen / Serien",
+    "Gemütlich",
+    "Straßenbahn",
+    "Ärger"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2023-11-26",
+   "time": "14:20",
+   "mood": "super",
+   "level": 5,
+   "activities": [
+    "Kochen",
+    "Übelkeit"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2023-11-28",
+   "time": "08:59",
+   "mood": "gut",
+   "level": 4,
+   "activities": [
+    "Arbeit",
+    "Einkaufen",
+    "Gemütlich",
+    "Straßenbahn"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2023-11-29",
+   "time": "17:11",
+   "mood": "lausig",
+   "level": 1,
+   "activities": [
+    "Einkaufen"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2023-12-01",
+   "time": "12:40",
+   "mood": "ok",
+   "level": 3,
+   "activities": [
+    "Fernsehen / Serien",
+    "Gemütlich",
+    "Musik",
+    "Übelkeit"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2023-12-02",
+   "time": "11:56",
+   "mood": "schlecht",
+   "level": 2,
+   "activities": [
+    "Gemütlich"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2023-12-04",
+   "time": "08:38",
+   "mood": "lausig",
+   "level": 1,
+   "activities": [
+    "Fernsehen / Serien",
+    "Freunde",
+    "Lesen"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2023-12-04",
+   "time": "13:47",
+   "mood": "lausig",
+   "level": 1,
+   "activities": [
+    "Einkaufen",
+    "Freunde",
+    "Musik",
+    "Schlecht geschlafen",
+    "Spaziergang"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2023-12-05",
+   "time": "20:56",
+   "mood": "ok",
+   "level": 3,
+   "activities": [
+    "Freunde",
+    "Lesen",
+    "Straßenbahn"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2023-12-06",
+   "time": "09:56",
+   "mood": "super",
+   "level": 5,
+   "activities": [],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2023-12-06",
+   "time": "23:28",
+   "mood": "gut",
+   "level": 4,
+   "activities": [
+    "Arbeit",
+    "Freunde",
+    "Kochen",
+    "Übelkeit"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2023-12-07",
+   "time": "22:49",
+   "mood": "schlecht",
+   "level": 2,
+   "activities": [
+    "Arbeit",
+    "Einkaufen",
+    "Spaziergang",
+    "Übelkeit"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2023-12-08",
+   "time": "15:10",
+   "mood": "schlecht",
+   "level": 2,
+   "activities": [
+    "Spaziergang",
+    "Sport",
+    "Straßenbahn"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2023-12-09",
+   "time": "12:31",
+   "mood": "ok",
+   "level": 3,
+   "activities": [
+    "Einkaufen",
+    "Spaziergang",
+    "Sport",
+    "Straßenbahn",
+    "Übelkeit"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2023-12-09",
+   "time": "13:15",
+   "mood": "schlecht",
+   "level": 2,
+   "activities": [
+    "Gemütlich",
+    "Spaziergang"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2023-12-10",
+   "time": "21:07",
+   "mood": "lausig",
+   "level": 1,
+   "activities": [
+    "Familie",
+    "Ärger"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2023-12-11",
+   "time": "07:30",
+   "mood": "ok",
+   "level": 3,
+   "activities": [
+    "Fernsehen / Serien",
+    "Freunde",
+    "Gemütlich",
+    "Übelkeit"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2023-12-12",
+   "time": "08:03",
+   "mood": "ok",
+   "level": 3,
+   "activities": [
+    "Sport"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2023-12-12",
+   "time": "17:03",
+   "mood": "schlecht",
+   "level": 2,
+   "activities": [
+    "Familie",
+    "Fernsehen / Serien",
+    "Spaziergang",
+    "Ärger"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2023-12-12",
+   "time": "21:33",
+   "mood": "schlecht",
+   "level": 2,
+   "activities": [],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2023-12-14",
+   "time": "11:09",
+   "mood": "super",
+   "level": 5,
+   "activities": [
+    "Familie",
+    "Gemütlich",
+    "Kochen",
+    "Sport"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2023-12-14",
+   "time": "17:40",
+   "mood": "super",
+   "level": 5,
+   "activities": [
+    "Familie",
+    "Freunde",
+    "Gemütlich",
+    "Schlecht geschlafen",
+    "Straßenbahn"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2023-12-14",
+   "time": "18:37",
+   "mood": "super",
+   "level": 5,
+   "activities": [
+    "Familie",
+    "Sport",
+    "Straßenbahn",
+    "Ärger",
+    "Übelkeit"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2023-12-16",
+   "time": "21:18",
+   "mood": "gut",
+   "level": 4,
+   "activities": [
+    "Familie",
+    "Gemütlich",
+    "Musik",
+    "Schlecht geschlafen",
+    "Straßenbahn"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2023-12-17",
+   "time": "22:56",
+   "mood": "schlecht",
+   "level": 2,
+   "activities": [
+    "Fernsehen / Serien",
+    "Musik",
+    "Schlecht geschlafen"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2023-12-18",
+   "time": "16:53",
+   "mood": "ok",
+   "level": 3,
+   "activities": [],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2023-12-19",
+   "time": "23:02",
+   "mood": "super",
+   "level": 5,
+   "activities": [],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2023-12-20",
+   "time": "11:40",
+   "mood": "super",
+   "level": 5,
+   "activities": [
+    "Kochen",
+    "Schlecht geschlafen",
+    "Spaziergang"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2023-12-21",
+   "time": "17:19",
+   "mood": "ok",
+   "level": 3,
+   "activities": [
+    "Familie",
+    "Lesen",
+    "Sport",
+    "Straßenbahn",
+    "Ärger"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2023-12-22",
+   "time": "23:56",
+   "mood": "ok",
+   "level": 3,
+   "activities": [
+    "Fernsehen / Serien",
+    "Lesen",
+    "Musik",
+    "Spaziergang",
+    "Straßenbahn"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2023-12-23",
+   "time": "18:32",
+   "mood": "schlecht",
+   "level": 2,
+   "activities": [],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2023-12-24",
+   "time": "15:26",
+   "mood": "super",
+   "level": 5,
+   "activities": [
+    "Freunde",
+    "Kochen",
+    "Musik",
+    "Sport",
+    "Ärger"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2023-12-26",
+   "time": "19:36",
+   "mood": "lausig",
+   "level": 1,
+   "activities": [
+    "Ärger"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2023-12-27",
+   "time": "10:46",
+   "mood": "ok",
+   "level": 3,
+   "activities": [
+    "Fernsehen / Serien",
+    "Spaziergang",
+    "Sport",
+    "Straßenbahn",
+    "Übelkeit"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2023-12-27",
+   "time": "23:07",
+   "mood": "lausig",
+   "level": 1,
+   "activities": [
+    "Ärger"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2023-12-29",
+   "time": "19:58",
+   "mood": "lausig",
+   "level": 1,
+   "activities": [
+    "Einkaufen",
+    "Spaziergang"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2023-12-30",
+   "time": "16:03",
+   "mood": "gut",
+   "level": 4,
+   "activities": [
+    "Einkaufen",
+    "Gemütlich",
+    "Sport",
+    "Straßenbahn"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2023-12-31",
+   "time": "11:38",
+   "mood": "gut",
+   "level": 4,
+   "activities": [
+    "Einkaufen",
+    "Gemütlich",
+    "Musik",
+    "Sport",
+    "Straßenbahn"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2023-12-31",
+   "time": "13:21",
+   "mood": "super",
+   "level": 5,
+   "activities": [
+    "Einkaufen",
+    "Familie",
+    "Freunde"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2024-01-01",
+   "time": "18:06",
+   "mood": "super",
+   "level": 5,
+   "activities": [
+    "Freunde",
+    "Gemütlich",
+    "Kochen",
+    "Ärger",
+    "Übelkeit"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2024-01-04",
+   "time": "18:44",
+   "mood": "super",
+   "level": 5,
+   "activities": [
+    "Freunde",
+    "Schlecht geschlafen"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  },
+  {
+   "date": "2024-01-04",
+   "time": "22:44",
+   "mood": "schlecht",
+   "level": 2,
+   "activities": [
+    "Einkaufen",
+    "Familie",
+    "Gemütlich",
+    "Sport",
+    "Übelkeit"
+   ],
+   "title": "",
+   "note": "",
+   "photos": 0
+  }
+ ],
+ "skipped": [],
+ "warnings": [],
+ "moods": [
+  {
+   "name": "gut",
+   "level": 4
+  },
+  {
+   "name": "ok",
+   "level": 3
+  },
+  {
+   "name": "schlecht",
+   "level": 2
+  },
+  {
+   "name": "lausig",
+   "level": 1
+  },
+  {
+   "name": "super",
+   "level": 5
+  }
+ ],
+ "activities": [
+  {
+   "name": "Arbeit",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "Einkaufen",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "Familie",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "Fernsehen / Serien",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "Freunde",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "Gemütlich",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "Kochen",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "Lesen",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "Musik",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "Schlecht geschlafen",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "Spaziergang",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "Sport",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "Straßenbahn",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "Ärger",
+   "group": "Imported from Daylio"
+  },
+  {
+   "name": "Übelkeit",
+   "group": "Imported from Daylio"
+  }
+ ],
+ "counts": {
+  "entries": 50,
+  "skipped": 0,
+  "moods": 5,
+  "activities": 15,
+  "photos": 0
+ },
+ "_meta": {
+  "confidence": "mixed",
+  "assumptions": [
+   "German app keeps English header (as the 2026 Italian sample does)",
+   "date cell \"28. September\" format",
+   "German default mood names super/gut/ok/schlecht/lausig lower-case in the CSV (names from German reviews)"
+  ]
+ }
+}

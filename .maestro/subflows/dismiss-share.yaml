@@ -1,0 +1,24 @@
+appId: ${APP_ID}
+---
+# Closes the system share sheet without choosing an app (iOS: a tap above the sheet; Android: Back), then waits for
+# the Backup & export screen again.
+- extendedWaitUntil:
+    notVisible:
+      id: backup-screen
+    timeout: 8000
+    optional: true
+- runFlow:
+    when:
+      platform: iOS
+    commands:
+      - tapOn:
+          point: 50%,12%
+- runFlow:
+    when:
+      platform: Android
+    commands:
+      - back
+- extendedWaitUntil:
+    visible:
+      id: backup-screen
+    timeout: 15000

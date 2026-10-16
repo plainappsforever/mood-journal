@@ -1,0 +1,8 @@
+{
+  "file": "backup-no-dayentries.daylio",
+  "status": "error",
+  "error": "notDaylio",
+  "entries": [],
+  "skipped": [],
+  "warnings": []
+}

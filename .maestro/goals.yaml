@@ -1,0 +1,58 @@
+appId: ${APP_ID}
+name: Goals - sport 3 times a week shows on Home
+tags:
+  - p6
+---
+- runFlow: subflows/reset.yaml
+- tapOn:
+    id: tab-more
+- tapOn:
+    id: more-goals
+- tapOn:
+    id: goal-add
+- tapOn:
+    id: goal-activity-10
+- tapOn:
+    id: goal-period-week
+- assertVisible:
+    id: goal-target
+    text: 3 days a week
+- scrollUntilVisible:
+    element:
+      id: goal-save
+- tapOn:
+    id: goal-save
+- extendedWaitUntil:
+    visible:
+      id: goal-1
+    timeout: 10000
+- assertVisible: ".*sport: 0 of 3 this week.*"
+- runFlow: subflows/go-back.yaml
+- tapOn:
+    id: tab-entries
+- assertVisible:
+    id: home-goals
+- assertVisible: ".*sport: 0 of 3 this week.*"
+# Log sport → 1 of 3
+- tapOn:
+    id: mood-level-4
+- tapOn:
+    id: activity-10
+- tapOn:
+    id: entry-save
+- extendedWaitUntil:
+    visible:
+      id: entry-row-1
+    timeout: 10000
+- assertVisible: ".*sport: 1 of 3 this week.*"
+- tapOn:
+    id: home-goals
+- tapOn:
+    id: goal-1
+- extendedWaitUntil:
+    visible:
+      id: goal-progress-1
+    timeout: 10000
+- scrollUntilVisible:
+    element:
+      id: goal-history

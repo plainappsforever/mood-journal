@@ -1,0 +1,35 @@
+appId: ${APP_ID}
+name: Perf - 20k entries, Home and Stats All time (A12; not in the regular run; timings in the Metro log '[debug]')
+tags:
+  - perf
+---
+- runFlow: subflows/reset.yaml
+- openLink: moodjournal-dev://debug/seed?days=4000&perDay=5&stay=1
+- tapOn:
+    text: Open
+    optional: true
+- extendedWaitUntil:
+    visible:
+      id: debug-done
+    timeout: 600000
+- openLink: moodjournal-dev://debug/perf?stay=1
+- tapOn:
+    text: Open
+    optional: true
+- extendedWaitUntil:
+    visible:
+      id: debug-done
+    timeout: 120000
+- runFlow: subflows/launch.yaml
+- tapOn:
+    id: tab-stats
+- tapOn:
+    id: period-all
+- extendedWaitUntil:
+    visible:
+      id: stat-average
+    timeout: 30000
+- scrollUntilVisible:
+    element:
+      id: stats-timing
+    optional: true

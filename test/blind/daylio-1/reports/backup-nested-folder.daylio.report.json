@@ -1,0 +1,94 @@
+{
+  "file": "backup-nested-folder.daylio",
+  "status": "ok",
+  "kind": "daylio_backup",
+  "entries": [
+    {
+      "date": "2024-04-10",
+      "time": "17:41",
+      "mood": "bad",
+      "level": 2,
+      "activities": [
+        "gaming",
+        "meds",
+        "music",
+        "reading"
+      ],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2024-04-09",
+      "time": "21:57",
+      "mood": "awful",
+      "level": 1,
+      "activities": [
+        "family",
+        "gaming",
+        "meds",
+        "walk"
+      ],
+      "title": "",
+      "note": "Rain all day; stayed in.",
+      "photos": 0
+    },
+    {
+      "date": "2024-04-08",
+      "time": "14:18",
+      "mood": "meh",
+      "level": 3,
+      "activities": [
+        "friends",
+        "music"
+      ],
+      "title": "",
+      "note": "Walked to work, cold.",
+      "photos": 0
+    },
+    {
+      "date": "2024-04-08",
+      "time": "08:16",
+      "mood": "good",
+      "level": 4,
+      "activities": [],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2024-04-06",
+      "time": "12:18",
+      "mood": "awful",
+      "level": 1,
+      "activities": [],
+      "title": "Short title",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2024-04-05",
+      "time": "08:23",
+      "mood": "rad",
+      "level": 5,
+      "activities": [],
+      "title": "",
+      "note": "Walked to work, cold.",
+      "photos": 0
+    },
+    {
+      "date": "2024-04-04",
+      "time": "20:00",
+      "mood": "good",
+      "level": 4,
+      "activities": [],
+      "title": "",
+      "note": "CRCTARGET this note will be silently changed if CRC is ignored",
+      "photos": 0
+    }
+  ],
+  "skipped": [],
+  "warnings": [
+    "goalsNotImported"
+  ]
+}

@@ -1,0 +1,299 @@
+{
+  "file": "backup-archived-deleted.daylio",
+  "status": "ok",
+  "kind": "daylio_backup",
+  "entries": [
+    {
+      "date": "2022-01-25",
+      "time": "16:48",
+      "mood": "bad",
+      "level": 2,
+      "activities": [],
+      "title": "",
+      "note": "Good talk with Sam\nfelt better",
+      "photos": 0
+    },
+    {
+      "date": "2022-01-24",
+      "time": "16:03",
+      "mood": "rad",
+      "level": 5,
+      "activities": [
+        "friends",
+        "meds",
+        "music",
+        "walk"
+      ],
+      "title": "Short title",
+      "note": "Rain all day; stayed in.",
+      "photos": 0
+    },
+    {
+      "date": "2022-01-23",
+      "time": "17:20",
+      "mood": "rad",
+      "level": 5,
+      "activities": [
+        "walk"
+      ],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2022-01-22",
+      "time": "22:18",
+      "mood": "awful",
+      "level": 1,
+      "activities": [
+        "meds",
+        "movies / tv",
+        "sport",
+        "walk"
+      ],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2022-01-21",
+      "time": "12:34",
+      "mood": "meh",
+      "level": 3,
+      "activities": [],
+      "title": "",
+      "note": "Walked to work, cold.",
+      "photos": 0
+    },
+    {
+      "date": "2022-01-21",
+      "time": "11:10",
+      "mood": "meh",
+      "level": 3,
+      "activities": [],
+      "title": "",
+      "note": "Good talk with Sam\nfelt better",
+      "photos": 0
+    },
+    {
+      "date": "2022-01-20",
+      "time": "08:54",
+      "mood": "meh",
+      "level": 3,
+      "activities": [
+        "bad sleep",
+        "good sleep"
+      ],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2022-01-19",
+      "time": "12:06",
+      "mood": "good",
+      "level": 4,
+      "activities": [
+        "gaming"
+      ],
+      "title": "",
+      "note": "Walked to work, cold.",
+      "photos": 0
+    },
+    {
+      "date": "2022-01-19",
+      "time": "07:34",
+      "mood": "rad",
+      "level": 5,
+      "activities": [
+        "friends",
+        "gaming",
+        "walk"
+      ],
+      "title": "",
+      "note": "Good talk with Sam\nfelt better",
+      "photos": 0
+    },
+    {
+      "date": "2022-01-18",
+      "time": "17:55",
+      "mood": "meh",
+      "level": 3,
+      "activities": [
+        "family",
+        "gaming"
+      ],
+      "title": "Short title",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2022-01-17",
+      "time": "19:25",
+      "mood": "rad",
+      "level": 5,
+      "activities": [
+        "meds",
+        "movies / tv",
+        "reading"
+      ],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2022-01-16",
+      "time": "17:25",
+      "mood": "awful",
+      "level": 1,
+      "activities": [],
+      "title": "",
+      "note": "Good talk with Sam\nfelt better",
+      "photos": 0
+    },
+    {
+      "date": "2022-01-16",
+      "time": "11:01",
+      "mood": "good",
+      "level": 4,
+      "activities": [
+        "friends"
+      ],
+      "title": "",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2022-01-16",
+      "time": "07:37",
+      "mood": "awful",
+      "level": 1,
+      "activities": [
+        "friends",
+        "good sleep"
+      ],
+      "title": "",
+      "note": "Rain all day; stayed in.",
+      "photos": 0
+    },
+    {
+      "date": "2022-01-15",
+      "time": "15:56",
+      "mood": "good",
+      "level": 4,
+      "activities": [
+        "good sleep",
+        "movies / tv",
+        "reading"
+      ],
+      "title": "Short title",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2022-01-15",
+      "time": "10:28",
+      "mood": "bad",
+      "level": 2,
+      "activities": [
+        "bad sleep",
+        "date",
+        "family",
+        "movies / tv"
+      ],
+      "title": "",
+      "note": "Walked to work, cold.",
+      "photos": 0
+    },
+    {
+      "date": "2022-01-14",
+      "time": "22:40",
+      "mood": "bad",
+      "level": 2,
+      "activities": [
+        "movies / tv",
+        "music",
+        "reading"
+      ],
+      "title": "",
+      "note": "Good talk with Sam\nfelt better",
+      "photos": 0
+    },
+    {
+      "date": "2022-01-14",
+      "time": "22:31",
+      "mood": "bad",
+      "level": 2,
+      "activities": [
+        "bad sleep",
+        "gaming"
+      ],
+      "title": "Short title",
+      "note": "",
+      "photos": 0
+    },
+    {
+      "date": "2022-01-14",
+      "time": "20:40",
+      "mood": "rad",
+      "level": 5,
+      "activities": [],
+      "title": "",
+      "note": "Walked to work, cold.",
+      "photos": 0
+    },
+    {
+      "date": "2022-01-13",
+      "time": "20:00",
+      "mood": "rad",
+      "level": 5,
+      "activities": [],
+      "title": "",
+      "note": "only deleted tags",
+      "photos": 0
+    },
+    {
+      "date": "2022-01-12",
+      "time": "20:00",
+      "mood": "meh",
+      "level": 3,
+      "activities": [
+        "music"
+      ],
+      "title": "",
+      "note": "tag 4242 was deleted",
+      "photos": 0
+    },
+    {
+      "date": "2022-01-11",
+      "time": "20:00",
+      "mood": "good",
+      "level": 4,
+      "activities": [
+        "friends",
+        "old job"
+      ],
+      "title": "",
+      "note": "archived tag kept",
+      "photos": 0
+    },
+    {
+      "date": "2022-01-10",
+      "time": "20:00",
+      "mood": "old mood",
+      "level": 3,
+      "activities": [
+        "smoking"
+      ],
+      "title": "",
+      "note": "archived mood + archived tag",
+      "photos": 0
+    }
+  ],
+  "skipped": [],
+  "warnings": [
+    "unknownTag",
+    "unknownTag",
+    "goalsNotImported"
+  ]
+}

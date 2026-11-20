@@ -110,7 +110,7 @@ function Editor({ entry, moodId, date, settings, moods, activities }: Props & { 
       title: entry ? t('entry.editTitle') : t('entry.newTitle'),
       headerRight: () => (
         <Pressable testID="entry-save" accessibilityRole="button" onPress={() => void save()} hitSlop={12} style={styles.headerBtn} disabled={draft.moodId === null}>
-          <Text style={[styles.headerText, { color: draft.moodId === null ? theme.textSecondary : theme.tint }]}>{t('common.save')}</Text>
+          <Text style={[styles.headerText, { color: draft.moodId === null ? theme.textSecondary : theme.tintText }]}>{t('common.save')}</Text>
         </Pressable>
       ),
     });

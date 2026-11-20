@@ -1,5 +1,5 @@
 // Russian strings. Same keys as en.ts (enforced by src/i18n/i18n.test.ts); machine-assisted translation from the
-// English and German sources (P10, D11) — no native reader yet (A14: IMPLEMENTED BUT UNVERIFIED except where logged).
+// English and German sources (P10, D11): no native reader yet (A14: IMPLEMENTED BUT UNVERIFIED except where logged).
 import type { LocaleMessages } from './en';
 
 export const ru: LocaleMessages = {
@@ -83,7 +83,7 @@ export const ru: LocaleMessages = {
   'pdf.noEntries': "В этом периоде нет записей.",
   'pdf.photo': "Фото",
   'pdf.footer': "Сделано в Mood. Личный дневник, а не медицинская карта.",
-  'import.error.notZip': "Этот файл — не резервная копия и не экспорт CSV из Daylio.",
+  'import.error.notZip': "Этот файл, не резервная копия и не экспорт CSV из Daylio.",
   'import.error.notDaylio': "В этом ZIP-файле нет резервной копии Daylio.",
   'import.error.encrypted': "Эта копия зашифрована. Экспортируйте в Daylio копию без шифрования и попробуйте снова.",
   'import.error.zip64': "Эта копия слишком большая для чтения (ZIP64).",
@@ -107,15 +107,19 @@ export const ru: LocaleMessages = {
   'import.warn.dateOrder': "Программа таблиц переписала даты этого CSV; они прочитаны как {order} (сверено со столбцом дня недели). Посмотрите предпросмотр.",
   'about.promise.local': "Ваш дневник остаётся на этом телефоне. Mood ничего никуда не отправляет: без аккаунта, без рекламы, без аналитики.",
   'about.promise.backup': "Резервные копии попадают только туда, куда вы их положите.",
-  'about.promise.stats': "Статистика говорит, что происходило вместе и на скольких днях или записях это основано, — но никогда не говорит почему.",
-  'about.disclaimer': "Mood — личный дневник, а не медицинское изделие. Он не ставит диагнозы, не лечит, не излечивает и не предотвращает никакие состояния. Если вам тяжело, поговорите с врачом или с человеком, которому доверяете.",
+  'about.promise.stats': "Статистика говорит, что происходило вместе и на скольких днях или записях это основано,, но никогда не говорит почему.",
+  'about.disclaimer': "Mood: личный дневник, а не медицинское изделие. Он не ставит диагнозы, не лечит, не излечивает и не предотвращает никакие состояния. Если вам тяжело, поговорите с врачом или с человеком, которому доверяете.",
   'nav.back': "Назад",
   'tabs.entries': "Записи",
   'tabs.calendar': "Календарь",
   'tabs.stats': "Статистика",
   'tabs.more': "Ещё",
   'home.question': "Как вы?",
-  'home.empty': "Первая запись — в два касания.",
+  'home.empty': "Первая запись, в два касания.",
+  'home.betterDays': "В ваши лучшие дни часто: {activity}",
+  'home.addToday': "Добавить запись за сегодня",
+  'licenses.title': "Лицензии",
+  'licenses.intro': "Программы с открытым кодом, на которых построено приложение.",
   'day.today': "Сегодня",
   'day.yesterday': "Вчера",
   'common.save': "Сохранить",
@@ -303,7 +307,7 @@ export const ru: LocaleMessages = {
   'backup.create': "Создать файл копии",
   'backup.working': "Подождите…",
   'backup.password': "Пароль (необязательно)",
-  'backup.passwordHint': "Оставьте пустым для обычного файла. С паролем файл шифруется; запишите пароль — без него копию не открыть.",
+  'backup.passwordHint': "Оставьте пустым для обычного файла. С паролем файл шифруется; запишите пароль. Без него копию не открыть.",
   'backup.contains': "Копия содержит все записи, фото, настроения, занятия, цели, напоминания и настройки. Она попадает только туда, куда вы её отправите или сохраните.",
   'backup.last': "Последняя копия: {date}",
   'backup.never': "На этом телефоне ещё не создавалось копий.",

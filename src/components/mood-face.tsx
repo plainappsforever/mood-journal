@@ -1,5 +1,6 @@
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 
+import { BrandFonts } from '@/constants/theme';
 import type { Mood } from '@/db/moods';
 import { useTheme } from '@/hooks/use-theme';
 
@@ -57,6 +58,6 @@ export function MoodFace({
 const styles = StyleSheet.create({
   wrap: { alignItems: 'center', gap: 4 },
   face: { alignItems: 'center', justifyContent: 'center', borderWidth: 3 },
-  name: { fontSize: 12, textAlign: 'center' },
+  name: { fontSize: 12, textAlign: 'center', fontFamily: BrandFonts.body },
   pressed: { opacity: 0.6 },
 });

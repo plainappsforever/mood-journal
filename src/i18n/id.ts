@@ -1,5 +1,5 @@
 // Indonesian strings. Same keys as en.ts (enforced by src/i18n/i18n.test.ts); machine-assisted translation from the
-// English and German sources (P10, D11) — no native reader yet (A14: IMPLEMENTED BUT UNVERIFIED except where logged).
+// English and German sources (P10, D11): no native reader yet (A14: IMPLEMENTED BUT UNVERIFIED except where logged).
 import type { LocaleMessages } from './en';
 
 export const id: LocaleMessages = {
@@ -107,7 +107,7 @@ export const id: LocaleMessages = {
   'import.warn.dateOrder': "Tanggal dalam CSV ini ditulis ulang oleh aplikasi spreadsheet; dibaca sebagai {order} (dicek dengan kolom hari). Periksa pratinjaunya.",
   'about.promise.local': "Jurnalmu tetap di ponsel ini. Mood tidak mengirim apa pun ke mana pun: tanpa akun, tanpa iklan, tanpa analitik.",
   'about.promise.backup': "Cadangan hanya pergi ke tempat yang kamu pilih.",
-  'about.promise.stats': "Statistik menunjukkan apa yang terjadi bersamaan dan berdasarkan berapa hari atau catatan — tidak pernah mengapa.",
+  'about.promise.stats': "Statistik menunjukkan apa yang terjadi bersamaan dan berdasarkan berapa hari atau catatan, tidak pernah mengapa.",
   'about.disclaimer': "Mood adalah jurnal pribadi, bukan alat medis. Mood tidak mendiagnosis, mengobati, menyembuhkan, atau mencegah kondisi apa pun. Jika kamu sedang kesulitan, bicaralah dengan dokter atau orang yang kamu percaya.",
   'nav.back': "Kembali",
   'tabs.entries': "Catatan",
@@ -116,6 +116,10 @@ export const id: LocaleMessages = {
   'tabs.more': "Lainnya",
   'home.question': "Apa kabar?",
   'home.empty': "Catatan pertamamu cukup dua ketukan.",
+  'home.betterDays': "Hari-hari terbaikmu sering ada: {activity}",
+  'home.addToday': "Tambah catatan hari ini",
+  'licenses.title': "Lisensi",
+  'licenses.intro': "Perangkat lunak sumber terbuka yang dipakai app ini.",
   'day.today': "Hari ini",
   'day.yesterday': "Kemarin",
   'common.save': "Simpan",
@@ -303,7 +307,7 @@ export const id: LocaleMessages = {
   'backup.create': "Buat file cadangan",
   'backup.working': "Memproses…",
   'backup.password': "Kata sandi (opsional)",
-  'backup.passwordHint': "Biarkan kosong untuk file biasa. Dengan kata sandi, file dienkripsi; catat kata sandinya — tanpa itu cadangan tidak bisa dibuka.",
+  'backup.passwordHint': "Biarkan kosong untuk file biasa. Dengan kata sandi, file dienkripsi; catat kata sandinya. Tanpa itu cadangan tidak bisa dibuka.",
   'backup.contains': "Cadangan berisi semua catatan, foto, suasana hati, kegiatan, target, pengingat, dan pengaturan. Cadangan hanya pergi ke tempat kamu mengirim atau menyimpannya.",
   'backup.last': "Cadangan terakhir: {date}",
   'backup.never': "Belum ada cadangan di ponsel ini.",

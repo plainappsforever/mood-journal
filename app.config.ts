@@ -1,5 +1,7 @@
 import type { ConfigContext, ExpoConfig } from 'expo/config';
 
+import brand from './src/constants/brand.json';
+
 // One codebase, three installable variants that can sit side by side on a device.
 // Select with APP_VARIANT (set by scripts/native.sh and eas.json).
 const VARIANTS = {
@@ -15,12 +17,18 @@ if (!(variant in VARIANTS)) {
   throw new Error(`Unknown APP_VARIANT "${variant}". Use development, preview or production.`);
 }
 const { name, id, scheme } = VARIANTS[variant];
+// Name under the iPhone icon (CFBundleDisplayName) and in the widget gallery: production reads "Mood Days" like the store
+// name (orchestrator ruling 2026-11-07). `name` stays "Mood" on purpose: expo prebuild derives the Xcode project, scheme
+// and folder (ios/Mood) from it, so renaming it would create a second project next to the existing one.
+const displayName = variant === 'production' ? 'Mood Days' : name;
 const otherSchemes = Object.values(VARIANTS).map((v) => v.scheme).filter((s) => s !== scheme);
 const otherGroups = Object.values(VARIANTS).filter((v) => v.id !== id).map((v) => `group.${v.id}`);
 
 // P9 (D20, eye-app D67): iOS "Mood" widget via expo-widgets (adds the ExpoWidgetsTarget extension and an App Group
 // group.<bundle id>; simulator builds sign it ad hoc, a device build needs a team id). WIDGETS=0 builds without it.
 // Android has its own RemoteViews widget in modules/mood-widget (expo-widgets is excluded from Android autolinking).
+// APPLE_TEAM_ID (optional, not a secret) becomes ios.appleTeamId (DEVELOPMENT_TEAM in the generated project) for archives.
+const appleTeamId = process.env.APPLE_TEAM_ID || undefined;
 const widgetsEnabled = process.env.WIDGETS !== '0';
 
 // P11 (review M3): the development client and its menu defaults are configured for development builds only; release
@@ -54,23 +62,40 @@ const RELEASE_BLOCKED = [
 ];
 const DEV_CLIENT_PLUGINS: ([string, { launchMode: string }] | string)[] = [['expo-dev-client', { launchMode: 'most-recent' }], './plugins/with-dev-menu-defaults.js'];
 
+// D24: splash and Android icon background come from the identity file (src/constants/brand.json).
+const IDENTITY = {
+  splashBackground: brand.light.accent,
+  splashBackgroundDark: brand.dark.background,
+  androidIconBackground: brand.light.accent,
+};
+
 export default ({ config }: ConfigContext): ExpoConfig => ({
   ...config,
   name,
   slug: 'mood-journal',
-  version: '1.0.0',
+  version: '1.1.0',
   orientation: 'portrait',
   icon: './assets/images/icon.png',
   scheme,
   userInterfaceStyle: 'automatic',
   ios: {
     bundleIdentifier: id,
+    buildNumber: '2',
+    ...(appleTeamId ? { appleTeamId } : {}),
+    infoPlist: {
+      CFBundleDisplayName: displayName,
+      // Own AES-256-GCM encrypted backup file (container MOODBK1) next to the OS crypto: tier 2 "standard algorithms in
+      // addition to the OS" (docs-export-compliance-2026-11-06, row mood-journal). Apple asks the follow-up questions at
+      // upload; the owner confirms the answers (France / BIS points are the owner's).
+      ITSAppUsesNonExemptEncryption: false, // owner 2026-11-07: standard encryption only, exempt; France excluded. Apple refuses "true" without a code (API cannot create a declaration with availableOnFrenchStore false)
+    },
     icon: './assets/expo.icon',
   },
   android: {
     package: id,
+    versionCode: 2,
     adaptiveIcon: {
-      backgroundColor: '#E6F4FE',
+      backgroundColor: IDENTITY.androidIconBackground,
       foregroundImage: './assets/images/android-icon-foreground.png',
       backgroundImage: './assets/images/android-icon-background.png',
       monochromeImage: './assets/images/android-icon-monochrome.png',
@@ -86,8 +111,10 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
   plugins: [
     // Release variants: no development-client residue (keys, local-network text, exp+ scheme). FIRST, so its mods run after the others'.
     ...(release ? (['./plugins/without-dev-client-residue.js'] as const) : []),
+    // No push entitlement: reminders are local only, `aps-environment` would add the Push capability to the App ID.
+    './plugins/without-push-entitlement.js',
     'expo-router',
-    ['expo-splash-screen', { backgroundColor: '#208AEF', image: './assets/images/splash-icon.png', imageWidth: 76 }],
+    ['expo-splash-screen', { backgroundColor: IDENTITY.splashBackground, dark: { backgroundColor: IDENTITY.splashBackgroundDark }, image: './assets/images/splash-icon.png', imageWidth: 76 }],
     'expo-sqlite',
     'expo-notifications',
     // 15 UI languages (P10, D11): the phones' per-app language settings list them (iOS CFBundleLocalizations, Android 13+
@@ -134,7 +161,7 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
               widgets: [
                 {
                   name: 'MoodWidget',
-                  displayName: 'Mood',
+                  displayName: variant === 'production' ? 'Mood Days' : 'Mood',
                   // One string for every language (expo-widgets); says what a tap does (review S1, L26).
                   description: 'Tap a face to start an entry. Shows your streak.',
                   supportedFamilies: ['systemSmall', 'systemMedium', 'accessoryCircular', 'accessoryRectangular'],

@@ -1,5 +1,5 @@
 // Italian strings. Same keys as en.ts (enforced by src/i18n/i18n.test.ts); machine-assisted translation from the
-// English and German sources (P10, D11) — no native reader yet (A14: IMPLEMENTED BUT UNVERIFIED except where logged).
+// English and German sources (P10, D11): no native reader yet (A14: IMPLEMENTED BUT UNVERIFIED except where logged).
 import type { LocaleMessages } from './en';
 
 export const it: LocaleMessages = {
@@ -107,7 +107,7 @@ export const it: LocaleMessages = {
   'import.warn.dateOrder': "Un foglio di calcolo ha riscritto le date di questo CSV; sono state lette come {order} (verificato con la colonna del giorno della settimana). Controlla l’anteprima.",
   'about.promise.local': "Il tuo diario resta su questo telefono. Mood non invia nulla da nessuna parte: niente account, niente pubblicità, niente analisi d’uso.",
   'about.promise.backup': "I backup vanno solo dove li metti tu.",
-  'about.promise.stats': "Le statistiche dicono cosa è successo insieme e su quanti giorni o voci si basano — mai perché.",
+  'about.promise.stats': "Le statistiche dicono cosa è successo insieme e su quanti giorni o voci si basano, mai perché.",
   'about.disclaimer': "Mood è un diario personale, non un dispositivo medico. Non diagnostica, non tratta, non cura e non previene alcuna condizione. Se stai attraversando un momento difficile, parlane con un medico o con una persona di fiducia.",
   'nav.back': "Indietro",
   'tabs.entries': "Voci",
@@ -116,6 +116,10 @@ export const it: LocaleMessages = {
   'tabs.more': "Altro",
   'home.question': "Come stai?",
   'home.empty': "La tua prima voce richiede due tocchi.",
+  'home.betterDays': "Nei tuoi giorni migliori spesso c’è: {activity}",
+  'home.addToday': "Aggiungi una voce per oggi",
+  'licenses.title': "Licenze",
+  'licenses.intro': "Software open source con cui è costruita questa app.",
   'day.today': "Oggi",
   'day.yesterday': "Ieri",
   'common.save': "Salva",

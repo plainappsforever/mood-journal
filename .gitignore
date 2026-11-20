@@ -47,6 +47,10 @@ artifacts/
 
 # Gradle output of local native modules
 modules/*/android/build/
+
+# App Store Connect helpers (store paperwork, local only)
+__pycache__/
+scripts/*.local.json
 keystore.properties
 *.keystore
 google-services.json

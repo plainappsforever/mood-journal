@@ -1,19 +1,25 @@
 import { router, type Href } from 'expo-router';
-import { Alert, Platform } from 'react-native';
+import { Alert, Platform, ScrollView, StyleSheet, View } from 'react-native';
 
 import { useAutoBackupFailed } from '@/components/auto-backup-section';
-import { Card, Row, Screen } from '@/components/ui';
+import { Row } from '@/components/ui';
+import { Radius, Spacing } from '@/constants/theme';
+import { useTheme } from '@/hooks/use-theme';
 import { useT } from '@/hooks/use-t';
 import { requestPinWidget } from '@/lib/widgets';
 
-// More (SPEC Screens): Goals · Moods · Activities · Reminders · Lock · Backup & export · Import from Daylio · Appearance · About.
+// More (SPEC Screens), settings layout B (identity sheet 13): a tall sheet with a grabber over a darker backdrop. Rows: Goals · Moods · Activities · Reminders · Lock · Backup & export · Import from Daylio · Appearance · About.
 export default function More() {
   const t = useT();
+  const theme = useTheme();
   const failed = useAutoBackupFailed();
   const go = (path: string) => () => router.push(path as Href);
   return (
-    <Screen testID="more-screen">
-      <Card>
+    <View style={[styles.backdrop, { backgroundColor: theme.backgroundSelected }]}>
+      <View style={[styles.sheet, { backgroundColor: theme.background }]}>
+        <View style={[styles.grabber, { backgroundColor: theme.border }]} />
+        <ScrollView testID="more-screen" contentContainerStyle={styles.content}>
+        <View>
         <Row testID="more-goals" label={t('goals.title')} onPress={go('/goals')} />
         <Row testID="more-moods" label={t('moods.title')} onPress={go('/moods')} />
         <Row testID="more-activities" label={t('activities.title')} onPress={go('/activities')} />
@@ -34,7 +40,16 @@ export default function More() {
             }}
           />
         ) : null}
-      </Card>
-    </Screen>
+        </View>
+        </ScrollView>
+      </View>
+    </View>
   );
 }
+
+const styles = StyleSheet.create({
+  backdrop: { flex: 1, paddingTop: Spacing.two },
+  sheet: { flex: 1, borderTopLeftRadius: Radius.card, borderTopRightRadius: Radius.card, overflow: 'hidden' },
+  grabber: { alignSelf: 'center', width: 40, height: 5, borderRadius: 3, marginTop: Spacing.two },
+  content: { paddingHorizontal: Spacing.four, paddingTop: Spacing.two, paddingBottom: Spacing.six },
+});

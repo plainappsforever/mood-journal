@@ -1,5 +1,5 @@
 // Simplified Chinese strings. Same keys as en.ts (enforced by src/i18n/i18n.test.ts); machine-assisted translation from the
-// English and German sources (P10, D11) — no native reader yet (A14: IMPLEMENTED BUT UNVERIFIED except where logged).
+// English and German sources (P10, D11): no native reader yet (A14: IMPLEMENTED BUT UNVERIFIED except where logged).
 import type { LocaleMessages } from './en';
 
 export const zhCN: LocaleMessages = {
@@ -107,7 +107,7 @@ export const zhCN: LocaleMessages = {
   'import.warn.dateOrder': "此 CSV 中的日期被表格软件改写过，已按 {order} 读取（已用星期列核对）。请检查预览。",
   'about.promise.local': "你的日记只留在这部手机上。Mood 不向任何地方发送任何内容：没有账号、没有广告、没有分析。",
   'about.promise.backup': "备份只会存到你选择的地方。",
-  'about.promise.stats': "统计只告诉你哪些事同时发生，以及依据了多少天或多少条记录——从不说原因。",
+  'about.promise.stats': "统计只告诉你哪些事同时发生，以及依据了多少天或多少条记录，从不说原因。",
   'about.disclaimer': "Mood 是个人日记，不是医疗器械。它不诊断、治疗、治愈或预防任何疾病。如果你感到难熬，请与医生或你信任的人聊聊。",
   'nav.back': "返回",
   'tabs.entries': "记录",
@@ -116,6 +116,10 @@ export const zhCN: LocaleMessages = {
   'tabs.more': "更多",
   'home.question': "你现在感觉怎么样？",
   'home.empty': "第一条记录只需点两下。",
+  'home.betterDays': "你状态好的日子里常有：{activity}",
+  'home.addToday': "添加今天的记录",
+  'licenses.title': "许可证",
+  'licenses.intro': "本应用使用的开源软件。",
   'day.today': "今天",
   'day.yesterday': "昨天",
   'common.save': "保存",
@@ -303,7 +307,7 @@ export const zhCN: LocaleMessages = {
   'backup.create': "创建备份文件",
   'backup.working': "处理中…",
   'backup.password': "密码（可选）",
-  'backup.passwordHint': "留空则为普通文件。设置密码后文件会加密；请记下密码——没有它就无法打开备份。",
+  'backup.passwordHint': "留空则为普通文件。设置密码后文件会加密；请记下密码。没有它就无法打开备份。",
   'backup.contains': "备份包含所有记录、照片、心情、活动、目标、提醒和设置。它只会去往你发送或保存的地方。",
   'backup.last': "上次备份：{date}",
   'backup.never': "这部手机上还没有备份。",

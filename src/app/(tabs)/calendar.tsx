@@ -2,17 +2,18 @@ import { router, type Href } from 'expo-router';
 import { useMemo, useState } from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 
+import { MonthDots } from '@/components/month-dots';
 import { Chip, Screen, Segmented, Small } from '@/components/ui';
-import { Spacing } from '@/constants/theme';
+import { BrandFonts, Spacing } from '@/constants/theme';
 import { useSQLiteContext } from '@/db/provider';
 import { addDays } from '@/engine/dates';
-import { dayIndex, monthGrid, pixelLevels, yearPixels } from '@/engine/stats';
+import { dayIndex, pixelLevels, yearPixels } from '@/engine/stats';
 import { useFormatter, useMoods, useSettings } from '@/hooks/use-journal';
 import { useLoad } from '@/hooks/use-load';
 import { useTheme } from '@/hooks/use-theme';
 import { calendarToday } from '@/lib/clock';
 import { levelColor } from '@/lib/levels';
-import { formatMonthShort, formatMonthYear, weekdayName } from '@/lib/locale';
+import { formatMonthShort, formatMonthYear } from '@/lib/locale';
 import { statEntries } from '@/lib/stat-cache';
 
 // Calendar (SPEC Screens): month grid coloured by the day's level (Formula 7) and Year in Pixels; a day opens its sheet.
@@ -37,7 +38,6 @@ export default function Calendar() {
 
   if (!moods) return <Screen testID="calendar-screen">{null}</Screen>;
   const shift = (n: number) => setMonth(({ y, m }) => ({ y: y + Math.floor((m - 1 + n) / 12), m: ((((m - 1 + n) % 12) + 12) % 12) + 1 }));
-  const weekdays = [0, 1, 2, 3, 4, 5, 6].map((i) => ((settings.weekStart - 1 + i) % 7) + 1);
 
   return (
     <Screen testID="calendar-screen">
@@ -58,39 +58,22 @@ export default function Calendar() {
             </Text>
             <Chip testID="cal-next" label="›" accessibilityLabel={t('calendar.next')} onPress={() => shift(1)} />
           </View>
-          <View style={styles.week}>
-            {weekdays.map((w) => (
-              <Text key={w} style={[styles.weekday, { color: theme.textSecondary }]}>
-                {weekdayName(locale, w, 'narrow')}
-              </Text>
-            ))}
-          </View>
-          {monthGrid(month.y, month.m, settings.weekStart).map((row, r) => (
-            <View key={r} style={styles.week}>
-              {row.map((date, c) => {
-                if (!date) return <View key={c} style={styles.cell} />;
-                const level = levels.get(date);
-                const future = date > addDays(today, 1);
-                return (
-                  <Pressable
-                    key={date}
-                    testID={`cal-day-${date}`}
-                    accessibilityRole="button"
-                    accessibilityLabel={`${date}${level ? `, ${t('calendar.level', { n: level })}` : ''}`}
-                    disabled={future}
-                    onPress={() => router.push(`/day/${date}` as Href)}
-                    style={[
-                      styles.cell,
-                      styles.day,
-                      { backgroundColor: level ? levelColor(moods, level) : theme.empty, opacity: future ? 0.35 : 1 },
-                      date === today && { borderWidth: 2, borderColor: theme.text },
-                    ]}>
-                    <Text style={[styles.dayText, { color: level ? '#ffffff' : theme.text }]}>{Number(date.slice(8))}</Text>
-                  </Pressable>
-                );
-              })}
-            </View>
-          ))}
+          <MonthDots
+            year={month.y}
+            month={month.m}
+            weekStart={settings.weekStart}
+            locale={locale}
+            today={today}
+            numbers
+            dot={34}
+            colorOf={(date) => {
+              const level = levels.get(date);
+              return level ? levelColor(moods, level) : null;
+            }}
+            onPressDay={(date) => router.push(`/day/${date}` as Href)}
+            testIDPrefix="cal-day-"
+            labelOf={(date, has) => `${date}${has ? `, ${t('calendar.level', { n: levels.get(date) ?? 0 })}` : ''}`}
+          />
           <Small>{t('calendar.hint')}</Small>
         </View>
       ) : (
@@ -150,17 +133,12 @@ const styles = StyleSheet.create({
   flex: { flex: 1 },
   block: { gap: Spacing.two },
   nav: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' },
-  title: { fontSize: 18, fontWeight: '700' },
-  week: { flexDirection: 'row', gap: 4 },
-  weekday: { flex: 1, textAlign: 'center', fontSize: 12 },
-  cell: { flex: 1, aspectRatio: 1 },
-  day: { borderRadius: 8, alignItems: 'center', justifyContent: 'center' },
-  dayText: { fontSize: 14, fontWeight: '600' },
+  title: { fontSize: 18, fontWeight: '700', fontFamily: BrandFonts.title },
   pixels: { flexDirection: 'row', gap: 2 },
   pixelCol: { gap: 2, alignItems: 'stretch' },
   pixelHead: { fontSize: 10, textAlign: 'center', height: 14 },
   pixelDay: { fontSize: 8, height: 10, width: 14, textAlign: 'right' },
-  pixel: { height: 10, borderRadius: 2 },
+  pixel: { height: 10, borderRadius: 5 },
   legend: { flexDirection: 'row', flexWrap: 'wrap', gap: Spacing.two },
   legendItem: { flexDirection: 'row', alignItems: 'center', gap: 4 },
   legendDot: { width: 12, height: 12, borderRadius: 6 },

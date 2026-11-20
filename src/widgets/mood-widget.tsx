@@ -78,7 +78,7 @@ function MoodWidgetLayout(props: MoodWidgetProps, environment: WidgetEnvironment
       )}
       {props.locked ? null : <Text modifiers={[font({ size: 12 }), lineLimit(2), minimumScaleFactor(0.7)]}>{props.streakText}</Text>}
       <Spacer />
-      <Text modifiers={[font({ size: 14, weight: 'semibold' }), foregroundStyle('#208AEF'), padding({ top: 0 })]}>{`＋ ${props.logLabel}`}</Text>
+      <Text modifiers={[font({ size: 14, weight: 'semibold' }), foregroundStyle(environment.colorScheme === 'dark' ? '#F27BB3' : '#B5306F'), padding({ top: 0 })]}>{`＋ ${props.logLabel}`}</Text>
     </VStack>
   );
 }

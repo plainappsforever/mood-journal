@@ -2,7 +2,7 @@
 import type { ReactNode } from 'react';
 import { Pressable, ScrollView, StyleSheet, Switch, Text, TextInput, View, type TextInputProps, type ViewStyle } from 'react-native';
 
-import { Spacing } from '@/constants/theme';
+import { BrandFonts, Radius, Spacing } from '@/constants/theme';
 import { useTheme } from '@/hooks/use-theme';
 
 export function Screen({ children, testID, scroll = true }: { children: ReactNode; testID?: string; scroll?: boolean }) {
@@ -97,7 +97,7 @@ export function Row({
       {left}
       <Text style={[styles.rowLabel, { color: danger ? theme.danger : theme.text }]}>{label}</Text>
       {value ? <Text style={[styles.rowValue, { color: theme.textSecondary }]}>{value}</Text> : null}
-      {onPress ? <Text style={{ color: theme.textSecondary }}>›</Text> : null}
+      {onPress ? <Text style={{ color: theme.textSecondary, fontFamily: BrandFonts.body }}>›</Text> : null}
     </Pressable>
   );
 }
@@ -128,7 +128,7 @@ export function Chip({
       onLongPress={onLongPress}
       style={({ pressed }) => [
         styles.chip,
-        { borderColor: selected ? theme.tint : theme.border, backgroundColor: selected ? theme.tint : theme.background },
+        { borderColor: selected ? theme.tint : theme.border, backgroundColor: selected ? theme.tint : theme.backgroundElement },
         pressed && styles.pressed,
       ]}>
       <Text style={[styles.chipText, { color: selected ? theme.onTint : theme.text }]}>{label}</Text>
@@ -170,7 +170,7 @@ export function Field({ label, testID, ...rest }: TextInputProps & { label?: str
       <TextInput
         testID={testID}
         placeholderTextColor={theme.textSecondary}
-        style={[styles.input, { color: theme.text, borderColor: theme.border, backgroundColor: theme.background }, rest.multiline && styles.multiline]}
+        style={[styles.input, { color: theme.text, borderColor: theme.border, backgroundColor: theme.backgroundElement }, rest.multiline && styles.multiline]}
         {...rest}
       />
     </View>
@@ -207,20 +207,20 @@ export const ui = StyleSheet.create({
 const styles = StyleSheet.create({
   flex: { flex: 1 },
   screen: { padding: Spacing.three, gap: Spacing.three, paddingBottom: Spacing.six },
-  card: { borderRadius: 14, padding: Spacing.three, gap: Spacing.two },
-  title: { fontSize: 22, fontWeight: '700' },
-  label: { fontSize: 16, lineHeight: 22 },
+  card: { borderRadius: Radius.card, padding: Spacing.three, gap: Spacing.two },
+  title: { fontSize: 22, fontWeight: '700', fontFamily: BrandFonts.title },
+  label: { fontSize: 16, lineHeight: 22, fontFamily: BrandFonts.body },
   center: { textAlign: 'center' },
-  small: { fontSize: 13, lineHeight: 18 },
-  section: { fontSize: 13, fontWeight: '700', textTransform: 'uppercase', letterSpacing: 0.5, marginTop: Spacing.two },
+  small: { fontSize: 13, lineHeight: 18, fontFamily: BrandFonts.body },
+  section: { fontSize: 13, fontWeight: '700', fontFamily: BrandFonts.body, textTransform: 'uppercase', letterSpacing: 0.5, marginTop: Spacing.two },
   row: { flexDirection: 'row', alignItems: 'center', gap: Spacing.two, minHeight: 48, paddingVertical: Spacing.two, borderBottomWidth: StyleSheet.hairlineWidth },
-  rowLabel: { fontSize: 16, flexShrink: 1, flexGrow: 1, minWidth: '40%' },
-  rowValue: { fontSize: 15, flexShrink: 1, textAlign: 'right' },
-  chip: { borderWidth: 1, borderRadius: 18, paddingHorizontal: 12, paddingVertical: 7, minHeight: 36, justifyContent: 'center' },
-  chipText: { fontSize: 15 },
+  rowLabel: { fontSize: 16, fontFamily: BrandFonts.body, flexShrink: 1, flexGrow: 1, minWidth: '40%' },
+  rowValue: { fontSize: 15, fontFamily: BrandFonts.body, flexShrink: 1, textAlign: 'right' },
+  chip: { borderWidth: 1, borderRadius: 999, paddingHorizontal: 12, paddingVertical: 7, minHeight: 36, justifyContent: 'center' },
+  chipText: { fontSize: 15, fontFamily: BrandFonts.body },
   pressed: { opacity: 0.6 },
   wrap: { flexDirection: 'row', flexWrap: 'wrap', gap: Spacing.two },
   field: { gap: Spacing.one },
-  input: { borderWidth: 1, borderRadius: 10, paddingHorizontal: 12, paddingVertical: 10, fontSize: 16, minHeight: 44 },
+  input: { borderWidth: 1, borderRadius: Radius.control, paddingHorizontal: 12, paddingVertical: 10, fontSize: 16, minHeight: 44 },
   multiline: { minHeight: 110, textAlignVertical: 'top' },
 });

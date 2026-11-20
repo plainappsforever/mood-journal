@@ -1,5 +1,5 @@
 import Constants from 'expo-constants';
-import { Stack } from 'expo-router';
+import { router, Stack, type Href } from 'expo-router';
 import { Alert, Linking } from 'react-native';
 
 import { Card, Label, Row, Screen, SectionTitle, Small } from '@/components/ui';
@@ -32,6 +32,7 @@ export default function About() {
       <Small>{t('about.deviceBackup')}</Small>
       <Card>
         <Row testID="about-privacy-link" label={t('about.privacyLink')} onPress={openPrivacy} />
+        <Row testID="about-licenses" label={t('licenses.title')} onPress={() => router.push('/licenses' as Href)} />
       </Card>
       <Small testID="about-version">{t('about.version', { version: Constants.expoConfig?.version ?? '1.0.0' })}</Small>
     </Screen>

@@ -1,5 +1,5 @@
 // Arabic strings. Same keys as en.ts (enforced by src/i18n/i18n.test.ts); machine-assisted translation from the
-// English and German sources (P10, D11) — no native reader yet (A14: IMPLEMENTED BUT UNVERIFIED except where logged).
+// English and German sources (P10, D11): no native reader yet (A14: IMPLEMENTED BUT UNVERIFIED except where logged).
 import type { LocaleMessages } from './en';
 
 export const ar: LocaleMessages = {
@@ -107,7 +107,7 @@ export const ar: LocaleMessages = {
   'import.warn.dateOrder': "أعاد برنامج جداول كتابة التواريخ في ملف CSV هذا؛ قُرئت بصيغة {order} (بعد مطابقتها بعمود يوم الأسبوع). يُرجى مراجعة المعاينة.",
   'about.promise.local': "تبقى يومياتك على هذا الهاتف. لا يرسل Mood أي شيء إلى أي مكان: لا حساب، لا إعلانات، لا تحليلات.",
   'about.promise.backup': "النسخ الاحتياطية تذهب فقط إلى حيث تضعها.",
-  'about.promise.stats': "تُبيّن الإحصاءات ما حدث معًا وعلى كم يومًا أو تدوينة تستند — ولا تقول السبب أبدًا.",
+  'about.promise.stats': "تُبيّن الإحصاءات ما حدث معًا وعلى كم يومًا أو تدوينة تستند, ولا تقول السبب أبدًا.",
   'about.disclaimer': "Mood يوميات شخصية، وليس جهازًا طبيًا. لا يقوم بتشخيص أي حالة أو علاجها أو شفائها أو الوقاية منها. إن كنت تمرّ بوقت صعب، فتحدّث مع طبيب أو مع شخص تثق به.",
   'nav.back': "رجوع",
   'tabs.entries': "التدوينات",
@@ -116,6 +116,10 @@ export const ar: LocaleMessages = {
   'tabs.more': "المزيد",
   'home.question': "كيف حالك؟",
   'home.empty': "تدوينتك الأولى تحتاج لمستين فقط.",
+  'home.betterDays': "في أيامك الأفضل غالبًا: {activity}",
+  'home.addToday': "إضافة إدخال لليوم",
+  'licenses.title': "التراخيص",
+  'licenses.intro': "برامج مفتوحة المصدر بُني بها هذا التطبيق.",
   'day.today': "اليوم",
   'day.yesterday': "أمس",
   'common.save': "حفظ",
@@ -303,7 +307,7 @@ export const ar: LocaleMessages = {
   'backup.create': "إنشاء ملف النسخة",
   'backup.working': "جارٍ العمل…",
   'backup.password': "كلمة المرور (اختياري)",
-  'backup.passwordHint': "اتركها فارغة لملف عادي. مع كلمة مرور يُشفَّر الملف؛ دوّن كلمة المرور — فبدونها لا يمكن فتح النسخة.",
+  'backup.passwordHint': "اتركها فارغة لملف عادي. مع كلمة مرور يُشفَّر الملف؛ دوّن كلمة المرور. فبدونها لا يمكن فتح النسخة.",
   'backup.contains': "تحتوي النسخة على كل التدوينات والصور والحالات المزاجية والأنشطة والأهداف والتذكيرات والإعدادات. وتذهب فقط إلى حيث ترسلها أو تحفظها.",
   'backup.last': "آخر نسخة: {date}",
   'backup.never': "لم تُنشأ أي نسخة على هذا الهاتف بعد.",

@@ -30,6 +30,7 @@
     "expo-splash-screen": "~57.0.10",
     "expo-sqlite": "~57.0.4",
     "expo-status-bar": "~57.0.1",
+    "expo-store-review": "~57.0.3",
     "expo-symbols": "~57.0.3",
     "expo-system-ui": "~57.0.4",
     "expo-web-browser": "~57.0.3",
@@ -70,7 +71,8 @@
     "test:e2e:android": "scripts/e2e.sh android",
     "preview": "scripts/native.sh ios preview && scripts/native.sh android preview",
     "preview:eas": "eas build --profile preview --platform all",
-    "new-app": "scripts/new-app.sh"
+    "new-app": "scripts/new-app.sh",
+    "licenses": "node scripts/licenses.js"
   },
   "jest": {
     "preset": "jest-expo",
@@ -95,5 +97,6 @@
         ]
       }
     }
-  }
+  },
+  "license": "GPL-3.0-only"
 }

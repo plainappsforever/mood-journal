@@ -1,5 +1,5 @@
 // Hindi strings. Same keys as en.ts (enforced by src/i18n/i18n.test.ts); machine-assisted translation from the
-// English and German sources (P10, D11) — no native reader yet (A14: IMPLEMENTED BUT UNVERIFIED except where logged).
+// English and German sources (P10, D11): no native reader yet (A14: IMPLEMENTED BUT UNVERIFIED except where logged).
 import type { LocaleMessages } from './en';
 
 export const hi: LocaleMessages = {
@@ -107,7 +107,7 @@ export const hi: LocaleMessages = {
   'import.warn.dateOrder': "इस CSV की तारीख़ें किसी स्प्रेडशीट ऐप ने बदलकर लिखीं; इन्हें {order} के रूप में पढ़ा गया (सप्ताह के दिन वाले कॉलम से जाँचा गया)। कृपया प्रीव्यू देखें।",
   'about.promise.local': "आपकी डायरी इसी फ़ोन पर रहती है। Mood कहीं कुछ नहीं भेजता: न अकाउंट, न विज्ञापन, न एनालिटिक्स।",
   'about.promise.backup': "बैकअप सिर्फ़ वहीं जाते हैं जहाँ आप रखें।",
-  'about.promise.stats': "आँकड़े बताते हैं कि क्या साथ-साथ हुआ और यह कितने दिनों या एंट्री पर आधारित है — कभी यह नहीं कि क्यों।",
+  'about.promise.stats': "आँकड़े बताते हैं कि क्या साथ-साथ हुआ और यह कितने दिनों या एंट्री पर आधारित है, कभी यह नहीं कि क्यों।",
   'about.disclaimer': "Mood एक निजी डायरी है, कोई मेडिकल डिवाइस नहीं। यह किसी भी स्थिति का निदान, उपचार, इलाज या रोकथाम नहीं करता। अगर आप मुश्किल समय से गुज़र रहे हैं, तो किसी डॉक्टर या भरोसेमंद व्यक्ति से बात करें।",
   'nav.back': "वापस",
   'tabs.entries': "एंट्री",
@@ -116,6 +116,10 @@ export const hi: LocaleMessages = {
   'tabs.more': "और",
   'home.question': "आप कैसे हैं?",
   'home.empty': "आपकी पहली एंट्री में बस दो टैप लगते हैं।",
+  'home.betterDays': "आपके बेहतर दिनों में अक्सर: {activity}",
+  'home.addToday': "आज की प्रविष्टि जोड़ें",
+  'licenses.title': "लाइसेंस",
+  'licenses.intro': "ओपन-सोर्स सॉफ़्टवेयर जिससे यह ऐप बना है।",
   'day.today': "आज",
   'day.yesterday': "कल",
   'common.save': "सहेजें",
@@ -303,7 +307,7 @@ export const hi: LocaleMessages = {
   'backup.create': "बैकअप फ़ाइल बनाएँ",
   'backup.working': "काम चल रहा है…",
   'backup.password': "पासवर्ड (वैकल्पिक)",
-  'backup.passwordHint': "सादी फ़ाइल के लिए ख़ाली छोड़ें। पासवर्ड देने पर फ़ाइल एन्क्रिप्ट होती है; पासवर्ड लिख लें — इसके बिना बैकअप नहीं खुलेगा।",
+  'backup.passwordHint': "सादी फ़ाइल के लिए ख़ाली छोड़ें। पासवर्ड देने पर फ़ाइल एन्क्रिप्ट होती है; पासवर्ड लिख लें. इसके बिना बैकअप नहीं खुलेगा।",
   'backup.contains': "बैकअप में सभी एंट्री, फ़ोटो, मूड, गतिविधियाँ, लक्ष्य, रिमाइंडर और सेटिंग होती हैं। यह सिर्फ़ वहीं जाता है जहाँ आप भेजें या सहेजें।",
   'backup.last': "पिछला बैकअप: {date}",
   'backup.never': "इस फ़ोन पर अभी कोई बैकअप नहीं बना।",

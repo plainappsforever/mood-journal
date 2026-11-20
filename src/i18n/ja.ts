@@ -1,5 +1,5 @@
 // Japanese strings. Same keys as en.ts (enforced by src/i18n/i18n.test.ts); machine-assisted translation from the
-// English and German sources (P10, D11) — no native reader yet (A14: IMPLEMENTED BUT UNVERIFIED except where logged).
+// English and German sources (P10, D11): no native reader yet (A14: IMPLEMENTED BUT UNVERIFIED except where logged).
 import type { LocaleMessages } from './en';
 
 export const ja: LocaleMessages = {
@@ -116,6 +116,10 @@ export const ja: LocaleMessages = {
   'tabs.more': "その他",
   'home.question': "今の気分は？",
   'home.empty': "最初の記録は2タップで終わります。",
+  'home.betterDays': "調子の良い日によくあること: {activity}",
+  'home.addToday': "今日の記録を追加",
+  'licenses.title': "ライセンス",
+  'licenses.intro': "このアプリが使っているオープンソースソフトウェア。",
   'day.today': "今日",
   'day.yesterday': "昨日",
   'common.save': "保存",

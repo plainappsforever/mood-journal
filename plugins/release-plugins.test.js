@@ -112,3 +112,13 @@ test('a widget extension bundle id left from another variant moves to this varia
   expect(moveBundleId('"com.plainapps.moodjournal.preview.ExpoWidgetsTarget"', 'com.plainapps.moodjournal.preview', others)).toBe('"com.plainapps.moodjournal.preview.ExpoWidgetsTarget"');
   expect(moveBundleId('"com.plainapps.moodjournal.ExpoWidgetsTarget"', 'com.plainapps.moodjournal.dev', ['com.plainapps.moodjournal.preview', 'com.plainapps.moodjournal'])).toBe('"com.plainapps.moodjournal.dev.ExpoWidgetsTarget"');
 });
+
+test('no push entitlement is left in the app entitlements (reminders are local only)', async () => {
+  const withoutPush = require('./without-push-entitlement');
+  const ent = await runMod(withoutPush({ name: 'Mood', slug: 'mood-journal' }), 'ios', 'entitlements', {
+    'aps-environment': 'development',
+    'com.apple.security.application-groups': ['group.com.plainapps.moodjournal'],
+  });
+  expect(ent['aps-environment']).toBeUndefined();
+  expect(ent['com.apple.security.application-groups']).toEqual(['group.com.plainapps.moodjournal']);
+});

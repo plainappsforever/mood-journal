@@ -1,5 +1,5 @@
 // Spanish strings. Same keys as en.ts (enforced by src/i18n/i18n.test.ts); machine-assisted translation from the
-// English and German sources (P10, D11) — no native reader yet (A14: IMPLEMENTED BUT UNVERIFIED except where logged).
+// English and German sources (P10, D11): no native reader yet (A14: IMPLEMENTED BUT UNVERIFIED except where logged).
 import type { LocaleMessages } from './en';
 
 export const es: LocaleMessages = {
@@ -116,6 +116,10 @@ export const es: LocaleMessages = {
   'tabs.more': "Más",
   'home.question': "¿Cómo estás?",
   'home.empty': "Tu primera entrada lleva dos toques.",
+  'home.betterDays': "En tus mejores días suele haber: {activity}",
+  'home.addToday': "Añadir una entrada de hoy",
+  'licenses.title': "Licencias",
+  'licenses.intro': "Software de código abierto con el que está hecha esta app.",
   'day.today': "Hoy",
   'day.yesterday': "Ayer",
   'common.save': "Guardar",

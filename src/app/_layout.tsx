@@ -1,9 +1,10 @@
-import { DarkTheme, DefaultTheme, Stack, ThemeProvider } from 'expo-router';
+import { DarkTheme, DefaultTheme, Stack, ThemeProvider, type Theme } from 'expo-router';
 import type { SQLiteDatabase } from 'expo-sqlite';
 import { getCalendars } from 'expo-localization';
 import { useEffect } from 'react';
 import { LogBox, useColorScheme } from 'react-native';
 
+import { BrandFonts, Colors, Radius } from '@/constants/theme';
 import { AppLockGate } from '@/components/app-lock-gate';
 import { DatabaseProvider, useSQLiteContext } from '@/db/provider';
 import { migrate } from '@/db/migrations';
@@ -54,6 +55,18 @@ export default function RootLayout() {
   );
 }
 
+function navigationTheme(dark: boolean): Theme {
+  const base = dark ? DarkTheme : DefaultTheme;
+  const c = Colors[dark ? 'dark' : 'light'];
+  const font = (f: Theme['fonts']['regular']) => ({ ...f, fontFamily: BrandFonts.body });
+  return {
+    ...base,
+    colors: { ...base.colors, primary: c.tintText, background: c.background, card: c.background, text: c.text, border: c.border },
+    fonts: { regular: font(base.fonts.regular), medium: font(base.fonts.medium), bold: font(base.fonts.bold), heavy: font(base.fonts.heavy) },
+  };
+}
+const NAV_THEMES = { light: navigationTheme(false), dark: navigationTheme(true) };
+
 function Navigator() {
   const scheme = useColorScheme();
   const t = useT();
@@ -65,13 +78,13 @@ function Navigator() {
   // Widgets (SPEC flow 10): pushed on start, foreground and every journal change.
   useEffect(() => startWidgets(db), [db]);
   return (
-    <ThemeProvider value={scheme === 'dark' ? DarkTheme : DefaultTheme}>
+    <ThemeProvider value={NAV_THEMES[scheme === 'dark' ? 'dark' : 'light']}>
       <AppLockGate>
-        <Stack screenOptions={{ headerBackTitle: t('nav.back') }}>
+        <Stack screenOptions={{ headerBackTitle: t('nav.back'), headerTitleStyle: { fontFamily: BrandFonts.title } }}>
           <Stack.Screen name="(tabs)" options={{ headerShown: false, title: t('tabs.entries') }} />
           <Stack.Screen name="debug/[action]" options={{ title: 'Debug' }} />
           {/* Day view as a sheet (SPEC Screens): declared here, not from inside the screen (D59 found that half-pushed). */}
-          <Stack.Screen name="day/[date]" options={{ presentation: 'formSheet', sheetAllowedDetents: [0.55, 1], sheetGrabberVisible: true, sheetCornerRadius: 16, headerShown: false }} />
+          <Stack.Screen name="day/[date]" options={{ presentation: 'formSheet', sheetAllowedDetents: [0.55, 1], sheetGrabberVisible: true, sheetCornerRadius: Radius.card, headerShown: false }} />
         </Stack>
       </AppLockGate>
     </ThemeProvider>

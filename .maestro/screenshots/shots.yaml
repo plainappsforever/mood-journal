@@ -1,0 +1,96 @@
+appId: ${APP_ID}
+name: Store screenshots - Home, entry editor, Stats, activity detail, calendar month (run by scripts/screenshots.sh, not part of the suite)
+tags:
+  - screenshots
+---
+# env: SHOTS = "en" or "de" (file-name prefix). The journal comes from scripts/store-demo.py
+# (a production build has no seed route). Navigation uses testIDs only, so the same steps run in both languages.
+# Every shot starts from a fresh process, so no screen depends on the one before.
+- launchApp:
+    stopApp: true
+- extendedWaitUntil:
+    visible:
+      id: home-screen
+    timeout: 120000
+- waitForAnimationToEnd
+# 1. Home: five faces, streak, sport goal, the newest entries
+- extendedWaitUntil:
+    visible:
+      id: entry-row-.*
+    timeout: 30000
+- takeScreenshot: ${SHOTS}-01-home
+
+# 2. The entry editor on today's newest entry (a new entry would show the real clock, not 9:41): face, time, activities by group
+- tapOn:
+    id: entry-row-.*
+- extendedWaitUntil:
+    visible:
+      id: entry-editor
+    timeout: 30000
+- waitForAnimationToEnd
+- takeScreenshot: ${SHOTS}-02-editor
+
+# 3. Stats: average with its basis, chart, counts
+- launchApp:
+    stopApp: true
+- extendedWaitUntil:
+    visible:
+      id: home-screen
+    timeout: 120000
+- tapOn:
+    id: tab-stats
+- extendedWaitUntil:
+    visible:
+      id: stat-average
+    timeout: 60000
+- waitForAnimationToEnd
+# the chart draws a moment after the cards (it appears late on a loaded Mac, up to ~30 s)
+- extendedWaitUntil:
+    visible:
+      id: never-there
+    timeout: 30000
+    optional: true
+# the chart (react-native-svg) is sometimes drawn blank on the first mount of Stats in a fresh process: a period switch redraws it
+- tapOn:
+    id: period-month
+- waitForAnimationToEnd
+- tapOn:
+    id: period-30d
+- waitForAnimationToEnd
+- extendedWaitUntil:
+    visible:
+      id: never-there
+    timeout: 3000
+    optional: true
+- takeScreenshot: ${SHOTS}-03-stats
+
+# 4. Activity detail: sport (clear difference or could be chance, both means)
+- scrollUntilVisible:
+    element:
+      id: stat-activity-10
+- tapOn:
+    id: stat-activity-10
+- extendedWaitUntil:
+    visible:
+      id: cmp-result
+    timeout: 60000
+- waitForAnimationToEnd
+- takeScreenshot: ${SHOTS}-04-activity
+
+# 5. Calendar: last month, nearly every day coloured
+- launchApp:
+    stopApp: true
+- extendedWaitUntil:
+    visible:
+      id: home-screen
+    timeout: 120000
+- tapOn:
+    id: tab-calendar
+- extendedWaitUntil:
+    visible:
+      id: cal-title
+    timeout: 60000
+- tapOn:
+    id: cal-prev
+- waitForAnimationToEnd
+- takeScreenshot: ${SHOTS}-05-calendar

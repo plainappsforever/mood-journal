@@ -1,6 +1,7 @@
 /**
  * @jest-environment node
  */
+import { createCipheriv as d21Cipher, pbkdf2Sync as d21Pbkdf2 } from 'node:crypto';
 // Backup round trip (A6, unit part): journal → snapshot → ZIP (→ sealed) → restore into another journal.
 import { createHash } from 'node:crypto';
 
@@ -200,5 +201,29 @@ describe('restore never trusts the file (review S7)', () => {
     expect(await code(restoreSnapshot(b, archivedLevel))).toBe('damaged');
     expect(await dump(b)).toBe(before);
     expect(await restoreSnapshot(b, snapshot)).toEqual({ entries: 40, photos: 2 }); // the honest file still restores
+  });
+});
+
+describe('entry 0 with a wrong index (ported template D21)', () => {
+  it('entry 0 that opens (tag OK) but carries the wrong index → damaged, not wrong-password', async () => {
+    const salt = Buffer.from('000102030405060708090a0b0c0d0e0f', 'hex');
+    const header = Buffer.from(JSON.stringify({ format: 1, kdf: 'pbkdf2-sha256', iterations: 1000, salt: salt.toString('hex'), createdAt: '2026-11-07T08:00:00.000Z', appVersion: '1.0.0' }));
+    const key = d21Pbkdf2(Buffer.from('pw'), salt, 1000, 32, 'sha256');
+    const be = (n: number) => {
+      const b = Buffer.alloc(4);
+      b.writeUInt32BE(n);
+      return b;
+    };
+    const prefix = Buffer.concat([Buffer.from('MOODBK1'), be(header.length), header]);
+    const entry = (index: number, last: boolean, body: Buffer) => {
+      const nonce = Buffer.alloc(12, 5);
+      const c = d21Cipher('aes-256-gcm', key, nonce);
+      const ct = Buffer.concat([c.update(Buffer.concat([be(index), Buffer.from([last ? 1 : 0]), body])), c.final()]);
+      const sealed = Buffer.concat([nonce, ct, c.getAuthTag()]);
+      return Buffer.concat([be(sealed.length), sealed]);
+    };
+    const file = new Uint8Array(Buffer.concat([prefix, entry(1, false, Buffer.from('{"zipSize":3}')), entry(1, true, Buffer.from('abc'))]));
+    await expect(openSealedBackup(file, nodeBackupCrypto, 'pw')).rejects.toMatchObject({ code: 'damaged' });
+    await expect(openSealedBackup(file, nodeBackupCrypto, 'wrong')).rejects.toMatchObject({ code: 'wrong-password' });
   });
 });

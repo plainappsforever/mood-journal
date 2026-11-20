@@ -1,5 +1,5 @@
 // Vietnamese strings. Same keys as en.ts (enforced by src/i18n/i18n.test.ts); machine-assisted translation from the
-// English and German sources (P10, D11) — no native reader yet (A14: IMPLEMENTED BUT UNVERIFIED except where logged).
+// English and German sources (P10, D11): no native reader yet (A14: IMPLEMENTED BUT UNVERIFIED except where logged).
 import type { LocaleMessages } from './en';
 
 export const vi: LocaleMessages = {
@@ -107,7 +107,7 @@ export const vi: LocaleMessages = {
   'import.warn.dateOrder': "Một ứng dụng bảng tính đã ghi lại ngày trong CSV này; đã đọc theo dạng {order} (đối chiếu với cột thứ trong tuần). Hãy kiểm tra bản xem trước.",
   'about.promise.local': "Nhật ký của bạn ở lại trên điện thoại này. Mood không gửi gì đi đâu: không tài khoản, không quảng cáo, không phân tích.",
   'about.promise.backup': "Bản sao lưu chỉ đến nơi bạn đặt chúng.",
-  'about.promise.stats': "Thống kê cho biết điều gì xảy ra cùng nhau và dựa trên bao nhiêu ngày hoặc mục — không bao giờ nói vì sao.",
+  'about.promise.stats': "Thống kê cho biết điều gì xảy ra cùng nhau và dựa trên bao nhiêu ngày hoặc mục, không bao giờ nói vì sao.",
   'about.disclaimer': "Mood là nhật ký cá nhân, không phải thiết bị y tế. Ứng dụng không chẩn đoán, điều trị, chữa khỏi hay phòng ngừa bất kỳ tình trạng nào. Nếu bạn đang gặp khó khăn, hãy nói chuyện với bác sĩ hoặc người bạn tin tưởng.",
   'nav.back': "Quay lại",
   'tabs.entries': "Nhật ký",
@@ -116,6 +116,10 @@ export const vi: LocaleMessages = {
   'tabs.more': "Thêm",
   'home.question': "Bạn thấy thế nào?",
   'home.empty': "Mục đầu tiên chỉ cần hai lần chạm.",
+  'home.betterDays': "Những ngày tốt của bạn thường có: {activity}",
+  'home.addToday': "Thêm mục cho hôm nay",
+  'licenses.title': "Giấy phép",
+  'licenses.intro': "Phần mềm nguồn mở dùng để xây dựng ứng dụng này.",
   'day.today': "Hôm nay",
   'day.yesterday': "Hôm qua",
   'common.save': "Lưu",
@@ -303,7 +307,7 @@ export const vi: LocaleMessages = {
   'backup.create': "Tạo tệp sao lưu",
   'backup.working': "Đang xử lý…",
   'backup.password': "Mật khẩu (không bắt buộc)",
-  'backup.passwordHint': "Để trống để có tệp thường. Có mật khẩu thì tệp được mã hóa; hãy ghi lại mật khẩu — không có nó sẽ không mở được bản sao lưu.",
+  'backup.passwordHint': "Để trống để có tệp thường. Có mật khẩu thì tệp được mã hóa; hãy ghi lại mật khẩu. Không có nó sẽ không mở được bản sao lưu.",
   'backup.contains': "Bản sao lưu chứa mọi mục, ảnh, tâm trạng, hoạt động, mục tiêu, lời nhắc và cài đặt. Nó chỉ đến nơi bạn gửi hoặc lưu.",
   'backup.last': "Lần sao lưu gần nhất: {date}",
   'backup.never': "Chưa có bản sao lưu nào trên điện thoại này.",

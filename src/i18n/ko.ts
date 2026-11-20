@@ -1,5 +1,5 @@
 // Korean strings. Same keys as en.ts (enforced by src/i18n/i18n.test.ts); machine-assisted translation from the
-// English and German sources (P10, D11) — no native reader yet (A14: IMPLEMENTED BUT UNVERIFIED except where logged).
+// English and German sources (P10, D11): no native reader yet (A14: IMPLEMENTED BUT UNVERIFIED except where logged).
 import type { LocaleMessages } from './en';
 
 export const ko: LocaleMessages = {
@@ -116,6 +116,10 @@ export const ko: LocaleMessages = {
   'tabs.more': "더보기",
   'home.question': "지금 기분은 어때요?",
   'home.empty': "첫 기록은 두 번만 탭하면 돼요.",
+  'home.betterDays': "컨디션 좋은 날에 자주 있는 것: {activity}",
+  'home.addToday': "오늘 기록 추가",
+  'licenses.title': "라이선스",
+  'licenses.intro': "이 앱을 만든 오픈소스 소프트웨어입니다.",
   'day.today': "오늘",
   'day.yesterday': "어제",
   'common.save': "저장",

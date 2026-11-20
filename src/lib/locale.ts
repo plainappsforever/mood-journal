@@ -70,6 +70,11 @@ export function formatMonthYear(locale: string, year: number, month: number): st
   return fmt(locale, { month: 'long', year: 'numeric' }).format(new Date(Date.UTC(year, month - 1, 1)));
 }
 
+/** "October" (month name alone, for the Home heading). */
+export function formatMonthLong(locale: string, month: number): string {
+  return fmt(locale, { month: 'long' }).format(new Date(Date.UTC(2026, month - 1, 1)));
+}
+
 /** "Oct". */
 export function formatMonthShort(locale: string, month: number): string {
   return fmt(locale, { month: 'short' }).format(new Date(Date.UTC(2026, month - 1, 1)));

@@ -267,7 +267,8 @@ export async function openSealedBackup(bytes: Uint8Array, crypto: BackupCrypto, 
       throw new BackupError(firstWrongPassword ? 'wrong-password' : 'damaged', `entry ${index}`);
     }
     at += length;
-    if (plain.length < 5 || readU32(plain) !== index) throw new BackupError(firstWrongPassword ? 'wrong-password' : 'damaged', 'entry order');
+    // The GCM tag verified, so the password is right: a wrong index here is damage, never 'wrong-password' (D21).
+    if (plain.length < 5 || readU32(plain) !== index) throw new BackupError('damaged', 'entry order');
     return { last: plain[4] === 1, payload: plain.subarray(5) };
   };
   const first = await next(0, true);

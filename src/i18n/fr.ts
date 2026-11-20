@@ -1,5 +1,5 @@
 // French strings. Same keys as en.ts (enforced by src/i18n/i18n.test.ts); machine-assisted translation from the
-// English and German sources (P10, D11) — no native reader yet (A14: IMPLEMENTED BUT UNVERIFIED except where logged).
+// English and German sources (P10, D11): no native reader yet (A14: IMPLEMENTED BUT UNVERIFIED except where logged).
 import type { LocaleMessages } from './en';
 
 export const fr: LocaleMessages = {
@@ -107,7 +107,7 @@ export const fr: LocaleMessages = {
   'import.warn.dateOrder': "Un tableur a réécrit les dates de ce CSV ; elles ont été lues au format {order} (vérifié avec la colonne du jour de la semaine). Vérifie l’aperçu.",
   'about.promise.local': "Ton journal reste sur ce téléphone. Mood n’envoie rien nulle part : pas de compte, pas de pub, pas de statistiques d’usage.",
   'about.promise.backup': "Les sauvegardes vont uniquement là où tu les mets.",
-  'about.promise.stats': "Les statistiques disent ce qui s’est produit ensemble et sur combien de jours ou d’entrées elles reposent — jamais pourquoi.",
+  'about.promise.stats': "Les statistiques disent ce qui s’est produit ensemble et sur combien de jours ou d’entrées elles reposent, jamais pourquoi.",
   'about.disclaimer': "Mood est un journal personnel, pas un dispositif médical. Il ne diagnostique, ne traite, ne guérit ni ne prévient aucune maladie. Si tu traverses une période difficile, parles-en à un médecin ou à une personne de confiance.",
   'nav.back': "Retour",
   'tabs.entries': "Entrées",
@@ -116,6 +116,10 @@ export const fr: LocaleMessages = {
   'tabs.more': "Plus",
   'home.question': "Comment ça va ?",
   'home.empty': "Ta première entrée se fait en deux touches.",
+  'home.betterDays': "Vos meilleurs jours comptent souvent : {activity}",
+  'home.addToday': "Ajouter une entrée pour aujourd’hui",
+  'licenses.title': "Licences",
+  'licenses.intro': "Logiciels libres avec lesquels cette app est construite.",
   'day.today': "Aujourd’hui",
   'day.yesterday': "Hier",
   'common.save': "Enregistrer",
@@ -303,7 +307,7 @@ export const fr: LocaleMessages = {
   'backup.create': "Créer le fichier de sauvegarde",
   'backup.working': "En cours…",
   'backup.password': "Mot de passe (facultatif)",
-  'backup.passwordHint': "Laisse vide pour un fichier non chiffré. Avec un mot de passe, le fichier est chiffré ; note-le — sans lui la sauvegarde ne peut pas être ouverte.",
+  'backup.passwordHint': "Laisse vide pour un fichier non chiffré. Avec un mot de passe, le fichier est chiffré ; note-le. Sans lui la sauvegarde ne peut pas être ouverte.",
   'backup.contains': "Une sauvegarde contient toutes les entrées, photos, humeurs, activités, objectifs, rappels et réglages. Elle va uniquement là où tu l’envoies ou l’enregistres.",
   'backup.last': "Dernière sauvegarde : {date}",
   'backup.never': "Aucune sauvegarde faite sur ce téléphone.",

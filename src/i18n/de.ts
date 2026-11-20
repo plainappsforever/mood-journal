@@ -114,7 +114,7 @@ export const de: Messages = {
 
   'about.promise.local': 'Dein Tagebuch bleibt auf diesem Handy. Mood sendet nichts: kein Konto, keine Werbung, keine Analyse.',
   'about.promise.backup': 'Backups landen nur dort, wo du sie ablegst.',
-  'about.promise.stats': 'Statistiken zeigen, was zusammen vorkam und auf wie vielen Tagen oder Einträgen das beruht — nie, warum.',
+  'about.promise.stats': 'Statistiken zeigen, was zusammen vorkam und auf wie vielen Tagen oder Einträgen das beruht, nie, warum.',
   'about.disclaimer':
     'Mood ist ein persönliches Tagebuch, kein Medizinprodukt. Es erkennt, behandelt, heilt oder verhindert keine Erkrankung. Wenn es dir schlecht geht, sprich mit einer Ärztin, einem Arzt oder einem Menschen, dem du vertraust.',
 
@@ -126,6 +126,10 @@ export const de: Messages = {
   'tabs.more': "Mehr",
   'home.question': "Wie geht es dir?",
   'home.empty': "Dein erster Eintrag braucht zwei Tipper.",
+  'home.betterDays': "An deinen besseren Tagen oft dabei: {activity}",
+  'home.addToday': "Eintrag für heute hinzufügen",
+  'licenses.title': "Lizenzen",
+  'licenses.intro': "Open-Source-Software, mit der diese App gebaut ist.",
   'day.today': "Heute",
   'day.yesterday': "Gestern",
   'common.save': "Sichern",
@@ -323,7 +327,7 @@ export const de: Messages = {
   'backup.create': "Sicherungsdatei erstellen",
   'backup.working': "Läuft…",
   'backup.password': "Passwort (optional)",
-  'backup.passwordHint': "Leer lassen für eine unverschlüsselte Datei. Mit Passwort wird die Datei verschlüsselt; schreib das Passwort auf — ohne es lässt sich die Sicherung nicht öffnen.",
+  'backup.passwordHint': "Leer lassen für eine unverschlüsselte Datei. Mit Passwort wird die Datei verschlüsselt; schreib das Passwort auf. Ohne es lässt sich die Sicherung nicht öffnen.",
   'backup.contains': "Eine Sicherung enthält alle Einträge, Fotos, Stimmungen, Aktivitäten, Ziele, Erinnerungen und Einstellungen. Sie landet nur dort, wohin du sie schickst oder speicherst.",
   'backup.last': "Letzte Sicherung: {date}",
   'backup.never': "Auf diesem Telefon noch keine Sicherung erstellt.",

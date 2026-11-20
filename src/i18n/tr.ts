@@ -1,5 +1,5 @@
 // Turkish strings. Same keys as en.ts (enforced by src/i18n/i18n.test.ts); machine-assisted translation from the
-// English and German sources (P10, D11) — no native reader yet (A14: IMPLEMENTED BUT UNVERIFIED except where logged).
+// English and German sources (P10, D11): no native reader yet (A14: IMPLEMENTED BUT UNVERIFIED except where logged).
 import type { LocaleMessages } from './en';
 
 export const tr: LocaleMessages = {
@@ -107,7 +107,7 @@ export const tr: LocaleMessages = {
   'import.warn.dateOrder': "Bu CSV’deki tarihleri bir tablo uygulaması yeniden yazmış; {order} olarak okundu (haftanın günü sütunuyla kontrol edildi). Lütfen önizlemeyi kontrol et.",
   'about.promise.local': "Günlüğün bu telefonda kalır. Mood hiçbir yere bir şey göndermez: hesap yok, reklam yok, analiz yok.",
   'about.promise.backup': "Yedekler yalnızca senin koyduğun yere gider.",
-  'about.promise.stats': "İstatistikler neyin birlikte olduğunu ve bunun kaç gün ya da kayda dayandığını söyler — asla nedenini değil.",
+  'about.promise.stats': "İstatistikler neyin birlikte olduğunu ve bunun kaç gün ya da kayda dayandığını söyler, asla nedenini değil.",
   'about.disclaimer': "Mood kişisel bir günlüktür, tıbbi bir cihaz değildir. Hiçbir durumu teşhis etmez, tedavi etmez, iyileştirmez veya önlemez. Zor bir dönemden geçiyorsan bir doktorla ya da güvendiğin biriyle konuş.",
   'nav.back': "Geri",
   'tabs.entries': "Kayıtlar",
@@ -116,6 +116,10 @@ export const tr: LocaleMessages = {
   'tabs.more': "Diğer",
   'home.question': "Nasılsın?",
   'home.empty': "İlk kaydın iki dokunuş sürer.",
+  'home.betterDays': "İyi günlerinde sık görülen: {activity}",
+  'home.addToday': "Bugün için kayıt ekle",
+  'licenses.title': "Lisanslar",
+  'licenses.intro': "Bu uygulamanın yapıldığı açık kaynak yazılımlar.",
   'day.today': "Bugün",
   'day.yesterday': "Dün",
   'common.save': "Kaydet",
@@ -303,7 +307,7 @@ export const tr: LocaleMessages = {
   'backup.create': "Yedek dosyası oluştur",
   'backup.working': "İşleniyor…",
   'backup.password': "Parola (isteğe bağlı)",
-  'backup.passwordHint': "Şifresiz bir dosya için boş bırak. Parolayla dosya şifrelenir; parolayı not al — o olmadan yedek açılamaz.",
+  'backup.passwordHint': "Şifresiz bir dosya için boş bırak. Parolayla dosya şifrelenir; parolayı not al. O olmadan yedek açılamaz.",
   'backup.contains': "Bir yedek tüm kayıtları, fotoğrafları, ruh hâllerini, etkinlikleri, hedefleri, hatırlatıcıları ve ayarları içerir. Yalnızca gönderdiğin ya da kaydettiğin yere gider.",
   'backup.last': "Son yedek: {date}",
   'backup.never': "Bu telefonda henüz yedek alınmadı.",

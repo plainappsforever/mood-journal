@@ -1,6 +1,6 @@
 // English strings (source of truth for keys). Every key must exist in every locale (src/i18n/i18n.test.ts).
 // Plural keys end in `_one` / `_other` (Intl.PluralRules categories; P10 adds `_few`, `_many` … where a language needs
-// them). Placeholders: {name}. Wording rules: SPEC "Honest promises" — no medical words (src/engine/wording.ts).
+// them). Placeholders: {name}. Wording rules: SPEC "Honest promises": no medical words (src/engine/wording.ts).
 export const en = {
   'app.name': 'Mood',
 
@@ -122,7 +122,7 @@ export const en = {
   // About & privacy (SPEC Honest promises; checked by the wording test)
   'about.promise.local': 'Your journal stays on this phone. Mood sends nothing anywhere: no account, no ads, no analytics.',
   'about.promise.backup': 'Backups go only where you put them.',
-  'about.promise.stats': 'Statistics say what happened together, and how many days or entries that is based on — never why.',
+  'about.promise.stats': 'Statistics say what happened together, and how many days or entries that is based on, never why.',
   'about.disclaimer':
     'Mood is a personal journal, not a medical device. It does not diagnose, treat, cure or prevent any condition. If you are struggling, talk to a doctor or someone you trust.',
 
@@ -134,6 +134,10 @@ export const en = {
   'tabs.more': "More",
   'home.question': "How are you?",
   'home.empty': "Your first entry takes two taps.",
+  'home.betterDays': "Your better days often have: {activity}",
+  'home.addToday': "Add an entry for today",
+  'licenses.title': "Licences",
+  'licenses.intro': "Open source software this app is built with.",
   'day.today': "Today",
   'day.yesterday': "Yesterday",
   'common.save': "Save",
@@ -331,7 +335,7 @@ export const en = {
   'backup.create': "Create backup file",
   'backup.working': "Working…",
   'backup.password': "Password (optional)",
-  'backup.passwordHint': "Leave empty for a plain file. With a password the file is encrypted; write the password down — without it the backup cannot be opened.",
+  'backup.passwordHint': "Leave empty for a plain file. With a password the file is encrypted; write the password down. Without it the backup cannot be opened.",
   'backup.contains': "A backup contains all entries, photos, moods, activities, goals, reminders and settings. It goes only where you send or save it.",
   'backup.last': "Last backup: {date}",
   'backup.never': "No backup made on this phone yet.",

@@ -2,6 +2,7 @@ import { Image } from 'expo-image';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 
 import { MoodFace } from '@/components/mood-face';
+import { BrandFonts, Radius } from '@/constants/theme';
 import type { Entry } from '@/db/entries';
 import type { ActivityBook, MoodBook } from '@/hooks/use-journal';
 import { useTheme } from '@/hooks/use-theme';
@@ -39,7 +40,10 @@ export function EntryRow({
       <View style={styles.body}>
         <View style={styles.line}>
           <Text style={[styles.mood, { color: theme.text }]}>{mood?.name ?? '?'}</Text>
-          <Text style={[styles.time, { color: theme.textSecondary }]}>{formatClock(locale, entry.localTime)}</Text>
+          <View style={styles.timeBox}>
+            {mood ? <View style={[styles.dot, { backgroundColor: mood.color }]} /> : null}
+            <Text style={[styles.time, { color: theme.textSecondary }]}>{formatClock(locale, entry.localTime)}</Text>
+          </View>
         </View>
         {acts.length ? (
           <Text numberOfLines={2} style={[styles.acts, { color: theme.textSecondary }]}>
@@ -58,13 +62,15 @@ export function EntryRow({
 }
 
 const styles = StyleSheet.create({
-  row: { flexDirection: 'row', gap: 12, padding: 12, borderRadius: 14, alignItems: 'flex-start' },
+  row: { flexDirection: 'row', gap: 12, padding: 12, borderRadius: Radius.card, alignItems: 'flex-start' },
   body: { flex: 1, gap: 2 },
   line: { flexDirection: 'row', justifyContent: 'space-between', gap: 8 },
-  mood: { fontSize: 16, fontWeight: '600' },
-  time: { fontSize: 14 },
-  acts: { fontSize: 14 },
-  note: { fontSize: 14 },
-  thumb: { width: 48, height: 48, borderRadius: 8 },
+  mood: { fontSize: 16, fontWeight: '600', fontFamily: BrandFonts.body },
+  timeBox: { flexDirection: 'row', alignItems: 'center', gap: 6 },
+  dot: { width: 10, height: 10, borderRadius: 5 },
+  time: { fontSize: 14, fontFamily: BrandFonts.numerals, fontVariant: ['tabular-nums'] },
+  acts: { fontSize: 14, fontFamily: BrandFonts.body },
+  note: { fontSize: 14, fontFamily: BrandFonts.body },
+  thumb: { width: 48, height: 48, borderRadius: 12 },
   pressed: { opacity: 0.7 },
 });

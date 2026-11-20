@@ -1,5 +1,5 @@
 // Brazilian Portuguese strings. Same keys as en.ts (enforced by src/i18n/i18n.test.ts); machine-assisted translation from the
-// English and German sources (P10, D11) — no native reader yet (A14: IMPLEMENTED BUT UNVERIFIED except where logged).
+// English and German sources (P10, D11): no native reader yet (A14: IMPLEMENTED BUT UNVERIFIED except where logged).
 import type { LocaleMessages } from './en';
 
 export const ptBR: LocaleMessages = {
@@ -107,7 +107,7 @@ export const ptBR: LocaleMessages = {
   'import.warn.dateOrder': "Uma planilha reescreveu as datas deste CSV; elas foram lidas como {order} (conferido com a coluna do dia da semana). Confira a prévia.",
   'about.promise.local': "Seu diário fica neste celular. O Mood não envia nada para lugar nenhum: sem conta, sem anúncios, sem análises de uso.",
   'about.promise.backup': "Os backups vão só para onde você colocar.",
-  'about.promise.stats': "As estatísticas dizem o que aconteceu junto e em quantos dias ou registros se baseiam — nunca o porquê.",
+  'about.promise.stats': "As estatísticas dizem o que aconteceu junto e em quantos dias ou registros se baseiam, nunca o porquê.",
   'about.disclaimer': "O Mood é um diário pessoal, não um dispositivo médico. Ele não diagnostica, trata, cura nem previne nenhuma condição. Se estiver passando por um momento difícil, converse com um médico ou com alguém de confiança.",
   'nav.back': "Voltar",
   'tabs.entries': "Registros",
@@ -116,6 +116,10 @@ export const ptBR: LocaleMessages = {
   'tabs.more': "Mais",
   'home.question': "Como você está?",
   'home.empty': "Seu primeiro registro leva dois toques.",
+  'home.betterDays': "Seus melhores dias costumam ter: {activity}",
+  'home.addToday': "Adicionar registro de hoje",
+  'licenses.title': "Licenças",
+  'licenses.intro': "Software de código aberto usado neste app.",
   'day.today': "Hoje",
   'day.yesterday': "Ontem",
   'common.save': "Salvar",
@@ -303,7 +307,7 @@ export const ptBR: LocaleMessages = {
   'backup.create': "Criar arquivo de backup",
   'backup.working': "Processando…",
   'backup.password': "Senha (opcional)",
-  'backup.passwordHint': "Deixe vazio para um arquivo sem criptografia. Com senha o arquivo é criptografado; anote a senha — sem ela o backup não abre.",
+  'backup.passwordHint': "Deixe vazio para um arquivo sem criptografia. Com senha o arquivo é criptografado; anote a senha. Sem ela o backup não abre.",
   'backup.contains': "Um backup contém todos os registros, fotos, humores, atividades, metas, lembretes e ajustes. Ele vai só para onde você enviar ou salvar.",
   'backup.last': "Último backup: {date}",
   'backup.never': "Nenhum backup feito neste celular ainda.",
